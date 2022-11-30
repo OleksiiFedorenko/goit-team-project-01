@@ -1,0 +1,38 @@
+@mixin mobile-only {
+    @media screen and (max-width: 969px) {
+        @content;
+    }
+}
+
+@mixin mobile-up {
+    @media screen and (min-width: 414px) {
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media screen and (min-width: 970px) {
+        @content;
+    }
+}
+
+@mixin desktop-up {
+    @media screen and (min-width: 1150px) {
+        @content;
+    }
+}
+
+@mixin double-background {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+@mixin flex($type: flex, $justify: center, $align: center) {
+    display: $type;
+    justify-content: $justify;
+    align-items: $align;
+}

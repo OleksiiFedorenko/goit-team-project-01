@@ -1,0 +1,20 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include mobile-up {
+        width: 414px;
+    }
+
+    @include tablet-up {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 970px;
+    }
+
+    @include desktop-up {
+        width: 1280px;
+    }
+}

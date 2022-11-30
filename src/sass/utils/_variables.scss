@@ -1,0 +1,29 @@
+$color-brand: #f3c653;
+$color-brand-dark: #c79002;
+$color-text: #7a7a7a;
+$color-text-dark: #5f5f5f;
+$color-text-light: #bababa;
+$color-text-modal: #808080;
+$color-title-light: #b4b4b4;
+$color-address: #e5e5e5;
+
+$color-mid-grey: #828282;
+$color-white: #fff;
+$color-black: #000;
+
+$bg-light: #fffdee;
+$bg-dark: #f0ecd6;
+$bg-footer: #0e0c07;
+$bg-arrow: rgb(0 0 0 / 0.65);
+$bg-button: rgb(0 0 0 / 0.4);
+
+$header-shade: linear-gradient(180deg,
+        #000 0%,
+        rgb(0 0 0 / 0.55) 54.17%,
+        rgb(0 0 0 / 0) 100%);
+
+$border-radius-small: 2px;
+$border-radius-big: 25px;
+
+$transition-time: 250ms;
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);

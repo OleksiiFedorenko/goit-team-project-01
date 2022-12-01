@@ -1,0 +1,60 @@
+/*  Logo styling
+
+Код лого:
+<a class="logo zzzz" href="./index.html">Міміно</a>
+
+Замість zzzz використовуйте класи:
+Для хедеру .logo--header 
+Для hero  .logo--hero 
+Для футеру  .logo--footer
+Для лого в контентних секціях в залежності від кольору використовуйте :
+.logo--content-dark або  .logo--content-white   */
+
+.logo {
+  padding: 0;
+  font-family: $logo-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.08;
+  text-decoration: none;
+  font-style: normal;
+
+  &--header {
+    color: $color-white;
+    font-size: 36px;
+    @include mobile-up {
+      font-size: 40px;
+    }
+  }
+  &--hero {
+    color: $color-white;
+    font-size: 96px;
+    @include mobile-up {
+      font-size: 128px;
+    }
+  }
+  &--footer {
+    color: $color-brand;
+    font-size: 40px;
+    @include mobile-up {
+      font-size: 64px;
+    }
+  }
+  &--content-white {
+    color: $color-white;
+    font-size: 40px;
+    @include mobile-up {
+      font-size: 64px;
+    }
+  }
+  &--content-dark {
+    color: $color-dark-grey;
+    font-size: 40px;
+    @include mobile-up {
+      font-size: 64px;
+    }
+  }
+}

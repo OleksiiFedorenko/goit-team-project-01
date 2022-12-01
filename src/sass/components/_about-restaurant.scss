@@ -1,0 +1,78 @@
+.about-restaurant{
+    padding: 16px 0 28px 0;
+   @include tablet-up{
+    padding: 120px 0 32px 0;
+   }
+   &__wrapper-container{
+    @include tablet-up {
+   @include flex($justify:space-between);
+   }
+}
+   
+    &__wrapper {
+       padding-bottom: 28px;
+       @include tablet-up{
+        padding-bottom: 0;
+       }
+    }
+    &__title {
+      font-family: 'Times New Roman';
+       font-weight: 400;
+       font-size: 20px;
+       line-height: 1.15;
+       margin-bottom: 12px;
+       color: $color-title-light;
+       @include tablet-up{
+        font-size: 32px;
+        line-height: 1.156;
+        margin-bottom: 4px;
+       }
+    }
+    &__logo {
+        font-family: 'Film P3';
+       font-weight: 700;
+       font-size: 40px;
+       line-height: 1.075;
+       margin-bottom: 12px;
+       letter-spacing: 0.3em;
+       color: #494848;
+       @include tablet-up{
+        font-size: 64px;
+        line-height: 1.078;
+        margin-bottom: 24px;
+        
+       }
+       }
+   &__text{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-text-dark;
+    width: 258px;
+    margin-top: 12px;
+      @include tablet-up{
+      font-size: 16px;
+      line-height: 1.25;
+      
+  }
+   }
+   &__wrapper-industrial{
+   @include flex($justify: flex-end);
+   padding-bottom: 32px;
+   }
+   &__wrapper-modern{
+       @include flex;
+       padding-bottom: 32px;
+   }
+   &__second-text{
+      margin-left: 20px;
+       font-family: 'Montserrat';
+       font-size: 12px;
+           line-height: 15px;
+           letter-spacing: 0.02em;
+           color: $color-brand-dark;
+   
+   }
+   }

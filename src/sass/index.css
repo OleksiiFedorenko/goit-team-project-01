@@ -1,0 +1,160 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/swiper/swiper.min.css';
+body {
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background-color: #fffdee;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 970px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.about-restaurant {
+  padding: 16px 0 28px 0;
+}
+@media screen and (min-width: 970px) {
+  .about-restaurant {
+    padding: 120px 0 32px 0;
+  }
+}
+@media screen and (min-width: 970px) {
+  .about-restaurant__wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.about-restaurant__wrapper {
+  padding-bottom: 28px;
+}
+@media screen and (min-width: 970px) {
+  .about-restaurant__wrapper {
+    padding-bottom: 0;
+  }
+}
+.about-restaurant__title {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: #b4b4b4;
+}
+@media screen and (min-width: 970px) {
+  .about-restaurant__title {
+    font-size: 32px;
+    line-height: 1.156;
+    margin-bottom: 4px;
+  }
+}
+.about-restaurant__logo {
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  margin-bottom: 12px;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+@media screen and (min-width: 970px) {
+  .about-restaurant__logo {
+    font-size: 64px;
+    line-height: 1.078;
+    margin-bottom: 24px;
+  }
+}
+.about-restaurant__text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+  width: 258px;
+  margin-top: 12px;
+}
+@media screen and (min-width: 970px) {
+  .about-restaurant__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.about-restaurant__wrapper-industrial {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.about-restaurant__wrapper-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.about-restaurant__second-text {
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}/*# sourceMappingURL=index.css.map */

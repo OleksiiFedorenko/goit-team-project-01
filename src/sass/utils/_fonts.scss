@@ -85,7 +85,7 @@
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
-  src: url('../../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -100,8 +100,9 @@
   font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
-  src: url('../../fonts/filmp3/FilmP3Bold.eot'); /* IE9 Compat Modes */
-  src: local(''), url('../fonts/filmp3/FilmP3Bold.eot') format('embedded-opentype'),/* IE6-IE8 */ 
+  src: url('../fonts/filmp3/FilmP3Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/filmp3/FilmP3Bold.eot') format('embedded-opentype'),/* IE6-IE8 */ 
        url('../fonts/filmp3/FilmP3Bold.woff2') format('woff2'),/* Super Modern Browsers */ 
        url('../fonts/filmp3/FilmP3Bold.woff') format('woff'),/* Modern Browsers */ 
        url('../fonts/filmp3/FilmP3Bold.ttf') format('truetype'),/* Safari, Android, iOS */ 

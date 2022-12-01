@@ -1,0 +1,58 @@
+.three-room{
+	padding-bottom: 32px;
+	padding-top: 32px;
+}
+
+.logo-subtitle{
+	font-family: 'Times New Roman';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.15;
+
+	margin-bottom: 8px;
+
+	color: $color-title-light;
+}
+
+.logo-title{
+	font-family: 'Film P3';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.075;	
+	letter-spacing: 0.3em;
+
+	margin-bottom: 32px;
+	
+	text-transform: uppercase;
+	color: #494848;
+}
+
+.three-room__title{
+	font-family: 'Times New Roman';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.16;
+
+		margin-bottom: 12px;
+	
+		letter-spacing: 0.05em;
+
+		text-transform: uppercase;
+		color: $color-black;
+}
+
+.three-room__text{
+	font-family: 'Montserrat';
+
+	font-size: 12px;
+	line-height: 1.25;
+	
+	color:$color-text-dark;
+
+	margin-bottom: 32px;
+
+	width: 242px;
+	box-sizing: border-box;
+
+}

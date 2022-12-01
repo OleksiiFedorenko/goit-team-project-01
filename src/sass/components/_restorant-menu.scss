@@ -1,0 +1,41 @@
+.restorant-menu__section-title {
+font-family: 'Times New Roman', Times, serif;
+font-style: 700;
+font-size: 32px;
+line-height: 1.16;
+margin-bottom: 32px;
+}
+
+.dish-type{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: left;
+    margin: 16px;
+}
+
+.menu-list__item:not(:last-child){
+    margin-bottom: 16px;
+}
+.menu-list__item:last-child{
+    margin-bottom: 32px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+table td {
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
+.dish{
+    font-family:Montserrat;
+    font-style: 500;
+    font-size: 14px;
+    line-height: 1.214;
+    
+
+}

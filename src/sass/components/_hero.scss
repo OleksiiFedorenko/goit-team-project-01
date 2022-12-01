@@ -1,0 +1,78 @@
+.hero {
+    padding-top: 181px;
+    padding-bottom: 20px;
+    height: 740px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $bg-footer;
+    background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/homepage-hero-m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    @media screen and (min-width: 1024px){
+        padding-top: 188px;
+        padding-bottom: 15px;
+        height: 720px;
+    }
+
+    @media screen and (min-width: 1280px){
+        padding-top: 164px;
+        padding-bottom: 64px;
+    }
+
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/homepage-hero-m@2x.jpg);
+    }
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t@2x.jpg);
+      }
+    }
+      }
+
+@media screen and (min-width: 1280px) {
+        .hero {
+          background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d.jpg);
+        }
+    
+     @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
+          }
+        }
+          }
+
+          // .hero__title {
+          //   margin-top: 0;
+          //   margin-bottom: 24px;
+          //   max-width: 303px;
+          //   margin-right: auto;
+          //   margin-left: auto;
+          //   color: $color-white;
+          //   font-weight: 700;
+          //   font-size: 96px;
+          //   line-height: 1.07;
+          //   letter-spacing: 0.3em;
+          //   text-transform: uppercase;
+
+          // }

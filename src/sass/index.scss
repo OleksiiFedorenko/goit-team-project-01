@@ -1,8 +1,8 @@
-@import './src/sass/utils/variables';
-@import './src/sass/utils/mixins';
+@import './utils/variables';
+@import './utils/mixins';
 
-@import './src/sass/base/base';
-@import './src/sass/base/reset';
-@import './src/sass/base/container';
+@import './base/base';
+@import './base/reset';
+@import './base/container';
 
-@import './src/sass/components/hero-slider';
+@import './components/hero-slider';

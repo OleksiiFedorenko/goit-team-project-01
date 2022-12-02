@@ -1,5 +1,9 @@
 .double-room {
+  position: relative;
   padding: 32px 0;
+}
+.double-room__wrap {
+  text-align: left;
 }
 .double-room__subtitle {
   font-size: 20px;
@@ -17,15 +21,69 @@
   font-weight: 700;
   font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: $color-black;
   margin-bottom: 12px;
 }
 .double-room__text {
+  max-width: 258px;
   font-size: 12px;
   line-height: 1.22;
   font-weight: 600;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: $color-text-dark;
-  margin-bottom: 12px;
   letter-spacing: 0.02em;
+  color: $color-text-dark;
+  margin-bottom: 32px;
+}
+.double-room__image-wrap {
+  text-align: right;
+  margin-bottom: 32px;
+}
+.double-room__image {
+  // outline: 2px solid orangered;
+  display: inline-block;
+}
+.double-room__image {
+  border-radius: 2px;
+}
+
+.double-room__slider {
+  width: 269px;
+  height: 194px;
+  background-color: $color-text-dark;
+  margin-bottom: 72px;
+}
+
+.double-room__nav {
+  // outline: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.mybtn {
+  border-radius: 28px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font: inherit;
+  color: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+.myprimary-btn {
+  width: 236px;
+  height: 48px;
+  color: $color-brand;
+  background-color: $color-black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  font-family: montserrat;
+}
+.link-unstyled {
+  text-decoration: none;
+  font-style: normal;
 }

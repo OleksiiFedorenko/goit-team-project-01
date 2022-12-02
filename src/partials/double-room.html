@@ -1,5 +1,5 @@
 <section class="section double-room">
-  <div class="container">
+  <div class="container double-room__wrap">
     <h3 class="double-room__subtitle">Amet minim mollit non</h3>
     <a class="logo logo--medium-dark double-room__logo" href="./index.html"
       >Mimiho</a
@@ -10,5 +10,43 @@
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
+    <div class="double-room__image-wrap">
+      <picture class="double-room__image">
+        <source
+          srcset="
+            /src/images/pages/desktop/hotel-room-d.jpg,
+            /src/images/pages/desktop/hotel-room-d@2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+          width="460"
+          height="574"
+        />
+        <source
+          srcset="
+            /src/images/pages/mobile/hotel-room-m.jpg,
+            /src/images/pages/mobile/hotel-room-m@2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+          width="246"
+          height="322"
+        />
+        <img
+          class="double-room__image"
+          src="/src/images/pages/desktop/hotel-room-d.jpg"
+          alt="Двомісний номер"
+          width="460"
+          height="574"
+        />
+      </picture>
+    </div>
+    <div class="double-room__slider"></div>
+    <div class="double-room__nav">
+      <a class="mybtn myprimary-btn link-unstyled" href="./suite.html"
+        >Детальніше</a
+      >
+      <button class="mybtn myprimary-btn" type="button">
+        Переглянути ціни
+      </button>
+    </div>
   </div>
 </section>

@@ -1,22 +1,23 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid orangered;
 
-    @include mobile-up {
-        width: 414px;
-    }
+  @include mobile-up {
+    width: 414px;
+  }
 
-    @include tablet-up {
-        width: 1024px;
-        padding-left: 47px;
-        padding-right: 47px;
-    }
+  @include tablet-up {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
 
-    @include desktop-up {
-        width: 1280px;
-        padding-left: 47px;
-        padding-right: 47px;
-    }
+  @include desktop-up {
+    width: 1280px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
 }

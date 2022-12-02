@@ -4,6 +4,12 @@
 
 	background:$bg-dark;
 
+	&__thumb{
+		box-sizing: border-box;
+		
+
+	}
+
 	&__title {
 			font-family: 'Times New Roman';
 			font-style: normal;
@@ -12,7 +18,7 @@
 			line-height: 1.16;
 	
 			margin-bottom: 12px;
-	
+
 			letter-spacing: 0.05em;
 	
 			text-transform: uppercase;
@@ -28,10 +34,15 @@
 			color: $color-text-dark;
 	
 			margin-bottom: 32px;
+		
+			
+			
 	
 			width: 242px;
-			box-sizing: border-box;
-	
+			
+			
+			text-align: left;
+
 		}
 }
 
@@ -42,6 +53,8 @@
 	line-height: 1.15;
 
 	margin-bottom: 8px;
+
+	text-align: right;
 
 	color: $color-title-light;
 }
@@ -54,8 +67,35 @@
 	letter-spacing: 0.3em;
 
 	margin-bottom: 32px;
+
+	text-align: right;
 	
 	text-transform: uppercase;
 	color: #494848;
 }
 
+.slider{
+	margin-bottom: 20px;
+}
+
+.triple-room__image{
+	margin-bottom: 32px;
+}
+
+.link {
+	text-decoration: none;
+		color: inherit;
+}
+
+.details-button {
+	display: block;
+	margin-bottom: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.price-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

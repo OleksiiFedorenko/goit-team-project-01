@@ -6,13 +6,17 @@
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
+   
+    display: inline-block;
+   
+   
    }
 }
    
     &__wrapper {
        padding-bottom: 28px;
        @include tablet-up{
-        padding-bottom: 0;
+        padding-bottom: 142px;
        }
     }
     &__title {
@@ -42,6 +46,9 @@
         margin-bottom: 24px;
         
        }
+       @include desktop-up{
+        color: $color-mid-grey;
+       }
        }
    &__text{
     font-family: 'Montserrat';
@@ -51,20 +58,35 @@
     letter-spacing: 0.02em;
     color: $color-text-dark;
     width: 258px;
-    margin-top: 12px;
       @include tablet-up{
       font-size: 16px;
       line-height: 1.25;
+      width: 439px;
+      @include desktop-up{
+        width: 518px;
+      }
       
   }
    }
    &__wrapper-industrial{
    @include flex($justify: flex-end);
    padding-bottom: 32px;
+   @include tablet-up{
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    padding-bottom: 0px;
+   }
+   @include desktop-up{
+    right: 180px
+   }
    }
    &__wrapper-modern{
        @include flex;
        padding-bottom: 32px;
+       @include tablet-up{
+        @include flex($justify:flex-start);
+       }
    }
    &__second-text{
       margin-left: 20px;
@@ -73,6 +95,13 @@
            line-height: 15px;
            letter-spacing: 0.02em;
            color: $color-brand-dark;
+           width: 163px;
+           @include tablet-up{
+            margin-left: 48px;
+            width: 312px;
+            font-size: 16px;
+            line-height: 1.25;
+           }
    
    }
    }

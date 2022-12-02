@@ -1,5 +1,70 @@
+@charset "UTF-8";
+/* montserrat-300 - latin_cyrillic */
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import '~node_modules/swiper/swiper.min.css';
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* Times New Roman-regular  */
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/timesNewRoman/TimesNewRomanMTStd.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/timesNewRoman/TimesNewRomanMTStd.eot") format("embedded-opentype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.woff") format("woff"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.ttf") format("truetype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.svg") format("svg"); /* Legacy iOS */
+}
+/* Times New Roman-Bold  */
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot") format("embedded-opentype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.ttf") format("truetype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.svg") format("svg"); /* Legacy iOS */
+}
+/* Film P3  */
+@font-face {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/filmp3/FilmP3Bold.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/filmp3/FilmP3Bold.eot") format("embedded-opentype"), url("../fonts/filmp3/FilmP3Bold.woff2") format("woff2"), url("../fonts/filmp3/FilmP3Bold.woff") format("woff"), url("../fonts/filmp3/FilmP3Bold.ttf") format("truetype"), url("../fonts/filmp3/FilmP3Bold.svg") format("svg"); /* Legacy iOS */
+}
 body {
   color: #7a7a7a;
   font-weight: 600;
@@ -55,40 +120,111 @@ ul {
     width: 414px;
   }
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 970px;
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1150px;
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+/*  Logo styling
+
+Приклад коду лого:
+<a class="logo mmmm" href="./index.html">Mimiho</a>
+Додається загальний клас logo + модіфікатор mmmm
+Замість mmmm використовуйте класи:
+Для хедеру logo--small 
+Для hero  logo--large 
+Для футеру logo--medium-brand
+В контентних секціях в залежності від кольору використовуйте :
+logo--medium-dark або logo--medium-white    */
+.logo {
+  padding: 0;
+  font-family: Film P3, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 30%;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.08;
+  text-decoration: none;
+  font-style: normal;
+}
+.logo--small {
+  color: #fff;
+  font-size: 36px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--small {
+    font-size: 40px;
+  }
+}
+.logo--large {
+  color: #fff;
+  font-size: 96px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--large {
+    font-size: 128px;
+  }
+}
+.logo--medium-brand {
+  color: #f3c653;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--medium-brand {
+    font-size: 64px;
+  }
+}
+.logo--medium-white {
+  color: #fff;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--medium-white {
+    font-size: 64px;
+  }
+}
+.logo--medium-dark {
+  color: #494848;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--medium-dark {
+    font-size: 64px;
   }
 }
 
 .about-restaurant {
   padding: 16px 0 28px 0;
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .about-restaurant {
     padding: 120px 0 32px 0;
   }
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .about-restaurant__wrapper-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: inline-block;
   }
 }
 .about-restaurant__wrapper {
   padding-bottom: 28px;
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .about-restaurant__wrapper {
-    padding-bottom: 0;
+    padding-bottom: 142px;
   }
 }
 .about-restaurant__title {
@@ -99,7 +235,7 @@ ul {
   margin-bottom: 12px;
   color: #b4b4b4;
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .about-restaurant__title {
     font-size: 32px;
     line-height: 1.156;
@@ -115,11 +251,16 @@ ul {
   letter-spacing: 0.3em;
   color: #494848;
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .about-restaurant__logo {
     font-size: 64px;
     line-height: 1.078;
     margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-restaurant__logo {
+    color: #828282;
   }
 }
 .about-restaurant__text {
@@ -130,12 +271,17 @@ ul {
   letter-spacing: 0.02em;
   color: #5f5f5f;
   width: 258px;
-  margin-top: 12px;
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .about-restaurant__text {
     font-size: 16px;
     line-height: 1.25;
+    width: 439px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1280px) {
+  .about-restaurant__text {
+    width: 518px;
   }
 }
 .about-restaurant__wrapper-industrial {
@@ -144,11 +290,31 @@ ul {
   align-items: center;
   padding-bottom: 32px;
 }
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-industrial {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-restaurant__wrapper-industrial {
+    right: 180px;
+  }
+}
 .about-restaurant__wrapper-modern {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-modern {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .about-restaurant__second-text {
   margin-left: 20px;
@@ -157,4 +323,13 @@ ul {
   line-height: 15px;
   letter-spacing: 0.02em;
   color: #c79002;
+  width: 163px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__second-text {
+    margin-left: 48px;
+    width: 312px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -135,6 +135,117 @@ ul {
   }
 }
 
+.about-restaurant {
+  padding: 16px 0 28px 0;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant {
+    padding: 120px 0 32px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+  }
+}
+.about-restaurant__wrapper {
+  padding-bottom: 28px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper {
+    padding-bottom: 142px;
+  }
+}
+.about-restaurant__title {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: #b4b4b4;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__title {
+    font-size: 32px;
+    line-height: 1.156;
+    margin-bottom: 4px;
+  }
+}
+.about-restaurant__text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+  width: 258px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 439px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1280px) {
+  .about-restaurant__text {
+    width: 518px;
+  }
+}
+.about-restaurant__wrapper-industrial {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-industrial {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-restaurant__wrapper-industrial {
+    right: 180px;
+  }
+}
+.about-restaurant__wrapper-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-modern {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.about-restaurant__second-text {
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+  width: 163px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__second-text {
+    margin-left: 48px;
+    width: 312px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
 /*  Logo styling
 
 Приклад коду лого:
@@ -203,133 +314,56 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 
-.about-restaurant {
-  padding: 16px 0 28px 0;
+.two-img-slider {
+  width: 350px;
+  overflow: hidden;
+  margin-left: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .about-restaurant {
-    padding: 120px 0 32px 0;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__wrapper-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: inline-block;
-  }
-}
-.about-restaurant__wrapper {
-  padding-bottom: 28px;
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__wrapper {
-    padding-bottom: 142px;
-  }
-}
-.about-restaurant__title {
-  font-family: "Times New Roman";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  margin-bottom: 12px;
-  color: #b4b4b4;
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__title {
-    font-size: 32px;
-    line-height: 1.156;
-    margin-bottom: 4px;
-  }
-}
-.about-restaurant__logo {
-  font-family: "Film P3";
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.075;
-  margin-bottom: 12px;
-  letter-spacing: 0.3em;
-  color: #494848;
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__logo {
-    font-size: 64px;
-    line-height: 1.078;
-    margin-bottom: 24px;
+  .two-img-slider {
+    width: 448px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-restaurant__logo {
-    color: #828282;
+  .two-img-slider {
+    width: 568px;
   }
 }
-.about-restaurant__text {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #5f5f5f;
-  width: 258px;
+
+.two-img-slider__wrapper {
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .about-restaurant__text {
-    font-size: 16px;
-    line-height: 1.25;
-    width: 439px;
+  .two-img-slider__wrapper {
+    margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 1024px) and (min-width: 1280px) {
-  .about-restaurant__text {
-    width: 518px;
+@media screen and (min-width: 1280px) {
+  .two-img-slider__wrapper {
+    margin-bottom: 40px;
   }
 }
-.about-restaurant__wrapper-industrial {
+
+.two-img-slider__picture {
+  border-radius: 2px;
+}
+
+.arrows {
   display: flex;
+  gap: 10px;
+}
+.arrows--rigth {
   justify-content: flex-end;
-  align-items: center;
-  padding-bottom: 32px;
+  margin-right: 15px;
 }
-@media screen and (min-width: 1024px) {
-  .about-restaurant__wrapper-industrial {
-    position: absolute;
-    top: -32px;
-    right: 112px;
-    padding-bottom: 0px;
-  }
+
+.arrow-left, .arrow-right {
+  fill: #000;
+  background-color: transparent;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1280px) {
-  .about-restaurant__wrapper-industrial {
-    right: 180px;
-  }
-}
-.about-restaurant__wrapper-modern {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 32px;
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__wrapper-modern {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-.about-restaurant__second-text {
-  margin-left: 20px;
-  font-family: "Montserrat";
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.02em;
-  color: #c79002;
-  width: 163px;
-}
-@media screen and (min-width: 1024px) {
-  .about-restaurant__second-text {
-    margin-left: 48px;
-    width: 312px;
-    font-size: 16px;
-    line-height: 1.25;
-  }
+.arrow-left:hover, .arrow-left:focus, .arrow-right:hover, .arrow-right:focus {
+  fill: #f3c653;
 }/*# sourceMappingURL=index.css.map */

@@ -1,5 +1,6 @@
 .about-restaurant{
     padding: 16px 0 28px 0;
+    position: relative;
    @include tablet-up{
     padding: 120px 0 32px 0;
    }
@@ -32,21 +33,21 @@
         margin-bottom: 4px;
        }
     }
-    &__logo {
-      font-size: 40px;
-       line-height: 1.075;
-       margin-bottom: 12px;
-       color: #494848;
-       @include tablet-up{
-        font-size: 64px;
-        line-height: 1.078;
-        margin-bottom: 24px;
+    // &__logo {
+    //   font-size: 40px;
+    //    line-height: 1.075;
+    //    margin-bottom: 12px;
+    //    color: #494848;
+    //    @include tablet-up{
+    //     font-size: 64px;
+    //     line-height: 1.078;
+    //     margin-bottom: 24px;
         
-       }
-       @include desktop-up{
-        color: $color-mid-grey;
-       }
-       }
+    //    }
+    //    @include desktop-up{
+    //     color: $color-mid-grey;
+    //    }
+    //    }
    &__text{
     font-family: 'Montserrat';
     font-weight: 600;
@@ -101,4 +102,6 @@
            }
    
    }
-   }
+  }
+  
+   

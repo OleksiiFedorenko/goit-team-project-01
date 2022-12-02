@@ -1,9 +1,11 @@
 .two-img-slider {
     width: 350px;
     overflow: hidden;
+    margin-left: 50px;
 
     @include tablet-up {
         width: 448px;
+        margin-left: auto;
     }
 
     @include desktop-up {
@@ -43,6 +45,7 @@
     &--rigth {
         // Коли стрілочки мають бути біля правого краю слайдеру
         justify-content: flex-end;
+        margin-right: 15px;
     }
 }
 

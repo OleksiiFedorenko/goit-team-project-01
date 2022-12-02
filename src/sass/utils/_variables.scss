@@ -6,7 +6,7 @@ $color-text-light: #bababa;
 $color-text-modal: #808080;
 $color-title-light: #b4b4b4;
 $color-address: #e5e5e5;
-
+$color-dark-grey: #494848;
 $color-mid-grey: #828282;
 $color-white: #fff;
 $color-black: #000;
@@ -17,10 +17,12 @@ $bg-footer: #0e0c07;
 $bg-arrow: rgb(0 0 0 / 0.65);
 $bg-button: rgb(0 0 0 / 0.4);
 
-$header-shade: linear-gradient(180deg,
-        #000 0%,
-        rgb(0 0 0 / 0.55) 54.17%,
-        rgb(0 0 0 / 0) 100%);
+$header-shade: linear-gradient(
+  180deg,
+  #000 0%,
+  rgb(0 0 0 / 0.55) 54.17%,
+  rgb(0 0 0 / 0) 100%
+);
 
 $border-radius-small: 2px;
 $border-radius-big: 25px;

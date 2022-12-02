@@ -1,5 +1,69 @@
+/* montserrat-300 - latin_cyrillic */
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import '~node_modules/swiper/swiper.min.css';
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* Times New Roman-regular  */
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/timesNewRoman/TimesNewRomanMTStd.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/timesNewRoman/TimesNewRomanMTStd.eot") format("embedded-opentype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.woff") format("woff"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.ttf") format("truetype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.svg") format("svg"); /* Legacy iOS */
+}
+/* Times New Roman-Bold  */
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot") format("embedded-opentype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.ttf") format("truetype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.svg") format("svg"); /* Legacy iOS */
+}
+/* Film P3  */
+@font-face {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/filmp3/FilmP3Bold.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/filmp3/FilmP3Bold.eot") format("embedded-opentype"), url("../fonts/filmp3/FilmP3Bold.woff2") format("woff2"), url("../fonts/filmp3/FilmP3Bold.woff") format("woff"), url("../fonts/filmp3/FilmP3Bold.ttf") format("truetype"), url("../fonts/filmp3/FilmP3Bold.svg") format("svg"); /* Legacy iOS */
+}
 body {
   color: #7a7a7a;
   font-weight: 600;
@@ -55,20 +119,23 @@ ul {
     width: 414px;
   }
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 970px;
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1150px;
+    width: 1280px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }
 
 .hero {
+  position: relative;
   padding-top: 181px;
   padding-bottom: 20px;
   height: 740px;
@@ -82,14 +149,14 @@ ul {
   background-position: center;
   text-align: center;
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .hero {
     padding-top: 188px;
     padding-bottom: 15px;
     height: 720px;
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
   .hero {
     padding-top: 164px;
     padding-bottom: 64px;
@@ -101,22 +168,22 @@ ul {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/homepage-hero-m@2x.jpg);
   }
 }
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1024px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/homepage-hero-t.jpg);
   }
 }
-@media screen and (min-width: 970px) and (min-device-pixel-ratio: 2), screen and (min-width: 970px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 970px) and (min-resolution: 192dpi), screen and (min-width: 970px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/homepage-hero-t@2x.jpg);
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/homepage-hero-d.jpg);
   }
 }
-@media screen and (min-width: 1150px) and (min-device-pixel-ratio: 2), screen and (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1150px) and (min-resolution: 192dpi), screen and (min-width: 1150px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
   }
@@ -125,10 +192,103 @@ ul {
   margin-top: 0;
   margin-bottom: 24px;
   max-width: 303px;
+  margin-right: auto;
+  margin-left: auto;
   color: #fff;
+  font-family: Film P3, sans-serif;
   font-weight: 700;
   font-size: 96px;
   line-height: 1.07;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+}
+
+.hero__subtitle {
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 294px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.hero__phrase {
+  margin-top: 0;
+  margin-bottom: 113px;
+  max-width: 318px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  font-family: Times New Roman, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 236px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f3c653;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+.button:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.button:last-of-type {
+  margin-bottom: 58px;
+}
+
+.socials {
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials__link {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+.location {
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  display: flex;
+  width: 210px;
+  gap: 8px;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 6px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  text-decoration: none;
+  fill: #f3c653;
+  color: #e5e5e5;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: left;
 }/*# sourceMappingURL=index.css.map */

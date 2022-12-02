@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
     padding-top: 181px;
     padding-bottom: 20px;
     height: 740px;
@@ -56,17 +57,119 @@
         }
           }
 
-          .hero__title {
-            margin-top: 0;
-            margin-bottom: 24px;
-            max-width: 303px;
-            // margin-right: auto;
-            // margin-left: auto;
-            color: $color-white;
-            font-weight: 700;
-            font-size: 96px;
-            line-height: 1.07;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
+
+ .hero__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    max-width: 303px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $color-white;
+    font-family: Film P3, sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
 
           }
+
+ .hero__subtitle {
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 294px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $color-white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+          }
+
+.hero__phrase{
+  margin-top: 0;
+  margin-bottom: 113px;
+  max-width: 318px;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color-white;
+  font-family: Times New Roman, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  width: 236px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: $border-radius-big;
+  border: 2px solid $color-white;
+  
+  background-color: $bg-button;
+  color: $color-brand;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  &:not(:last-of-type){
+    margin-bottom: 24px;
+  }
+
+  &:last-of-type{
+    margin-bottom: 58px;
+  }
+}
+
+.socials {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+
+  .socials__link{
+    fill: rgba(243, 198, 83, 0.7);
+  }
+
+
+  .location {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+
+
+    display: flex;
+    width: 210px;
+    gap: 8px;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: $border-radius-small;
+
+    text-decoration: none;
+    fill: $color-brand;
+    color: $color-address;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+  }
+

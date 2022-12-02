@@ -52,7 +52,9 @@
     background-color: transparent;
     border: none;
 
+    transition: fill $transition-time $cubic-bezier;
+
     &:hover, &:focus {
-        fill: #F3C653;
+        fill: $color-brand;
     }
 }

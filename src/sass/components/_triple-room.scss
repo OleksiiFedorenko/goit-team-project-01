@@ -1,18 +1,82 @@
+.logo-subtitle {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.15;
+
+	margin-bottom: 8px;
+	letter-spacing: 0;
+	
+	// outline: 1px solid red;
+
+	text-align: right;
+
+	color: $color-title-light;
+
+	@media screen and (min-width: 1024px) {
+		
+		font-size: 32px;
+		line-height: 1.156;
+		margin-bottom: 4px;
+		padding-right: 17px;
+	}
+}
+
+.logo-title {
+	font-family: 'Film P3';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.075;
+	letter-spacing: 0.3em;
+
+	margin-bottom: 32px;
+
+
+	// outline: 1px solid red;
+	text-align: right;
+
+	text-transform: uppercase;
+	color: #494848;
+
+	@media screen and (min-width: 1024px) {
+	
+		margin-bottom: 62px;
+		padding-right: 17px;
+
+		font-size: 64px;
+		line-height: 1.07;
+	}
+}
+
 .triple-room{
 	padding-bottom: 32px;
 	padding-top: 32px;
 
 	background:$bg-dark;
 
-	&__thumb{
-		box-sizing: border-box;
-		
+	@media screen and (min-width: 1024px){
+		padding-bottom: 145px;
+		padding-top: 66px;
+		position: relative;
 
+		
+	}
+
+		@media screen and (min-width: 1280px) {
+		padding-top: 72px;
+		}
+
+	&__thumb{
+	margin-bottom: 32px;
+	
+	@media screen and (min-width: 1024px) {
+			margin-bottom: 210px;
+		}
 	}
 
 	&__title {
-			font-family: 'Times New Roman';
-			font-style: normal;
+				font-family: 'Times New Roman', Times, serif;
+			
 			font-weight: 700;
 			font-size: 24px;
 			line-height: 1.16;
@@ -23,79 +87,136 @@
 	
 			text-transform: uppercase;
 			color: $color-black;
+			text-align: right;
+			// outline: 1px solid red;
+
+			@media screen and (min-width: 1024px) {
+					padding-right: 43px;
+					font-size: 30px;
+					line-height: 1.13;
+					margin-bottom: 16px;
+				}
 		}
 	
 		&__text {
 			font-family: 'Montserrat';
-	
+			display: block;
+			margin-left: 79px;
 			font-size: 12px;
-			line-height: 1.25;
+			line-height: 1.219;
 	
 			color: $color-text-dark;
-	
-			margin-bottom: 32px;
-		
 			
-			
-	
 			width: 242px;
-			
-			
-			text-align: left;
+			// outline: 1px solid red;
 
+			@media screen and (min-width: 1024px) {
+				width: 400px;
+
+				margin-left: 510px;
+
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 1.218;
+				}
 		}
 }
 
-.logo-subtitle{
-	font-family: 'Times New Roman';
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 1.15;
-
-	margin-bottom: 8px;
-
-	text-align: right;
-
-	color: $color-title-light;
-}
-
-.logo-title{
-	font-family: 'Film P3';
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 1.075;	
-	letter-spacing: 0.3em;
-
+.triple-room__image {
 	margin-bottom: 32px;
 
-	text-align: right;
-	
-	text-transform: uppercase;
-	color: #494848;
+	@media screen and (min-width: 1024px){
+		position: absolute;
+
+		top: -32px;
+		left: 112px;
+		margin-bottom: 0;
+	}
+
+		@media screen and (min-width: 1280px){
+
+			left: 180px;
+			
+			box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+			border-radius: 2px;
+		}
 }
+
 
 .slider{
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 1024px) {
+	
+			position: absolute;
+			bottom: 42px;
+			right: 44px;
+			margin-bottom: 0;
+		}
+
+	&__image{
+		margin-bottom: 20px;
+	}
 }
 
-.triple-room__image{
-	margin-bottom: 32px;
-}
+
 
 .link {
 	text-decoration: none;
-		color: inherit;
+	color: inherit;
 }
 
 .details-button {
 	display: block;
+	width: 236px;
 	margin-bottom: 16px;
 	margin-left: auto;
 	margin-right: auto;
+
+	
+	
+	background: #000000;
+	border: 2px solid #F0ECD6;
+	border-radius: 25px;
+
+	padding-top: 14px;
+		padding-bottom: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: $color-brand;
+		
+	cursor: pointer;
+
+	@media screen and (min-width: 1024px) {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .price-button {
-	display: block;
+display: block;
+	width: 236px;
+	
 	margin-left: auto;
 	margin-right: auto;
+
+
+	
+		background: #000000;
+		border: 2px solid #F0ECD6;
+		border-radius: 25px;
+
+		padding-top: 14px;
+		padding-bottom: 14px;
+			text-align: center;
+			text-decoration: none;
+			color: $color-brand;
+		
+			cursor: pointer;
+
+			@media screen and (min-width: 1024px) {
+					margin-left: 0;
+					margin-right: 0;
+					
+				}
 }

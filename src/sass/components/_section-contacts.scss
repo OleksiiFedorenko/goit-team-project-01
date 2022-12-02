@@ -1,0 +1,32 @@
+.contacts__titel {
+  margin-top: 12px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+}
+
+.contacts__list {
+  margin-top: 24px;
+}
+
+.contacts__item {
+}
+
+.contacts__link {
+  &--tel {
+  }
+}
+
+.contacts__features {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #c79002;
+}

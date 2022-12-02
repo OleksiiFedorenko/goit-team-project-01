@@ -1,7 +1,14 @@
-@import '../sass/utils/variables';
-@import '../sass/utils/mixins';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/fonts';
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+@import './components/logo;
 
-@import '../sass/base/base';
-@import '../sass/base/reset';
-@import '../sass/base/container';
-@import '../sass/components/about-restaurant'
+
+
+
+
+
+

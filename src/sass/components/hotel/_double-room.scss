@@ -1,3 +1,31 @@
 .double-room {
   padding: 32px 0;
 }
+.double-room__subtitle {
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  margin-bottom: 8px;
+}
+.double-room__logo {
+  margin-bottom: 32px;
+}
+.double-room__title {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  text-transform: uppercase;
+  color: $color-black;
+  margin-bottom: 12px;
+}
+.double-room__text {
+  font-size: 12px;
+  line-height: 1.22;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: $color-text-dark;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}

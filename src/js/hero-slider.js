@@ -6,7 +6,7 @@ new Swiper('.hero-slider',{
         nextEl: '.hero-slider__button--next',
         prevEl: '.hero-slider__button--prev'
     },
-    // slidesPerView: 1,
+    slidesPerView: 1,
     
     // Ефект переключення слайдів
     // Зміна прозорості

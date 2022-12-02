@@ -1,50 +1,36 @@
-// styles
-
-.wrapper {
-    // outline: 1px dashed red;
-    overflow: hidden;
-    margin: 0 auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
-
-        //todo Breakpoint MOBILE:
-        @media screen and (min-width: 414px) {
-            width: 414px;
-        }
-    
-        //todo Breakpoint TABLET:
-        @media screen and (min-width: 970px) {
-            width: 970px;
-        }
-    
-        //todo Breakpoint DESKTOP:
-        @media screen and (min-width: 1150px) {
-            width: 1150px;
-        }
-    }
-
-
-// .image-slider__wrapper {
-//     position: relative;
-
-// }
 
 .hero-slider {
+    // outline: 1px dashed red;
+
     position: relative;
+
+    margin: 0 auto;
+    overflow: hidden;
+    @include mobile-up {
+        width: 414px;
+    }
+
+    @include tablet-up {
+        width: 1024px;
+    }
+
+    @include desktop-up {
+        width: 1280px;
+    }
 }
 
+// ? Робив за прикладом з відео, не факт що якось впливає
 .hero-slider__image {
     text-align: center;
 }
 
 .hero-slider__image img {
-    // width: 194px;
-    max-width: 100%;
     object-fit: cover;
 }
+// ?
+
 
 // Стрілки
-
 .hero-slider__nav {
     // outline: 1px dashed tomato;
     
@@ -59,32 +45,21 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    //todo Breakpoint TABLET:
-    @media screen and (min-width: 970px) {
+    @include tablet-up {
         padding-left: 47px;
         padding-right: 47px;
     }
 
-    //todo Breakpoint DESKTOP:
-    @media screen and (min-width: 1150px) {
+    @include desktop-up {
         padding-left: 85px;
         padding-right: 85px;
     }
 }
 
-    
-
-
 .hero-slider__button {
     // outline: 1px dashed teal;
     
     @include flex;
-    // display: flex;
-    // justify-content: center;
-    // text-align: center;
-
-    // width: 40px;
-    // height: 40px;
     border: none;
     padding: 0;
 

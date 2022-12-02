@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* montserrat-300 - latin_cyrillic */
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import '~node_modules/swiper/swiper.min.css';
@@ -137,7 +138,7 @@ ul {
 .hero {
   position: relative;
   padding-top: 181px;
-  padding-bottom: 20px;
+  padding-bottom: 102px;
   height: 740px;
   max-width: 1280px;
   margin-left: auto;
@@ -152,7 +153,7 @@ ul {
 @media screen and (min-width: 1024px) {
   .hero {
     padding-top: 188px;
-    padding-bottom: 15px;
+    padding-bottom: 64px;
     height: 720px;
   }
 }
@@ -202,6 +203,19 @@ ul {
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    margin-bottom: 16px;
+    max-width: 404px;
+    font-size: 128px;
+    line-height: 1.08;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    margin-bottom: 32px;
+  }
+}
 
 .hero__subtitle {
   margin-top: 0;
@@ -214,6 +228,19 @@ ul {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
+}
+@media screen and (min-width: 1024px) {
+  .hero__subtitle {
+    margin-bottom: 56px;
+    max-width: 368px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__subtitle {
+    margin-bottom: 64px;
+  }
 }
 
 .hero__phrase {
@@ -230,15 +257,90 @@ ul {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1024px) {
+  .hero__phrase {
+    margin-bottom: 145px;
+    max-width: 358px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__phrase {
+    margin-bottom: 144px;
+  }
+}
 
-.button {
+.hero__actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.location {
+  display: flex;
+  width: 285px;
+  height: 56px;
+  gap: 10px;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 8px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  text-decoration: none;
+  fill: #f3c653;
+  color: #e5e5e5;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+@media screen and (max-width: 1023px) {
+  .location {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    gap: 8px;
+    width: 210px;
+    height: 47px;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    padding-right: 0;
+    font-size: 12px;
+  }
+}
+
+.location__address {
+  width: 233px;
+}
+@media screen and (max-width: 1023px) {
+  .location__address {
+    width: 176px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-buttons {
+    display: flex;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-buttons {
+    gap: 60px;
+  }
+}
+
+.hero-buttons__item {
   display: flex;
   justify-content: center;
   width: 236px;
   padding-top: 13px;
   padding-bottom: 11px;
-  margin-right: auto;
-  margin-left: auto;
   border-radius: 25px;
   border: 2px solid #fff;
   background-color: rgba(0, 0, 0, 0.4);
@@ -249,46 +351,161 @@ ul {
   line-height: 1.25;
   letter-spacing: 0.02em;
 }
-.button:not(:last-of-type) {
-  margin-bottom: 24px;
-}
-.button:last-of-type {
-  margin-bottom: 58px;
+@media screen and (max-width: 1023px) {
+  .hero-buttons__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .hero-buttons__item:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+  .hero-buttons__item:last-of-type {
+    margin-bottom: 58px;
+  }
 }
 
 .socials {
-  position: absolute;
-  left: 15px;
-  bottom: 20px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.socials__link {
+.socials__icon {
   fill: rgba(243, 198, 83, 0.7);
 }
 
-.location {
+.hero__socials {
   position: absolute;
-  top: 64px;
-  right: 15px;
-  display: flex;
-  width: 210px;
-  gap: 8px;
-  align-items: center;
-  padding-top: 8px;
-  padding-bottom: 9px;
-  padding-left: 6px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+  left: 15px;
+  bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__socials {
+    left: 47px;
+    bottom: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__socials {
+    display: none;
+  }
+}
+
+/*  Logo styling
+
+Приклад коду лого:
+<a class="logo mmmm" href="./index.html">Mimiho</a>
+Додається загальний клас logo + модіфікатор mmmm
+Замість mmmm використовуйте класи:
+Для хедеру logo--small 
+Для hero  logo--large 
+Для футеру logo--medium-brand
+В контентних секціях в залежності від кольору використовуйте :
+logo--medium-dark або logo--medium-white    */
+.logo {
+  padding: 0;
+  font-family: Film P3, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 30%;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.08;
   text-decoration: none;
+  font-style: normal;
+}
+.logo--small {
+  color: #fff;
+  font-size: 36px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--small {
+    font-size: 40px;
+  }
+}
+.logo--large {
+  color: #fff;
+  font-size: 96px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--large {
+    font-size: 128px;
+  }
+}
+.logo--medium-brand {
+  color: #f3c653;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--medium-brand {
+    font-size: 64px;
+  }
+}
+.logo--medium-white {
+  color: #fff;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--medium-white {
+    font-size: 64px;
+  }
+}
+.logo--medium-dark {
+  color: #494848;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .logo--medium-dark {
+    font-size: 64px;
+  }
+}
+
+.two-img-slider {
+  width: 350px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .two-img-slider {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .two-img-slider {
+    width: 568px;
+  }
+}
+
+.two-img-slider__wrapper {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .two-img-slider__wrapper {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .two-img-slider__wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+.two-img-slider__picture {
+  border-radius: 2px;
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+.arrows--rigth {
+  justify-content: flex-end;
+}
+
+.arrow-left, .arrow-right {
+  fill: #000;
+  background-color: transparent;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.arrow-left:hover, .arrow-left:focus, .arrow-right:hover, .arrow-right:focus {
   fill: #f3c653;
-  color: #e5e5e5;
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  text-align: left;
 }/*# sourceMappingURL=index.css.map */

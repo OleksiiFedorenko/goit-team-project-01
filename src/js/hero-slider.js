@@ -6,8 +6,8 @@ new Swiper('.hero-slider',{
         nextEl: '.hero-slider__button--next',
         prevEl: '.hero-slider__button--prev'
     },
+    // Кількість слайдів на сторінці/в'юпорті
     slidesPerView: 1,
-    
     // Ефект переключення слайдів
     // Зміна прозорості
     effect: 'fade',

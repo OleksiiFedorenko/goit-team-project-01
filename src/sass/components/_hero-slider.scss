@@ -1,14 +1,15 @@
-
+// SLIDER STYLES:
 .hero-slider {
     // outline: 1px dashed red;
-
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 
     margin: 0 auto;
     overflow: hidden;
-    @include mobile-up {
         width: 414px;
-    }
 
     @include tablet-up {
         width: 1024px;
@@ -38,7 +39,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 9;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -77,4 +78,41 @@
 .hero-slider__icon {
     width: 40px;
     height: 40px;
+}
+
+// 
+// 
+
+// Hero-section styles:
+
+.hero-test {
+    position: relative;
+    outline: 1px dotted teal;
+    background-color: rgba(255, 140, 0, 0);
+  
+        margin: 0 auto;
+        padding-top: 160px;
+        width: 414px;
+        height: 740px;
+
+    @include tablet-up {
+        width: 1024px;
+        height: 720px;
+    }
+
+    @include desktop-up {
+        width: 1280px;
+    }
+}
+
+.hero-test h1 {
+    
+    text-align: center;
+}
+
+.test-button {
+    margin-top: 40px;
+    width: 150px;
+    height: 80px;
+    
 }

@@ -136,14 +136,14 @@ ul {
 }
 
 .hero-slider {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
   margin: 0 auto;
   overflow: hidden;
-}
-@media screen and (min-width: 414px) {
-  .hero-slider {
-    width: 414px;
-  }
+  width: 414px;
 }
 @media screen and (min-width: 1024px) {
   .hero-slider {
@@ -170,7 +170,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 9;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -208,4 +208,35 @@ ul {
 .hero-slider__icon {
   width: 40px;
   height: 40px;
+}
+
+.hero-test {
+  position: relative;
+  outline: 1px dotted teal;
+  background-color: rgba(255, 140, 0, 0);
+  margin: 0 auto;
+  padding-top: 160px;
+  width: 414px;
+  height: 740px;
+}
+@media screen and (min-width: 1024px) {
+  .hero-test {
+    width: 1024px;
+    height: 720px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-test {
+    width: 1280px;
+  }
+}
+
+.hero-test h1 {
+  text-align: center;
+}
+
+.test-button {
+  margin-top: 40px;
+  width: 150px;
+  height: 80px;
 }/*# sourceMappingURL=index.css.map */

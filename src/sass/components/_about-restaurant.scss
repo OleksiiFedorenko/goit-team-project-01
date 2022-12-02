@@ -33,12 +33,9 @@
        }
     }
     &__logo {
-        font-family: 'Film P3';
-       font-weight: 700;
-       font-size: 40px;
+      font-size: 40px;
        line-height: 1.075;
        margin-bottom: 12px;
-       letter-spacing: 0.3em;
        color: #494848;
        @include tablet-up{
         font-size: 64px;
@@ -92,7 +89,7 @@
       margin-left: 20px;
        font-family: 'Montserrat';
        font-size: 12px;
-           line-height: 15px;
+           line-height: 1.25;
            letter-spacing: 0.02em;
            color: $color-brand-dark;
            width: 163px;

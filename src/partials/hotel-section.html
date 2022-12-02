@@ -1,13 +1,15 @@
-<section class="hotel-section">
-  <div class="container">
-    <p class="hotel-section__slogan">Amet minim mollit non</p>
-    <p class="hotel-section__logo">Міміно</p>
+<div class="container">
+  <section class="hotel-section">
     <h2 class="visually-hidden">Amet minim mollit non</h2>
+    <p class="hotel-section__slogan">Amet minim mollit non</p>
+    <p class="hotel-section__logo">Mimiho</p>
+
     <p class="hotel-section__text">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
+
     <picture>
       <source
         srcset="
@@ -30,36 +32,47 @@
         "
         media="(min-width: 1280px)"
       />
-      <img src="./images/pages/mobile/hotel-room-m.jpg" alt="Кімната готелю" />
+      <img
+        class="hotel-section__image"
+        src="./images/pages/mobile/hotel-room-m.jpg"
+        alt="Кімната готелю"
+      />
     </picture>
-    <p class="hotel-section__text hotel-section__text--brown">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    <picture>
-      <source
-        srcset="
-          ./images/pages/mobile/cozy-lobby-m.jpg    1x,
-          ./images/pages/mobile/cozy-lobby-m@2x.jpg 2x
-        "
-        media="(max-width: 413px)"
-      />
-      <source
-        srcset="
-          ./images/pages/tablet/cozy-lobby-t.jpg    1x,
-          ./images/pages/tablet/cozy-lobby-t@2x.jpg 2x
-        "
-        media="(min-width: 1024px)"
-      />
-      <source
-        srcset="
-          ./images/pages/desktop/cozy-lobby-d.jpg    1x,
-          ./images/pages/desktop/cozy-lobby-d@2x.jpg 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <img src="./images/pages/mobile/cozy-lobby-m.jpg" alt="Лобі" />
-    </picture>
-  </div>
-</section>
+
+    <div class="hotel-section__thumb">
+      <p class="hotel-section__text-brown">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <picture>
+        <source
+          srcset="
+            ./images/pages/mobile/cozy-lobby-m.jpg    1x,
+            ./images/pages/mobile/cozy-lobby-m@2x.jpg 2x
+          "
+          media="(max-width: 413px)"
+        />
+        <source
+          srcset="
+            ./images/pages/tablet/cozy-lobby-t.jpg    1x,
+            ./images/pages/tablet/cozy-lobby-t@2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/pages/desktop/cozy-lobby-d.jpg    1x,
+            ./images/pages/desktop/cozy-lobby-d@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hotel-section__image"
+          src="./images/pages/mobile/cozy-lobby-m.jpg"
+          alt="Лобі"
+        />
+      </picture>
+    </div>
+  </section>
+</div>

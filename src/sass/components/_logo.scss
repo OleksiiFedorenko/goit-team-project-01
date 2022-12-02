@@ -1,19 +1,18 @@
 /*  Logo styling
 
-Код лого:
-<a class="logo zzzz" href="./index.html">Міміно</a>
-
-Замість zzzz використовуйте класи:
-Для хедеру .logo--header 
-Для hero  .logo--hero 
-Для футеру  .logo--footer
-Для лого в контентних секціях в залежності від кольору використовуйте :
-.logo--content-dark або  .logo--content-white   */
+Приклад коду лого:
+<a class="logo mmmm" href="./index.html">Міміно</a>
+Додається загальний клас logo + модіфікатор mmmm
+Замість mmmm використовуйте класи:
+Для хедеру logo--small 
+Для hero  logo--large 
+Для футеру logo--medium-brand
+В контентних секціях в залежності від кольору використовуйте :
+logo--medium-dark або logo--medium-white    */
 
 .logo {
   padding: 0;
-  font-family: Film P3;
-  font-weight: 700;
+  font-family: Film P3, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 30%;
   vertical-align: middle;
@@ -22,38 +21,38 @@
   text-decoration: none;
   font-style: normal;
 
-  &--header {
+  &--small {
     color: $color-white;
     font-size: 36px;
-    @include mobile-up {
+    @include tablet-up {
       font-size: 40px;
     }
   }
-  &--hero {
+  &--large {
     color: $color-white;
     font-size: 96px;
-    @include mobile-up {
+    @include tablet-up {
       font-size: 128px;
     }
   }
-  &--footer {
+  &--medium-brand {
     color: $color-brand;
     font-size: 40px;
-    @include mobile-up {
+    @include tablet-up {
       font-size: 64px;
     }
   }
-  &--content-white {
+  &--medium-white {
     color: $color-white;
     font-size: 40px;
-    @include mobile-up {
+    @include tablet-up {
       font-size: 64px;
     }
   }
-  &--content-dark {
+  &--medium-dark {
     color: $color-dark-grey;
     font-size: 40px;
-    @include mobile-up {
+    @include tablet-up {
       font-size: 64px;
     }
   }

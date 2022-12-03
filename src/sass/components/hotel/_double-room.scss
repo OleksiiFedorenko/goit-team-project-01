@@ -74,7 +74,8 @@
 }
 .double-room__image-wrap {
   text-align: right;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
+  margin-bottom: 298px;
   @include tablet-up {
     margin: 0;
     position: absolute;
@@ -95,16 +96,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-.double-room__slider {
-  width: 269px;
-  height: 194px;
-  background-color: $color-text-dark;
-  margin-bottom: 72px;
-  @include tablet-up {
-    margin-bottom: 0;
   }
 }
 
@@ -140,4 +131,14 @@
 .link-unstyled {
   text-decoration: none;
   font-style: normal;
+}
+
+/*     Slider styling     */
+.two-img-slider--left-hotel {
+  outline: 3px solid yellowgreen;
+  @include mobile-only {
+    position: absolute;
+    top: 640;
+    right: 130px;
+  }
 }

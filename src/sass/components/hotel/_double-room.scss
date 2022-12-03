@@ -1,9 +1,3 @@
-.container {
-  outline: 5px solid red;
-}
-.double-room {
-  outline: 5px solid green;
-}
 .double-room__wrap {
   text-align: left;
   position: relative;
@@ -52,6 +46,9 @@
     font-size: 36px;
     margin-bottom: 24px;
   }
+  &--lowercase {
+    text-transform: lowercase;
+  }
 }
 .double-room__text {
   max-width: 258px;
@@ -86,12 +83,10 @@
 .double-room__image {
   // outline: 2px solid orangered;
   display: inline-block;
-}
-.double-room__image {
   border-radius: 2px;
 }
+
 .double-room__sl-wrapper {
-  outline: 2px dashed blue;
   @include tablet-up {
     display: flex;
     justify-content: space-between;
@@ -100,11 +95,18 @@
 }
 
 .double-room__nav {
-  outline: 1px solid green;
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  @include tablet-up {
+    margin-bottom: 69px;
+  }
+
+  @include desktop-up {
+    margin-bottom: 77px;
+  }
+  margin-bottom: 77px;
 }
 .mybtn {
   border-radius: 28px;
@@ -134,11 +136,16 @@
 }
 
 /*     Slider styling     */
-.two-img-slider--left-hotel {
-  outline: 3px solid yellowgreen;
+.hotel-slider--left-pos {
   @include mobile-only {
     position: absolute;
     top: 640;
     right: 130px;
+  }
+}
+.double-room__arrows {
+  justify-content: flex-end;
+  @include mobile-only {
+    margin-right: 170px;
   }
 }

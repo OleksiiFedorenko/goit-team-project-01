@@ -23,7 +23,6 @@
         padding-top: 164px;
         padding-bottom: 65px;
     }
-
 }
 
 @include double-background {
@@ -32,43 +31,104 @@
     }
   }
 
-
   @include tablet-up {
     .hero {
       background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t.jpg);
     }
 
-    @include double-background {
-      .hero {
-        background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t@2x.jpg);
+  @include double-background {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t@2x.jpg);
+      }
+    }
+  }
+
+  @include desktop-up {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d.jpg);
+    }
+    
+  @include double-background {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
+    }
+   }
+ }
+
+ .hero--colored {
+  background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/restaurant-hero-m.jpg);
+
+  @include double-background {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
+    }
+  }
+}
+  @include tablet-up {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/restaurant-hero-t.jpg);
+    }
+
+  @include double-background {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/restaurant-hero-t@2x.jpg);
       }
     }
       }
 
-      @include desktop-up {
-        .hero {
-          background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d.jpg);
-        }
+  @include desktop-up {
+    .hero--colored {
+     background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/restaurant-hero-d.jpg);
+     }
     
-    @include double-background {
-          .hero {
-            background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
-          }
+  @include double-background {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/restaurant-hero-d@2x.jpg);
+     }
+  }
+}
+
+
+.hero--light{
+background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
+
+@include double-background {
+  .hero--light {
+    background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
+  }
+}
+}
+@include tablet-up {
+  .hero--light {
+    background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
+  }
+
+  @include double-background {
+    .hero--light {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/hotel-hero.suit-hero-t@2x.jpg);
+    }
+  }
+}
+
+    @include desktop-up {
+      .hero--light {
+        background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
+      }
+  
+  @include double-background {
+        .hero--light {
+          background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/hotel-hero.suit-hero-d@2x.jpg);
         }
-          }
+      }
+}
 
-
- .hero__title {
-    @extend .logo;
-    @extend .logo--large;
-
+ .hero__logo {
     margin-top: 0;
     margin-bottom: 24px;
     max-width: 303px;
     margin-right: auto;
     margin-left: auto;
 
-    
     // color: $color-white;
     // font-family: Film P3, sans-serif;
     // font-weight: 700;
@@ -90,7 +150,7 @@
    }
 }
 
- .hero__subtitle {
+ .hero__title {
     margin-top: 0;
     margin-bottom: 40px;
     max-width: 294px;
@@ -113,9 +173,22 @@
       margin-bottom: 64px;
     }
 
-          }
+  }
 
-.hero__phrase{
+
+  .hotel-title{
+    margin-bottom: 178px;
+
+    @include tablet-up{
+      margin-bottom: 226px;
+    }
+
+    @include desktop-up{
+      margin-bottom: 249px;
+    }
+  }
+
+.hero__slogan{
   margin-top: 0;
   margin-bottom: 113px;
   max-width: 318px;
@@ -190,14 +263,14 @@
 
 }
 
-.location__address{
-  width: 233px;
+.location__icon {
+  flex-shrink: 0;
 
-  @include mobile-only{
-    width: 176px;
+  @include tablet-up{
+    width: 24px;
+    height: 24px;
   }
 }
-
 
 .hero-buttons{
   @include tablet-up{
@@ -213,21 +286,21 @@
 }
 
 .hero-buttons__item{
-  display: flex;
-  justify-content: center;
-  width: 236px;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  border-radius: $border-radius-big;
-  border: 2px solid $color-white;
+  // display: flex;
+  // justify-content: center;
+  // width: 236px;
+  // padding-top: 13px;
+  // padding-bottom: 11px;
+  // border-radius: $border-radius-big;
+  // border: 2px solid $color-white;
   
-  background-color: $bg-button;
-  color: $color-brand;
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+  // background-color: $bg-button;
+  // color: $color-brand;
+  // font-family: Montserrat, sans-serif;
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.02em;
 
 @include mobile-only{
   margin-right: auto;
@@ -241,21 +314,18 @@
   margin-bottom: 58px;
   }
 }
-
-
-
 }
 
+// .socials {
+//     display: flex;
+//     justify-content: center;
+//     gap: 20px;
+//   }
 
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
+//   .socials__icon{
+//     fill: rgba(243, 198, 83, 0.7);
+//   }
 
-  .socials__icon{
-    fill: rgba(243, 198, 83, 0.7);
-  }
 
   .hero__socials{
     position: absolute;
@@ -270,8 +340,11 @@
     @include desktop-up{
         display: none;
       }
-
   }
 
 
-  
+
+.menu-link {
+  text-decoration: none;
+  color: $color-brand;
+}

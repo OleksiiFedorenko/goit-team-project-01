@@ -28,9 +28,9 @@
 
 .navigation__links {
   @include flex;
-    gap: 20px;
-    padding-top: 28px;
-    padding-bottom: 12px;
+  gap: 20px;
+  padding-top: 28px;
+  padding-bottom: 12px;
 
   @include tablet-up {
     padding-top: 30px;
@@ -63,7 +63,7 @@
   }
 }
 
-.navigation__contact-container-header {
+.navigation__contact-container {
   display: none;
 
   @include tablet-up {
@@ -74,26 +74,34 @@
   }
 }
 
-.navigation__contact-phone-header {
+.navigation__contact-phone {
   display: none;
 
   @include tablet-up {
     @include flex;
     padding: 8px;
 
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+
     color: $color-white;
   }
 }
 
-.navigation__contact-phone-header {
-  // @include flex;
+.navigation__icons {
+  fill: $color-brand;
 
-  color: $color-white;
+  @include tablet-up {
+    margin-right: 8px;
+  }
+}
 
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
+.navigation__links-mobile {
+  padding: 0;
+  @include flex;
+  gap: 20px;
 }
 
 .navigation__contacts {
@@ -108,26 +116,6 @@
     min-width: 144px;
     max-width: 264px;
     height: 40px;
-  }
-}
-
-.navigation__links-mobile {
-  padding: 0;
-  @include flex;
-  gap: 20px;
-}
-.navigation__contact-phone {
-  display: none;
-
-  @include tablet-up {
-    padding: 8px;
-    @include flex;
-
-    color: $color-white;
-
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
   }
 }
 
@@ -146,15 +134,6 @@
     @include flex;
     padding-top: 38px;
     padding-bottom: 38px;
-    margin-left: 59px;
-  }
-}
-
-.navigation__icons {
-  fill: $color-brand;
-
-  @include tablet-up {
-    margin-right: 8px;
   }
 }
 

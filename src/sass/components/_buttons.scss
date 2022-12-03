@@ -1,0 +1,42 @@
+.button {
+    display: block;
+    color: $color-brand;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    border-radius: 25px;
+    padding: 14px 0;
+    cursor: pointer;
+    width: 236px;
+}
+
+
+
+.button__restorant-menu {   
+    background-color: $color-black;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: $bg-light;
+    border-style: solid;
+    border: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 15px 24px 14px;
+
+    &:hover,
+    &:focus {
+        border: none;
+        background-color: $color-white;
+    }
+
+    @media screen and (min-width:1024px) {
+        margin-right: 0;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-right: 0;
+    }
+
+
+}

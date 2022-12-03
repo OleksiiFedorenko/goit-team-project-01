@@ -213,18 +213,14 @@
 	border-radius: $border-radius-small;
 }
 
-.arrows {
-	// За замовчуванням стрілочки біля лівого краю слайдеру
+.arrows-tripleroom {
+	// За замовчуванням стрілочки біля правого краю слайдеру
 	display: flex;
 	gap: 10px;
-
-	@media screen and (min-width: 1024px){
-	&--rigth {
-		// Коли стрілочки мають бути біля правого краю слайдеру
+	
+	@media screen and (min-width: 1024px) {
 		justify-content: flex-start;
 	}
-	
-}
 }
 
 .arrow-left,

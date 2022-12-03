@@ -1,4 +1,5 @@
 .restorant-menu{
+    position: relative;
     padding: 32px 0;
 
     @media screen and (min-width:1024px) {
@@ -185,4 +186,14 @@ margin-bottom: 32px;
         margin-right: 0;
     }
 
+}
+.rectangle{
+    position: absolute;
+    width: 265px;
+    height: 616px;
+    top: 0;
+    right: 0;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    border-width:0 0 0 1px;
+    filter: blur(0.5px);
 }

@@ -1,61 +1,3 @@
-.logo-subtitle {
-	font-family: 'Times New Roman', Times, serif;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 1.15;
-
-	margin-bottom: 8px;
-	letter-spacing: 0;
-
-	text-align: right;
-
-	color: $color-title-light;
-
-	@media screen and (min-width: 1024px) {
-		
-		font-size: 32px;
-		line-height: 1.156;
-		margin-bottom: 4px;
-		padding-right: 17px;
-	}
-
-		@media screen and (min-width: 1280px) {
-
-			padding-right: 57px;
-		}
-
-		
-}
-
-.logo-title {
-	font-family: 'Film P3';
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 1.075;
-	letter-spacing: 0.3em;
-
-	margin-bottom: 32px;
-	text-align: right;
-
-	text-transform: uppercase;
-	color: #494848;
-
-	@media screen and (min-width: 1024px) {
-	
-		margin-bottom: 62px;
-		padding-right: 17px;
-
-		font-size: 64px;
-		line-height: 1.07;
-	}
-
-		@media screen and (min-width: 1280px) {
-
-			margin-bottom: 72px;
-			padding-right: 57px;
-		}
-}
-
 .triple-room{
 	padding-bottom: 32px;
 	padding-top: 32px;
@@ -73,6 +15,63 @@
 		@media screen and (min-width: 1280px) {
 		padding-top: 72px;
 		}
+
+		&__logo-subtitle {
+			font-family: 'Times New Roman', Times, serif;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.15;
+		
+			margin-bottom: 8px;
+			letter-spacing: 0;
+		
+			text-align: right;
+		
+			color: $color-title-light;
+		
+		@media screen and (min-width: 1024px) {
+		
+			font-size: 32px;
+			line-height: 1.156;
+			margin-bottom: 4px;
+			padding-right: 17px;
+			}
+		
+			@media screen and (min-width: 1280px) {
+		
+				padding-right: 57px;
+					}
+		
+		
+				}
+
+			&__logo-title {
+				font-family: 'Film P3';
+				font-weight: 700;
+				font-size: 40px;
+				line-height: 1.075;
+				letter-spacing: 0.3em;
+				
+				margin-bottom: 32px;
+				text-align: right;
+				text-transform: uppercase;
+				color: #494848;
+				
+				@media screen and (min-width: 1024px) {
+				
+				margin-bottom: 62px;
+				padding-right: 17px;
+				
+				font-size: 64px;
+				line-height: 1.07;
+				}
+				
+				@media screen and (min-width: 1280px) {
+				
+				margin-bottom: 72px;
+				padding-right: 57px;
+				}
+				}
 
 	&__thumb{
 	margin-bottom: 32px;
@@ -118,8 +117,8 @@
 	
 		&__text {
 			font-family: 'Montserrat';
-			display: block;
-			margin-left: 79px;
+			
+			margin-left: 83px;
 			font-size: 12px;
 			line-height: 1.219;
 	

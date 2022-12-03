@@ -59,25 +59,30 @@
 
 
  .hero__title {
+    @extend .logo;
+    @extend .logo--large;
+
     margin-top: 0;
     margin-bottom: 24px;
     max-width: 303px;
     margin-right: auto;
     margin-left: auto;
-    color: $color-white;
-    font-family: Film P3, sans-serif;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
+
+    
+    // color: $color-white;
+    // font-family: Film P3, sans-serif;
+    // font-weight: 700;
+    // font-size: 96px;
+    // line-height: 1.07;
+    // letter-spacing: 0.3em;
+    // text-transform: uppercase;
 
 
     @include tablet-up {
      margin-bottom: 16px;
      max-width: 404px;
-     font-size: 128px;
-     line-height: 1.08;
+    //  font-size: 128px;
+    //  line-height: 1.08;
    }
 
     @include desktop-up{

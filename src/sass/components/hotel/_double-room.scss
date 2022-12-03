@@ -1,9 +1,19 @@
+.container {
+  outline: 5px solid red;
+}
 .double-room {
-  position: relative;
-  padding: 32px 0;
+  outline: 5px solid green;
 }
 .double-room__wrap {
   text-align: left;
+  position: relative;
+  padding: 32px 0 32px;
+  @include tablet-up {
+    padding: 64px 0 104px;
+  }
+  @include tablet-up {
+    padding: 72px 0 112px;
+  }
 }
 .double-room__subtitle {
   font-size: 20px;
@@ -11,9 +21,19 @@
   font-weight: 400;
   font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
   margin-bottom: 8px;
+  @include tablet-up {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
 }
 .double-room__logo {
   margin-bottom: 32px;
+  @include tablet-up {
+    margin-bottom: 62px;
+  }
+  @include desktop-up {
+    margin-bottom: 72px;
+  }
 }
 .double-room__title {
   font-size: 24px;
@@ -24,6 +44,14 @@
   letter-spacing: 0.05em;
   color: $color-black;
   margin-bottom: 12px;
+  @include tablet-up {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  @include desktop-up {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
 }
 .double-room__text {
   max-width: 258px;
@@ -34,10 +62,25 @@
   letter-spacing: 0.02em;
   color: $color-text-dark;
   margin-bottom: 32px;
+  @include tablet-up {
+    font-size: 16px;
+    margin-bottom: 174px;
+    max-width: 439px;
+  }
+  @include desktop-up {
+    margin-bottom: 188px;
+    font-weight: 700px;
+  }
 }
 .double-room__image-wrap {
   text-align: right;
   margin-bottom: 32px;
+  @include tablet-up {
+    margin: 0;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+  }
 }
 .double-room__image {
   // outline: 2px solid orangered;
@@ -46,16 +89,27 @@
 .double-room__image {
   border-radius: 2px;
 }
+.double-room__sl-wrapper {
+  outline: 2px dashed blue;
+  @include tablet-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .double-room__slider {
   width: 269px;
   height: 194px;
   background-color: $color-text-dark;
   margin-bottom: 72px;
+  @include tablet-up {
+    margin-bottom: 0;
+  }
 }
 
 .double-room__nav {
-  // outline: 1px solid green;
+  outline: 1px solid green;
   display: flex;
   flex-direction: column;
   gap: 16px;

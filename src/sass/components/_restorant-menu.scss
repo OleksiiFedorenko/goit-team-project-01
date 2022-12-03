@@ -1,5 +1,5 @@
 .restorant-menu{
-    position: relative;
+    
     padding: 32px 0;
 
     @media screen and (min-width:1024px) {
@@ -10,6 +10,7 @@
     }
     
 }
+
 .menu-list{
     
     @media screen and (min-width:1024px){
@@ -60,12 +61,7 @@ margin-bottom: 32px;
             line-height: 1.167;
             margin-bottom: 20px;
         }
-          &--taller{
-            @media screen and (min-width:1280px) {
-            margin-bottom: 80px;
-        }
-          }
-}
+       }
 
 
 .menu-list__item:first-child{
@@ -123,10 +119,10 @@ margin-bottom: 32px;
     padding-left: 20px;
 
     @media screen and (min-width:1024px) {
-        padding-left: 32px;
+        padding-left: 40px;
     }
     @media screen and (min-width:1280px) {
-        padding-left: 50px;
+        padding-left: 65px;
     }
 }
 .menu-list__cost{
@@ -187,13 +183,57 @@ margin-bottom: 32px;
     }
 
 }
+
+.restorant-menu__container{
+    position: relative;
+        top: 0;
+        left: 0;
+        @media screen and (min-width:1024px) and (max-width:1279px) {
+           width: 1024px;
+        height: 100%; 
+        }
+        @media screen and (min-width:1280px){
+           width: 1280px;
+        height: 100%; 
+        }
+        
+}
 .rectangle{
     position: absolute;
-    width: 265px;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+    width: 245px;
     height: 616px;
     top: 0;
-    right: 0;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    border-width:0 0 0 1px;
-    filter: blur(0.5px);
+    left: 50%;    
+    border-width:0 1px 0 0;   
+    }
+
+    @media screen and (min-width:1280px){
+    width: 302px;
+    height: 616px;
+    top: 0;
+    right: 50%;    
+    border-width:0 0 0 1px;   
+    }
+    
+   
 }
+.rectangle1{
+    position: absolute;
+        border: 1px solid rgba(186, 186, 186, 0.4);
+        filter: blur(0.5px);
+
+         @media screen and (min-width:1280px) {
+    width: 302px;
+    height: 616px;
+    top: 0;
+    left:50%;    
+    border-width:0 1px 0 1px;   
+    }
+}
+   
+    
+

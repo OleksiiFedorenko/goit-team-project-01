@@ -15,6 +15,10 @@
 
 .navigation__links {
   @include flex;
+
+  @include tablet-up {
+    margin-right: 59px;
+  }
 }
 
 .navigation__contact-phone-header {

@@ -95,32 +95,6 @@
 }
 
 .button__reservation{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.21;
-    color: $color-white;
-    background-color: $color-black;
-    border-radius: 25px;
-    padding: 18px 38px 17px;
-    border: 1px solid $color-brand;
-    width: 434px;
-
-        &:hover,
-        &:focus {
-            color: $color-black;
-            border-color: $color-brand;
-            background-color: $color-brand;
-        }
-        margin-bottom: 15px;
-
-    &--rect{
-        padding: 18px 118px 18px 116px;
-        border-radius: 2px;
-        width: 592px;
-    }
-}
-
-.button__reservation-mobile{
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
@@ -131,15 +105,43 @@
     width: 384px;
     padding: 20px 0;
 
-    &:hover,
+        &:hover,
         &:focus {
             color: $color-black;
             border-color: $color-brand;
             background-color: $color-brand;
         }
-        margin-bottom: 15px;
 
-        &--rect{
-            border-radius: 2px;        
-    }
+        @media screen and (min-width:1024px) {
+                font-size: 24px;
+                line-height: 1.21;
+                padding: 18px 38px 17px;
+                width: 434px;
+        }     
+
+  }
+.button__reservation-modal{
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: $color-white;
+        background-color: $color-black;
+        border-radius: 2px;
+        border: 1px solid $color-brand;
+        width: 384px;
+        padding: 20px 0;
+    
+        &:hover,
+        &:focus {
+            color: $color-black;
+            border-color: $color-brand;
+            background-color: $color-brand;
+        }
+    
+        @media screen and (min-width:1024px) {
+            font-size: 24px;
+            line-height: 1.21;
+            padding: 18px 118px 18px 116px;
+            width: 592px;
+        }
 }

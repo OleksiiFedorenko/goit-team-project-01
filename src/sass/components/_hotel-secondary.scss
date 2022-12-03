@@ -1,0 +1,147 @@
+.hotel-secondary {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 414px;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/mobile/hotel-details-background-m.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @media screen and(min-width:1024px) {
+    width: 1024px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/pages/tablet/hotel-details-background-t.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 1280px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/pages/desktop/hotel-details-background-d.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.hotel-secondary__content {
+  padding: 0 125px 0 17px;
+  text-align: end;
+
+  @include tablet-up {
+    padding: 0 230px 0 150px;
+  }
+
+  @include desktop-up {
+    padding: 0 253px 0 262px;
+  }
+}
+
+
+.hotel-secondary__content .logo {
+  margin-left: auto;
+  margin-right: -15px;
+  letter-spacing: 0.3em;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.hotel-secondary__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $color-white;
+
+  @include tablet-up {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.20;
+  }
+}
+
+.hotel-secondary__text {
+  text-align: start;
+  margin-bottom: 48px;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $color-text-light;
+
+  @include tablet-up {
+    font-size: 16px;
+    line-height: 1.25;
+
+  }
+}
+
+.hotel-secondary__flex-container {
+  @include tablet-up {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+
+  }
+}
+
+.hotel-secondary__swiper-container.three-img-slider__container {
+  margin-left: -15px;
+
+  @include tablet-up {
+    width: 678px;
+  }
+
+  @include desktop-up {
+    width: 855px;
+
+  }
+}
+
+.hotel-secondary__arrows {
+  margin-bottom: 32px;
+  justify-content: flex-end;
+
+  @include tablet-up {
+    margin-bottom: 0px;
+  }
+}
+
+.hotel-secondary__arrows .arrow-left,
+.hotel-secondary__arrows .arrow-right {
+  fill: $color-white;
+}
+
+.hotel-secondary__list {
+  @include tablet-up {
+    padding-bottom: 60px;
+
+  }
+}
+
+.hotel-secondary__list-item {
+
+  &:first-child {
+    margin-bottom: 12px;
+  }
+}
+
+.hotel-secondary__button {
+  @include flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 236px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $color-brand;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+}

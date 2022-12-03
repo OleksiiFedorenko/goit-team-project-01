@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mimino</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <a href="./suite.html">ДВОМІСНИЙ НОМЕР ЛЮКС</a>
-    <include src="./partials/header.html"></include>
 
-    <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/two-img-slider.html"></include>
-      <include src="./partials/three-img-slider.html"></include>
-      <include src="./partials/hotel-slider.html"></include>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mimino</title>
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
 
-    <include src="./partials/footer.html"></include>
+<body>
+  <a href="./suite.html">ДВОМІСНИЙ НОМЕР ЛЮКС</a>
+  <include src="./partials/header.html"></include>
 
-    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
-  </body>
+  <main>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/hotel-secondary.html"></include>
+    <include src="./partials/two-img-slider.html"></include>
+    <include src="./partials/three-img-slider.html"></include>
+    <include src="./partials/hotel-slider.html"></include>
+  </main>
+
+  <include src="./partials/footer.html"></include>
+
+  <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+</body>
+
 </html>

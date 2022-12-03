@@ -215,14 +215,14 @@
   &:focus {
     fill: $color-brand;
   }
-}
 
-&--white {
-  // Коли стрілки мають бути білими
-  fill: $color-white;
-}
+  &--white {
+    // Коли стрілки мають бути білими
+    fill: $color-white;
+  }
 
-&:hover,
-&:focus {
-  fill: $color-brand;
+  &:hover,
+  &:focus {
+    fill: $color-brand;
+  }
 }

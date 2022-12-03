@@ -1,0 +1,8 @@
+.socials {
+  @include flex;
+  gap: 20px;
+}
+
+.socials__icon {
+  fill: $color-brand-light;
+}

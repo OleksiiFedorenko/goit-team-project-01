@@ -230,7 +230,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   padding-bottom: 9px;
   padding-left: 6px;
   // padding-right: 0;
-  border: 1px solid rgba(243, 198, 83, 0.7);
+  border: 1px solid $color-brand-translucent;
   border-radius: $border-radius-small;
 
   text-decoration: none;

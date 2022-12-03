@@ -105,7 +105,7 @@ margin-bottom: 32px;
     font-size: 10px;
     line-height: 1.2;
     color: $color-black;
-    letter-spacing: 0.02em;
+    letter-spacing: 2%;
     
 }
 .menu-list__weight{
@@ -119,10 +119,10 @@ margin-bottom: 32px;
     padding-left: 20px;
 
     @media screen and (min-width:1024px) {
-        padding-left: 40px;
+        padding-left: 52px;
     }
     @media screen and (min-width:1280px) {
-        padding-left: 65px;
+        padding-left: 78px;
     }
 }
 .menu-list__cost{

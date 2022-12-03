@@ -214,7 +214,6 @@
 }
 
 .arrows-tripleroom {
-	// За замовчуванням стрілочки біля правого краю слайдеру
 	display: flex;
 	gap: 10px;
 	
@@ -258,8 +257,8 @@
 
 			@media screen and (min-width: 1024px) {
 				margin-left: 0;
-					margin-right: 0;
-					margin-bottom: 145px;
+				margin-right: 0;
+				margin-bottom: 145px;
 				}
 
 			@media screen and (min-width: 1280px) {
@@ -282,8 +281,6 @@
 	padding: 14px 0;
 	cursor: pointer;
 	width: 236px;
-
-	
 }
 
 .button__view-prices,

@@ -3,10 +3,11 @@
 @import './utils/fonts';
 
 @import './base/base';
-@import './components/buttons';
 @import './base/reset';
 @import './base/container';
 
-@import './components/hero-slider';
+@import './components/buttons';
+
 @import './components/logo';
 @import './components/slider';
+@import './components/hero-slider';

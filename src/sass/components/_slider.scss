@@ -1,3 +1,7 @@
+// Стилі по слайдеру з 2ма зображеннями
+
+// Контейнер для слайдеру
+
 .two-img-slider {
   width: 350px;
   overflow: hidden;
@@ -19,6 +23,8 @@
   // }
 }
 
+// Обгортка для слайдів, відсовуємо стрілки
+
 .two-img-slider__wrapper {
   margin-bottom: 20px;
 
@@ -31,9 +37,145 @@
   }
 }
 
+// Скруглення кутів для зображень
+
 .two-img-slider__picture {
   border-radius: $border-radius-small;
 }
+
+// Стилі по слайдеру з 3ма зображеннями
+
+// Контейнер для слайдеру
+
+.three-img-slider__container {
+  overflow: hidden;
+  width: 374px;
+
+  @include tablet-up {
+    width: 662px;
+  }
+
+  @include desktop-up {
+    width: 874px;
+  }
+
+  // &--right {
+  //     // Стилізація коли слайдер має бути праворуч
+  // }
+
+  // &--left {
+  //     // Стилізація коли слайдер має бути ліворуч
+  // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.three-img-slider__wrapper {
+  margin-bottom: 16px;
+
+  @include tablet-up {
+    margin-bottom: 24px;
+  }
+}
+
+// Розміри слайдів
+
+.three-img-slider__slide-1 {
+  width: 274px;
+
+  @include tablet-up {
+    width: 270px;
+  }
+}
+
+.three-img-slider__slide-2 {
+  width: 182px;
+
+  @include tablet-up {
+    width: 162px;
+  }
+}
+
+.three-img-slider__slide-3 {
+  width: 182px;
+
+  @include tablet-up {
+    width: 162px;
+  }
+
+  @include desktop-up {
+    width: 270px;
+  }
+}
+
+// Скруглення кутів для зображень
+
+.three-img-slider__picture {
+  border-radius: $border-radius-small;
+}
+
+// Фон щоб було видно білі стрілки
+
+.container--dark {
+  background-color: $color-black;
+}
+
+// Стилі по слайдеру для сторінки готелю
+
+// Контейнер для слайдеру
+
+.hotel-slider__container {
+  overflow: hidden;
+  width: 284px;
+
+  @include tablet-up {
+    width: 428px;
+  }
+
+  @include desktop-up {
+    width: 548px;
+  }
+
+  // &--right {
+  //     // Стилізація коли слайдер має бути праворуч
+  // }
+
+  // &--left {
+  //     // Стилізація коли слайдер має бути ліворуч
+  // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.hotel-slider__wrapper {
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
+}
+
+// Розміри слайдів
+
+.hotel-slider__slide {
+  width: 194px;
+
+  @include desktop-up {
+    width: 254px;
+  }
+}
+
+// Скруглення кутів для зображень
+
+.hotel-slider__picture {
+  border-radius: $border-radius-small;
+}
+
+// Стилі по стрілкам
 
 .arrows {
   // За замовчуванням стрілочки біля лівого краю слайдеру
@@ -49,6 +191,20 @@
 .arrow-left,
 .arrow-right {
   fill: $color-black;
+  // За замовчуванням стрілки біля лівого краю слайдеру
+  display: flex;
+  gap: 10px;
+
+  &--rigth {
+    // Коли стрілки мають бути біля правого краю слайдеру
+    justify-content: flex-end;
+  }
+}
+
+.arrow-left,
+.arrow-right {
+  // За замовчуванням стрілки чорного кольору
+  fill: $color-black;
 
   background-color: transparent;
   border: none;
@@ -59,4 +215,14 @@
   &:focus {
     fill: $color-brand;
   }
+}
+
+&--white {
+  // Коли стрілки мають бути білими
+  fill: $color-white;
+}
+
+&:hover,
+&:focus {
+  fill: $color-brand;
 }

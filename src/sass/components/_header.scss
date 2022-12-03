@@ -3,41 +3,12 @@
   top: 0;
   left: 0;
   width: 100%;
+
+  background-color: black;
 }
 
 .navigation {
   @include flex($justify: space-between);
-
-  @include tablet-up {
-    @include flex;
-  }
-}
-
-.navigation__links {
-  @include flex;
-
-  @include tablet-up {
-    margin-right: 59px;
-  }
-}
-
-.navigation__contact-phone-header {
-  display: none;
-
-  @include tablet-up {
-    @include flex;
-    padding: 8px;
-
-    color: $color-white;
-  }
-}
-
-.navigation__contact-container-header {
-  display: none;
-
-  @include tablet-up {
-    display: flex;
-  }
 }
 
 .header__logo {
@@ -52,31 +23,77 @@
 
   @include desktop-up {
     margin-right: 96px;
-    padding-left: 0;
   }
 }
 
 .navigation__links {
-  padding-top: 28px;
-  padding-bottom: 12px;
-  gap: 20px;
+  @include flex;
+    gap: 20px;
+    padding-top: 28px;
+    padding-bottom: 12px;
 
   @include tablet-up {
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 72px;
   }
+
+  @include desktop-up {
+    margin-right: 59px;
+  }
 }
 
 .navigation__option {
   @include flex;
 }
+
 .navigation__item {
   margin-right: 6px;
 
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: $color-brand;
+
   @include tablet-up {
     margin-right: 32px;
+    font-size: 20px;
   }
+}
+
+.navigation__contact-container-header {
+  display: none;
+
+  @include tablet-up {
+    @include flex;
+    white-space: nowrap;
+    border: 1px solid $color-brand-light;
+    border-radius: 2px;
+  }
+}
+
+.navigation__contact-phone-header {
+  display: none;
+
+  @include tablet-up {
+    @include flex;
+    padding: 8px;
+
+    color: $color-white;
+  }
+}
+
+.navigation__contact-phone-header {
+  // @include flex;
+
+  color: $color-white;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .navigation__contacts {
@@ -111,41 +128,6 @@
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     line-height: 1.2;
-  }
-}
-
-.navigation__contact-phone-header {
-  @include flex;
-
-  color: $color-white;
-
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-.navigation__contact-container-header {
-  display: none;
-
-  @include tablet-up {
-    @include flex;
-    white-space: nowrap;
-    border: 1px solid $color-brand;
-    border-radius: 2px;
-  }
-}
-
-.navigation__item {
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
-
-  color: $color-brand;
-
-  @include tablet-up {
-    font-size: 20px;
   }
 }
 

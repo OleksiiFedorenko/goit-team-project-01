@@ -6,8 +6,6 @@
 
 	margin-bottom: 8px;
 	letter-spacing: 0;
-	
-	// outline: 1px solid red;
 
 	text-align: right;
 
@@ -20,6 +18,13 @@
 		margin-bottom: 4px;
 		padding-right: 17px;
 	}
+
+		@media screen and (min-width: 1280px) {
+
+			padding-right: 57px;
+		}
+
+		
 }
 
 .logo-title {
@@ -30,9 +35,6 @@
 	letter-spacing: 0.3em;
 
 	margin-bottom: 32px;
-
-
-	// outline: 1px solid red;
 	text-align: right;
 
 	text-transform: uppercase;
@@ -46,6 +48,12 @@
 		font-size: 64px;
 		line-height: 1.07;
 	}
+
+		@media screen and (min-width: 1280px) {
+
+			margin-bottom: 72px;
+			padding-right: 57px;
+		}
 }
 
 .triple-room{
@@ -55,7 +63,7 @@
 	background:$bg-dark;
 
 	@media screen and (min-width: 1024px){
-		padding-bottom: 145px;
+		padding-bottom:40px;
 		padding-top: 66px;
 		position: relative;
 
@@ -70,31 +78,41 @@
 	margin-bottom: 32px;
 	
 	@media screen and (min-width: 1024px) {
-			margin-bottom: 210px;
+		margin-bottom: 210px;
+		}
+
+	@media screen and (min-width: 1024px) {
+		margin-bottom: 260px;
 		}
 	}
 
 	&__title {
-				font-family: 'Times New Roman', Times, serif;
+		font-family: 'Times New Roman', Times, serif;
 			
-			font-weight: 700;
-			font-size: 24px;
-			line-height: 1.16;
-	
-			margin-bottom: 12px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.16;
 
-			letter-spacing: 0.05em;
+		margin-bottom: 12px;
+
+		letter-spacing: 0.05em;
 	
-			text-transform: uppercase;
-			color: $color-black;
-			text-align: right;
-			// outline: 1px solid red;
+		text-transform: uppercase;
+		color: $color-black;
+		text-align: right;
 
 			@media screen and (min-width: 1024px) {
 					padding-right: 43px;
 					font-size: 30px;
 					line-height: 1.13;
 					margin-bottom: 16px;
+				}
+
+			@media screen and (min-width: 1280px) {
+					font-size: 36px;
+					line-height: 1.15;
+					margin-bottom: 24px;
+					padding-right: 57px;
 				}
 		}
 	
@@ -108,7 +126,6 @@
 			color: $color-text-dark;
 			
 			width: 242px;
-			// outline: 1px solid red;
 
 			@media screen and (min-width: 1024px) {
 				width: 400px;
@@ -118,6 +135,11 @@
 				font-weight: 700;
 				font-size: 16px;
 				line-height: 1.218;
+				}
+
+				@media screen and (min-width: 1280px) {
+				margin-left: 600px;
+				
 				}
 		}
 }
@@ -142,24 +164,84 @@
 		}
 }
 
+		// slider
 
-.slider{
-	margin-bottom: 20px;
+.two-img-slider {
+	width: 350px;
+	overflow: hidden;
 
-	@media screen and (min-width: 1024px) {
-	
+	@include tablet-up {
+		width: 448px;
+	}
+
+	@include desktop-up {
+		width: 568px;
+	}
+
+	&--right {
+		margin-left: 40px;
+		
+		@media screen and (min-width: 1024px) {
 			position: absolute;
-			bottom: 42px;
-			right: 44px;
-			margin-bottom: 0;
-		}
+		
+			bottom: 40px;
+			right: 47px;
+			}
 
-	&__image{
-		margin-bottom: 20px;
+		@media screen and (min-width: 1280px) {
+			position: absolute;
+			
+			right: 85px;
+		}
 	}
 }
 
+.two-img-slider__wrapper {
+	margin-bottom: 20px;
 
+	@include tablet-up {
+		margin-bottom: 32px;
+	}
+
+	@include desktop-up {
+		margin-bottom: 40px;
+	}
+}
+
+.two-img-slider__picture {
+	border-radius: $border-radius-small;
+}
+
+.arrows {
+	// За замовчуванням стрілочки біля лівого краю слайдеру
+	display: flex;
+	gap: 10px;
+
+	@media screen and (min-width: 1024px){
+	&--rigth {
+		// Коли стрілочки мають бути біля правого краю слайдеру
+		justify-content: flex-start;
+	}
+	
+}
+}
+
+.arrow-left,
+.arrow-right {
+	fill: $color-black;
+
+	background-color: transparent;
+	border: none;
+
+	transition: fill $transition-time $cubic-bezier;
+
+	&:hover,
+	&:focus {
+		fill: $color-brand;
+	}
+}
+
+	// buttons
 
 .link {
 	text-decoration: none;
@@ -180,7 +262,7 @@
 	border-radius: 25px;
 
 	padding-top: 14px;
-		padding-bottom: 14px;
+	padding-bottom: 14px;
 	text-align: center;
 	text-decoration: none;
 	color: $color-brand;
@@ -217,6 +299,14 @@ display: block;
 			@media screen and (min-width: 1024px) {
 					margin-left: 0;
 					margin-right: 0;
+					margin-bottom: 145px;
 					
 				}
+
+								@media screen and (min-width: 1280px) {
+									margin-left: 0;
+									margin-right: 0;
+									margin-bottom: 182px;
+				
+								}
 }

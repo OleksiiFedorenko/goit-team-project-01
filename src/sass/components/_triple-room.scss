@@ -8,8 +8,6 @@
 		padding-bottom:40px;
 		padding-top: 66px;
 		position: relative;
-
-		
 	}
 
 		@media screen and (min-width: 1280px) {
@@ -51,7 +49,7 @@
 				font-size: 40px;
 				line-height: 1.075;
 				letter-spacing: 0.3em;
-				
+
 				margin-bottom: 32px;
 				text-align: right;
 				text-transform: uppercase;
@@ -163,41 +161,45 @@
 		}
 }
 
-		// slider
+// Стилі по слайдеру для сторінки готелю
+// Контейнер для слайдеру
 
-.two-img-slider {
-	width: 350px;
+.hotel-slider__container {
 	overflow: hidden;
+	width: 284px;
+
+	&--right {
+			margin-left: 115px;
+			margin-bottom: 20px;
+
+			@media screen and (min-width: 1024px) {
+				position: absolute;
+			
+				margin-bottom: 0px;
+				bottom: 40px;
+				right: 47px;
+				}
+								
+				@media screen and (min-width: 1280px) {
+				right: 85px;
+				}
+		}
 
 	@include tablet-up {
-		width: 448px;
+		width: 428px;
 	}
 
 	@include desktop-up {
-		width: 568px;
+		width: 548px;
 	}
-
-	&--right {
-		margin-left: 40px;
-		margin-bottom: 20px;
 		
-		@media screen and (min-width: 1024px) {
-			position: absolute;
-			
-			margin-bottom: 0px;
-			bottom: 40px;
-			right: 47px;
-			}
-
-		@media screen and (min-width: 1280px) {
-			position: absolute;
-			
-			right: 85px;
-		}
-	}
 }
 
-.two-img-slider__wrapper {
+
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.hotel-slider__wrapper {
 	margin-bottom: 20px;
 
 	@include tablet-up {
@@ -209,27 +211,50 @@
 	}
 }
 
-.two-img-slider__picture {
+// Розміри слайдів
+
+.hotel-slider__slide {
+	width: 194px;
+
+	@include desktop-up {
+		width: 254px;
+	}
+}
+
+// Скруглення кутів для зображень
+
+.hotel-slider__picture {
 	border-radius: $border-radius-small;
 }
+
+// Стилі по стрілкам
 
 .arrows-tripleroom {
 	display: flex;
 	gap: 10px;
-	
+	justify-content: flex-end;
+
 	@media screen and (min-width: 1024px) {
 		justify-content: flex-start;
 	}
 }
 
+
 .arrow-left,
 .arrow-right {
+	// За замовчуванням стрілки чорного кольору
 	fill: $color-black;
 
 	background-color: transparent;
 	border: none;
 
 	transition: fill $transition-time $cubic-bezier;
+
+	&--desktop {
+		// Коли стрілки мають бути білими
+		@media screen and (min-width: 1240px){
+		fill: $color-text-modal;}
+	}
 
 	&:hover,
 	&:focus {
@@ -258,13 +283,13 @@
 			@media screen and (min-width: 1024px) {
 				margin-left: 0;
 				margin-right: 0;
-				margin-bottom: 145px;
+				margin-bottom: 105px;
 				}
 
 			@media screen and (min-width: 1280px) {
 				margin-left: 0;
 				margin-right: 0;
-				margin-bottom: 182px;
+				margin-bottom: 142px;
 				}
 }
 

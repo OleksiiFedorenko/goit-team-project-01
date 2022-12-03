@@ -21,76 +21,48 @@
 
 		<!-- Slider -->
 		<!-- Слайдер для використання з правої сторони -->
-		<div class="two-img-slider two-img-slider--right swiper-container">
-			<div class="two-img-slider__wrapper swiper-wrapper">
-				<div class="swiper-slide">
-					<picture>
-						<source media="(min-width: 1280px)" srcset="
-			./images/sliders/desktop/hotel-sink-d.jpg    1x,
-			./images/sliders/desktop/hotel-sink-d@2x.jpg 2x
-			" />
+		<div class="hotel-slider__container hotel-slider__container--right">
+			<div class="hotel-slider swiper-container">
+				<div class="hotel-slider__wrapper swiper-wrapper">
+					<div class="hotel-slider__slide swiper-slide">
+						<picture>
+							<source media="(min-width: 1280px)" srcset="
+		                ./images/sliders/desktop/hotel-sink-d.jpg    1x,
+		                ./images/sliders/desktop/hotel-sink-d@2x.jpg 2x
+		              " />
+							<img class="hotel-slider__picture" srcset="
+		                ./images/sliders/mobile/hotel-sink-m.jpg    1x,
+		                ./images/sliders/mobile/hotel-sink-m@2x.jpg 2x
+		              " src="./images/sliders/mobile/hotel-sink-m.jpg" alt="Раковина" />
+						</picture>
+					</div>
 
-						<img class="two-img-slider__picture" srcset="
-			./images/sliders/mobile/hotel-sink-m.jpg    1x,
-			./images/sliders/mobile/hotel-sink-m@2x.jpg 2x
-			" src="./images/sliders/mobile/hotel-sink-m.jpg" alt="Ванна кімната" />
-					</picture>
+					<div class="hotel-slider__slide swiper-slide">
+						<picture>
+							<source media="(min-width: 1280px)" srcset="
+		                ./images/sliders/desktop/teacup-trees-d.jpg    1x,
+		                ./images/sliders/desktop/teacup-trees-d@2x.jpg 2x
+		              " />
+							<img class="hotel-slider__picture" srcset="
+		                ./images/sliders/mobile/teacup-trees-m.jpg    1x,
+		                ./images/sliders/mobile/teacup-trees-m@2x.jpg 2x
+		              " src="./images/sliders/mobile/teacup-trees-m.jpg" alt="Чашка на фоні дерев" />
+						</picture>
+					</div>
 				</div>
 
-				<div class="swiper-slide">
-					<picture>
-						<source media="(min-width: 1280px)" srcset="
-				./images/sliders/desktop/teacup-trees-d.jpg    1x,
-				./images/sliders/desktop/teacup-trees-d@2x.jpg 2x
-" />
-
-						<img class="two-img-slider__picture" srcset="
-			./images/sliders/mobile/teacup-trees-m.jpg    1x,
-			./images/sliders/mobile/teacup-trees-m@2x.jpg 2x
-			" src="./images/sliders/mobile/teacup-trees-m.jpg" alt="Сніданок" />
-					</picture>
+				<div class="arrows arrows-tripleroom">
+					<button class="arrow-left arrow-left--desktop" type="button">
+						<svg width="32" height="32">
+							<use href="./images/icons.svg#icon-arrow-left"></use>
+						</svg>
+					</button>
+					<button class="arrow-right arrow-right--desktop" type="button">
+						<svg width="32" height="32">
+							<use href="./images/icons.svg#icon-arrow-right"></use>
+						</svg>
+					</button>
 				</div>
-
-				<div class="swiper-slide">
-					<picture>
-						<source media="(min-width: 1280px)" srcset="
-						./images/sliders/desktop/hotel-sink-d.jpg    1x,
-					./images/sliders/desktop/hotel-sink-d@2x.jpg 2x
-" />
-
-						<img class="two-img-slider__picture" srcset="
-					./images/sliders/mobile/hotel-sink-m.jpg    1x,
-				./images/sliders/mobile/hotel-sink-m@2x.jpg 2x
-					" src="./images/sliders/mobile/hotel-sink-m.jpg" alt="Ванна кімната" />
-					</picture>
-				</div>
-
-				<div class="swiper-slide">
-					<picture>
-						<source media="(min-width: 1280px)" srcset="
-						./images/sliders/desktop/teacup-trees-d.jpg    1x,
-						./images/sliders/desktop/teacup-trees-d@2x.jpg 2x
-					" />
-
-						<img class="two-img-slider__picture" srcset="
-						./images/sliders/mobile/teacup-trees-m.jpg    1x,
-						./images/sliders/mobile/teacup-trees-m@2x.jpg 2x
-						" src="./images/sliders/mobile/teacup-trees-m.jpg" alt="Сніданок" />
-					</picture>
-				</div>
-			</div>
-
-			<div class="arrows arrows--rigth arrows-tripleroom">
-				<button class="arrow-left" type="button">
-					<svg width="32" height="32">
-						<use href="./images/icons.svg#icon-arrow-left"></use>
-					</svg>
-				</button>
-				<button class="arrow-right" type="button">
-					<svg width="32" height="32">
-						<use href="./images/icons.svg#icon-arrow-right"></use>
-					</svg>
-				</button>
 			</div>
 		</div>
 

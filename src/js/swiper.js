@@ -25,24 +25,18 @@ new Swiper('.three-img-slider', {
         prevEl: '.arrow-left'
     },
     
-    slidesPerView: 1.34,
+    slidesPerView: "auto",
 
     spaceBetween: 20,
 
     loop: true,
 
-autoWidth: true,
-
     breakpoints: {
         1024: {
-            slidesPerView: 3,
-
             spaceBetween: 34,
         },
 
         1280: {
-            slidesPerView: 3,
-
             spaceBetween: 86,
         }
     },

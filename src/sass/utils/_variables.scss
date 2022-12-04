@@ -25,6 +25,11 @@ $header-shade: linear-gradient(
   rgb(0 0 0 / 0) 100%
 );
 
+$vertical-lines-m: linear-gradient(to right, #0000 33.5%, #bababa66 33.7% 33.7%, #0000 33.9% 66%, #bababa66 66.2% 66.2%, #0000 66.4% 100%, #0000 0);
+$vertical-lines-t: linear-gradient(to right, #0000 27%, #bababa66 27.1% 27.1%, #0000 27.2% 49.9%, #bababa66 50% 50%, #0000 50.1% 72.8%, #bababa66 72.9% 72.9%, #0000 73% 100%, #0000 0);
+$vertical-lines-d: linear-gradient(to right, #0000 26.3%, #bababa66 26.4% 26.4%, #0000 26.5% 49.9%, #bababa66 50% 50%, #0000 50.1% 73.5%, #bababa66 73.6% 73.6%, #0000 73.7% 100%, #0000 0);
+    
+
 $border-radius-small: 2px;
 $border-radius-big: 25px;
 

@@ -1,9 +1,6 @@
 .about-restaurant{
-    padding: 16px 0 28px 0;
     position: relative;
-   @include tablet-up{
-    padding: 120px 0 32px 0;
-   }
+   
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
@@ -12,6 +9,16 @@
    
    
    }
+}
+
+.about-restaurant__gradient{
+  padding: 16px 0 28px 0;
+  @include tablet-up{
+    padding: 120px 0 32px 0;
+   } 
+   @include desktop-up {
+    padding: 120px 0 50px 0;
+   } 
 }
    
     &__wrapper {
@@ -93,5 +100,3 @@
    
    }
   }
-  
-   

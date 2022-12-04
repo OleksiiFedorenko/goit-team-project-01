@@ -5,14 +5,14 @@
   margin-right: auto;
   width: 414px;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: $vertical-lines-m, linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/pages/mobile/hotel-details-background-m.jpg);
   background-size: cover;
   background-position: center;
 
   @media screen and(min-width:1024px) {
     width: 1024px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: $vertical-lines-t, linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../images/pages/tablet/hotel-details-background-t.jpg);
     background-size: cover;
     background-position: center;
@@ -20,7 +20,7 @@
 
   @media screen and(min-width:1280px) {
     width: 1280px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: $vertical-lines-d, linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../images/pages/desktop/hotel-details-background-d.jpg);
     background-size: cover;
     background-position: center;

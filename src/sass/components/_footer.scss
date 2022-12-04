@@ -3,32 +3,26 @@ a {
 }
 
 .footer {
-  padding: 0;
+  padding: 40px 0;
   background-color: $color-black;
 
   @include tablet-up {
-    padding: 0;
+    padding: 80px 0;
   }
 }
 
 .footer__block {
   @include tablet-up {
     @include flex($align: flex-start);
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
 }
 
 .footer__logo {
   display: flex;
-  padding-top: 98px;
-  padding-bottom: 99px;
   padding-left: 59px;
 
   @include tablet-up {
     margin-right: 163px;
-    padding-top: 117px;
-    padding-bottom: 118px;
     padding-left: 0;
   }
   @include desktop-up {

@@ -3,67 +3,134 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import '~node_modules/swiper/swiper.min.css';
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-300.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-300.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff2')
+      format('woff2'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-300.woff')
+      format('woff'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-300.ttf')
+      format('truetype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-300.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff2')
+      format('woff2'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.woff')
+      format('woff'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.ttf')
+      format('truetype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-regular.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-500 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-500.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff2')
+      format('woff2'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-500.woff')
+      format('woff'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-500.ttf')
+      format('truetype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-500.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-600 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-600.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff2')
+      format('woff2'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-600.woff')
+      format('woff'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-600.ttf')
+      format('truetype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-600.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* montserrat-700 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+  src: url('../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-700.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff2')
+      format('woff2'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-700.woff')
+      format('woff'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-700.ttf')
+      format('truetype'),
+    url('../fonts/montserrat/montserrat-v25-latin_cyrillic-700.svg#Montserrat')
+      format('svg'); /* Legacy iOS */
 }
 /* Times New Roman-regular  */
 @font-face {
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/timesNewRoman/TimesNewRomanMTStd.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/timesNewRoman/TimesNewRomanMTStd.eot") format("embedded-opentype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.woff") format("woff"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.ttf") format("truetype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/timesNewRoman/TimesNewRomanMTStd.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd.eot')
+      format('embedded-opentype'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd.woff2') format('woff2'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd.woff') format('woff'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd.ttf') format('truetype'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd.svg') format('svg'); /* Legacy iOS */
 }
 /* Times New Roman-Bold  */
 @font-face {
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot") format("embedded-opentype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.ttf") format("truetype"), url("../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.eot')
+      format('embedded-opentype'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff2') format('woff2'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.woff') format('woff'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.ttf') format('truetype'),
+    url('../fonts/timesNewRoman/TimesNewRomanMTStd-Bold.svg') format('svg'); /* Legacy iOS */
 }
 /* Film P3  */
 @font-face {
-  font-family: "Film P3";
+  font-family: 'Film P3';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/filmp3/FilmP3Bold.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/filmp3/FilmP3Bold.eot") format("embedded-opentype"), url("../fonts/filmp3/FilmP3Bold.woff2") format("woff2"), url("../fonts/filmp3/FilmP3Bold.woff") format("woff"), url("../fonts/filmp3/FilmP3Bold.ttf") format("truetype"), url("../fonts/filmp3/FilmP3Bold.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/filmp3/FilmP3Bold.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/filmp3/FilmP3Bold.eot') format('embedded-opentype'),
+    url('../fonts/filmp3/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/filmp3/FilmP3Bold.woff') format('woff'),
+    url('../fonts/filmp3/FilmP3Bold.ttf') format('truetype'),
+    url('../fonts/filmp3/FilmP3Bold.svg') format('svg'); /* Legacy iOS */
 }
 body {
   color: #7a7a7a;
@@ -89,7 +156,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -162,7 +229,7 @@ ul {
 
 .hero-slider__image img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-slider__nav {
@@ -201,7 +268,8 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.hero-slider__button:hover, .hero-slider__button:focus-visible {
+.hero-slider__button:hover,
+.hero-slider__button:focus-visible {
   fill: #fff;
 }
 
@@ -243,7 +311,7 @@ ul {
 
 .luxe-hero__heading {
   margin-bottom: 18px;
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -263,7 +331,7 @@ ul {
 
 .luxe-hero__text {
   margin-bottom: 16px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -318,7 +386,9 @@ ul {
   fill: rgba(243, 198, 83, 0.7);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.luxe-soc__icon:hover, .luxe-soc__icon:focus, .luxe-soc__icon:active {
+.luxe-soc__icon:hover,
+.luxe-soc__icon:focus,
+.luxe-soc__icon:active {
   fill: #fff;
 }
 
@@ -326,7 +396,7 @@ ul {
   width: 232px;
   height: 48px;
   cursor: pointer;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -336,9 +406,13 @@ ul {
   background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #fff;
   border-radius: 25px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.luxe-hero__button:hover, .luxe-hero__button:focus, .luxe-hero__button:active {
+.luxe-hero__button:hover,
+.luxe-hero__button:focus,
+.luxe-hero__button:active {
   background-color: #fff;
   color: #f3c653;
   border-color: #f3c653;
@@ -366,7 +440,7 @@ ul {
   height: 56px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -375,14 +449,17 @@ ul {
   text-decoration: none;
   color: #e5e5e5;
   fill: #f3c653;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 1023px), (min-width: 1280px) {
   .luxe-hero__address-link {
     display: none;
   }
 }
-.luxe-hero__address-link:hover, .luxe-hero__address-link:focus {
+.luxe-hero__address-link:hover,
+.luxe-hero__address-link:focus {
   fill: #e5e5e5;
   border-color: #e5e5e5;
   color: #f3c653;
@@ -401,7 +478,12 @@ ul {
   left: 0;
   width: 100%;
   height: 143px;
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 @media screen and (min-width: 1024px) {
   .hero-gradient {
@@ -411,6 +493,116 @@ ul {
 @media screen and (min-width: 1280px) {
   .hero-gradient {
     height: 147px;
+  }
+  .about-restaurant {
+    padding: 16px 0 28px 0;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant {
+    padding: 120px 0 32px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+  }
+}
+.about-restaurant__wrapper {
+  padding-bottom: 28px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper {
+    padding-bottom: 142px;
+  }
+}
+.about-restaurant__title {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: #b4b4b4;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__title {
+    font-size: 32px;
+    line-height: 1.156;
+    margin-bottom: 4px;
+  }
+}
+.about-restaurant__text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+  width: 258px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 439px;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1280px) {
+  .about-restaurant__text {
+    width: 518px;
+  }
+}
+.about-restaurant__wrapper-industrial {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-industrial {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-restaurant__wrapper-industrial {
+    right: 180px;
+  }
+}
+.about-restaurant__wrapper-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__wrapper-modern {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.about-restaurant__second-text {
+  margin-left: 20px;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+  width: 163px;
+}
+@media screen and (min-width: 1024px) {
+  .about-restaurant__second-text {
+    margin-left: 48px;
+    width: 312px;
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
@@ -485,10 +677,12 @@ logo--medium-dark або logo--medium-white    */
 .two-img-slider {
   width: 350px;
   overflow: hidden;
+  margin-left: 50px;
 }
 @media screen and (min-width: 1024px) {
   .two-img-slider {
     width: 448px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -627,18 +821,24 @@ logo--medium-dark або logo--medium-white    */
 }
 .arrows--rigth {
   justify-content: flex-end;
+  margin-right: 15px;
 }
 
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
   fill: #000;
   background-color: transparent;
   border: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.arrow-left--white, .arrow-right--white {
+.arrow-left--white,
+.arrow-right--white {
   fill: #fff;
 }
-.arrow-left:hover, .arrow-left:focus, .arrow-right:hover, .arrow-right:focus {
+.arrow-left:hover,
+.arrow-left:focus,
+.arrow-right:hover,
+.arrow-right:focus {
   fill: #f3c653;
 }
 
@@ -650,7 +850,8 @@ logo--medium-dark або logo--medium-white    */
   margin-left: auto;
   margin-right: auto;
   background-color: #0e0c07;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/homepage-hero-m.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/pages/mobile/homepage-hero-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -670,87 +871,131 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/homepage-hero-m@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/mobile/homepage-hero-m@2x.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/homepage-hero-t.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/tablet/homepage-hero-t.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (min-resolution: 192dpi),
+  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/homepage-hero-t@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/tablet/homepage-hero-t@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/homepage-hero-d.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/desktop/homepage-hero-d.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/desktop/homepage-hero-d@2x.jpg);
   }
 }
 .hero--colored {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/restaurant-hero-m.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/pages/mobile/restaurant-hero-m.jpg);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero--colored .hero--colored {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero--colored {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/restaurant-hero-t.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/tablet/restaurant-hero-t.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (min-resolution: 192dpi),
+  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero--colored {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/restaurant-hero-t@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/tablet/restaurant-hero-t@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero--colored {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/restaurant-hero-d.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/desktop/restaurant-hero-d.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero--colored {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/restaurant-hero-d@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/desktop/restaurant-hero-d@2x.jpg);
   }
 }
 .hero--light {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero--light .hero--light {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero--light {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
   }
 }
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1024px) and (min-resolution: 192dpi),
+  screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero--light {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/hotel-hero.suit-hero-t@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/tablet/hotel-hero.suit-hero-t@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero--light {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero--light {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/hotel-hero.suit-hero-d@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/pages/desktop/hotel-hero.suit-hero-d@2x.jpg);
   }
 }
 .hero__container {
@@ -944,4 +1189,10 @@ logo--medium-dark або logo--medium-white    */
 .menu-link {
   text-decoration: none;
   color: #f3c653;
-}/*# sourceMappingURL=index.css.map */
+}
+.arrow-left:hover,
+.arrow-left:focus,
+.arrow-right:hover,
+.arrow-right:focus {
+  fill: #f3c653;
+} /*# sourceMappingURL=index.css.map */

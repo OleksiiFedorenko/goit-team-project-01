@@ -1,13 +1,15 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/fonts';
-
 @import './base/base';
 @import './base/reset';
 @import './base/container';
+@import './components/about-restaurant';
 
-@import './components/hero-slider';
+@import './components/buttons';
+
 @import './components/logo';
 @import './components/slider';
 
 @import './components/hero';
+@import './components/hero-slider';

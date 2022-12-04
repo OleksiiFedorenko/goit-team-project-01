@@ -3,13 +3,15 @@
   padding-top: 36px;
   padding-bottom: 32px;
   background-color: $bg-light;
+  padding-bottom: 32px;
 
   @include tablet-up {
     padding-top: 56px;
+    padding-bottom: 40px;
   }
 
   @include desktop-up {
-    padding-bottom: 40px;
+    padding-bottom: 74px;
   }
 }
 

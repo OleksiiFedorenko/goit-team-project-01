@@ -139,11 +139,12 @@
   }
 
   // &--right {
-  //     // Стилізація коли слайдер має бути праворуч
+  //   // Стилізація коли слайдер має бути праворуч
+
   // }
 
   // &--left {
-  //     // Стилізація коли слайдер має бути ліворуч
+  //   // Стилізація коли слайдер має бути ліворуч
   // }
 }
 
@@ -202,10 +203,12 @@
 .restaurant-slider__wrapper {
   margin-bottom: 20px;
 
+
   @include tablet-up {
     margin-bottom: 32px;
   }
   
+
   @include desktop-up {
     margin-bottom: 40px;
   }
@@ -214,15 +217,15 @@
  // Розміри слайдів
 
 .restaurant-slider__slide {
+  width: 245px;
+
+  @include tablet-up {
+    width: 194px;
+  }
+
+  @include desktop-up {
     width: 245px;
-
-    @include tablet-up {
-        width: 194px;
-    }
-
-    @include desktop-up {
-        width: 245px;
-    }
+  }
 }
 
 // Скруглення кутів для зображень

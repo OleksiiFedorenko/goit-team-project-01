@@ -8,13 +8,13 @@
 Для hero  logo--large 
 Для футеру logo--medium-brand
 В контентних секціях в залежності від кольору використовуйте :
-logo--medium-dark або logo--medium-white    */
+logo--medium-dark  logo--medium-white  logo--medium-grey   */
 
 .logo {
   padding: 0;
   font-family: Film P3, Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 30%;
+  letter-spacing: 0.3em;
   vertical-align: middle;
   display: inline-block;
   line-height: 1.08;
@@ -54,6 +54,16 @@ logo--medium-dark або logo--medium-white    */
     font-size: 40px;
     @include tablet-up {
       font-size: 64px;
+    }
+  }
+  &--medium-grey {
+    color: $color-dark-grey;
+    font-size: 40px;
+    @include tablet-up {
+      font-size: 64px;
+    }
+    @include desktop-up {
+      color: $color-mid-grey;
     }
   }
 }

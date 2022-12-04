@@ -42,6 +42,25 @@ new Swiper('.three-img-slider', {
     },
 });
 
+new Swiper('.restaurant-slider', {
+    navigation: {
+        nextEl: '.arrow-right',
+        prevEl: '.arrow-left'
+    },
+    
+    slidesPerView: "auto",
+
+    spaceBetween: 24,
+
+    loop: true,
+
+    breakpoints: {
+        1024: {
+            spaceBetween: 40,
+        }
+    },
+});
+
 new Swiper('.hotel-slider', {
     navigation: {
         nextEl: '.arrow-right',

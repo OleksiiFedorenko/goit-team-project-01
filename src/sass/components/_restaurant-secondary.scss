@@ -133,16 +133,6 @@
 }
 
 .restaurant-secondary__button {
-  @include flex;
   margin-right: auto;
   margin-left: auto;
-  width: 236px;
-  height: 48px;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: $color-brand;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #FFFFFF;
-  border-radius: 25px;
 }

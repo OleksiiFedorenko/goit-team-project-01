@@ -143,9 +143,6 @@
       width: 312px;
       font-size: 16px;
     }
-
-    @include desktop-up {
-    }
   }
 
   &__second-image {
@@ -186,15 +183,15 @@
     }
   }
 
-  // &__slider {
-  //   width: 245px;
+  &__slider {
+    @include mobile-only {
+      width: 245px;
+    }
+  }
 
-  //   @include tablet-up {
-  //     width: 194px;
-  //   }
-
-  //   @include desktop-up {
-  //     width: 245px;
-  //   }
-  // }
+  &__slider-img {
+    @include mobile-only {
+      height: 245px;
+    }
+  }
 }

@@ -48,6 +48,9 @@
     right: 0;
     border-width: 0 0 0 1px;
 }
+
+
+
 // РЕСТОРАН
 
 // restorant menu
@@ -147,11 +150,13 @@
     }
 }
 
-//footer
+//footer-homepage
 
 .homepage-footer__container{
     @extend %positioning-lines;
 }
+
+
 
 .rectangle6 {
     @extend %positioning-rectangle;
@@ -163,7 +168,77 @@
     }
 
     @media screen and (min-width:1280px) {
-        @include right-rect(304px, 301px);
+        @include right-rect(301px, 304px);
     }
 }
 
+
+//FOOTER (ВСЕ страницы кроме homepage)
+
+.footer__container{
+    @extend %positioning-lines;
+}
+
+.rectangle7 {
+    @extend %positioning-rectangle;
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        @include right-rect(239px, 304px);
+    }
+
+    @media screen and (min-width:1280px) {
+        @include right-rect(301px, 304px);
+    }
+}
+
+//Готель
+
+.two-person__container{
+     @extend %positioning-lines;
+}
+
+.rectangle8 {
+    @extend %positioning-rectangle;   
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        @include right-rect(234px, 1558px);
+    }
+
+    @media screen and (min-width:1280px) {
+        @include right-rect(302px, 3588px);
+    }
+}
+
+.rectangle9 {
+    @extend %positioning-rectangle;
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        @include left-rect(234px, 1558px);
+    }
+
+    @media screen and (min-width:1280px) {
+        @include left-rect(302px, 3588px);
+    }
+}
+
+//НОМЕР
+
+.room__container{
+     @extend %positioning-lines;
+}
+
+.rectangle10 {
+    @extend %positioning-rectangle;   
+
+    @media screen and (min-width:1280px) {
+        @include right-rect(302px, 1051px);
+    }
+}
+
+.rectangle11 {
+    @extend %positioning-rectangle;
+
+    @media screen and (min-width:1280px) {
+        @include left-rect(302px, 1051px);
+    }
+}

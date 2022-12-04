@@ -1,16 +1,23 @@
 .about-restaurant{
-    padding: 16px 0 28px 0;
-    position: relative;
-   @include tablet-up{
+  // outline: 2px dashed teal;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0 28px 0;
+
+  @include tablet-up {
+    width: 1024px;
     padding: 120px 0 32px 0;
-   }
+  }
+
+  @include desktop-up {
+    width: 1280px;
+  }
+
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
-   
     display: inline-block;
-   
-   
    }
 }
    
@@ -94,4 +101,4 @@
    }
   }
   
-   
+

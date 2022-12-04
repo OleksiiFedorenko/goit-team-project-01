@@ -184,6 +184,61 @@
   border-radius: $border-radius-small;
 }
 
+// Стилі по слайдеру для сторінки ресторану
+
+// Контейнер для слайдеру
+
+.restaurant-slider__container {
+    overflow: hidden;
+    width: 330px;
+
+    @include tablet-up {
+        width: 428px;
+    }
+
+    @include desktop-up {
+        width: 530px;
+    }
+
+    // &--right {
+    //     // Стилізація коли слайдер має бути праворуч
+    // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.restaurant-slider__wrapper {
+    margin-bottom: 20px;
+
+    @include tablet-up {
+        margin-bottom: 32px;
+    }
+
+    @include desktop-up {
+        margin-bottom: 40px;
+    }
+}
+
+// Розміри слайдів
+
+.restaurant-slider__slide {
+    width: 245px;
+
+    @include tablet-up {
+        width: 194px;
+    }
+
+    @include desktop-up {
+        width: 245px;
+    }
+}
+
+// Скруглення кутів для зображень
+
+.restaurant-slider__picture {
+    border-radius: $border-radius-small;
+}
+
 // Стилі по стрілкам
 
 .arrows {

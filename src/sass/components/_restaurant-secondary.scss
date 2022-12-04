@@ -1,0 +1,148 @@
+.restaurant-secondary {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 414px;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/mobile/restaurant-details-background-m.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include tablet-up {
+    width: 1024px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/pages/tablet/restaurant-details-background-t.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include desktop-up {
+    width: 1280px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/pages/desktop/restaurant-details-background-d.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.restaurant-secondary__content {
+  padding: 0 17px 0 125px;
+  text-align: start;
+
+  @include tablet-up {
+    padding: 0 150px 0 230px;
+  }
+
+  @include desktop-up {
+    padding: 0 262px 0 253px;
+  }
+}
+
+.restaurant-secondary__content .logo {
+  margin-right: -15px;
+  margin-bottom: 12px;
+  letter-spacing: 0.3em;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.restaurant-secondary__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $color-white;
+
+  @include tablet-up {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.20;
+  }
+}
+
+.restaurant-secondary__text {
+  text-align: start;
+  margin-bottom: 48px;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $color-text-light;
+
+  @include tablet-up {
+    font-size: 16px;
+    line-height: 1.25;
+
+  }
+}
+
+.restaurant-secondary__flex-container {
+  @include tablet-up {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+
+  }
+}
+
+.restaurant-secondary__swiper-container.three-img-slider__container {
+  margin-left: auto;
+  margin-right: -15px;
+
+  @include tablet-up {
+    width: 678px;
+    margin-right: -13px;
+  }
+
+  @include desktop-up {
+    width: 855px;
+
+  }
+}
+
+.restaurant-secondary__arrows {
+  margin-bottom: 32px;
+
+
+  @include tablet-up {
+    margin-bottom: 0px;
+  }
+}
+
+.restaurant-secondary__arrows .arrow-left,
+.restaurant-secondary__arrows .arrow-right {
+  fill: $color-white;
+}
+
+.restaurant-secondary__list {
+  @include tablet-up {
+    padding-bottom: 60px;
+  }
+}
+
+.restaurant-secondary__list-item {
+
+  &:first-child {
+    margin-bottom: 12px;
+  }
+}
+
+.restaurant-secondary__button {
+  @include flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 236px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $color-brand;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+}

@@ -1,0 +1,293 @@
+//* SLIDER STYLES:
+.hero-slider {
+    // outline: 1px dashed red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    margin: 0 auto;
+    overflow: hidden;
+        width: 414px;
+
+    @include tablet-up {
+        width: 1024px;
+    }
+
+    @include desktop-up {
+        width: 1280px;
+    }
+}
+
+// ? Робив за прикладом з відео, не факт що якось впливає
+.hero-slider__image {
+    text-align: center;
+}
+
+.hero-slider__image img {
+    object-fit: cover;
+}
+// ?
+
+
+// Стрілки
+.hero-slider__nav {
+    // outline: 1px dashed tomato;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include tablet-up {
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    @include desktop-up {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+}
+
+.hero-slider__button {
+    // outline: 1px dashed teal;
+    
+    @include flex;
+    border: none;
+    padding: 0;
+
+    background-color: $bg-arrow;
+    fill: $color-brand;
+    transition: fill $transition-time $cubic-bezier;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+        fill: $color-white;
+    }
+}
+
+.hero-slider__icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+//* Hero-section styles:
+
+.luxe-hero {
+    position: relative;
+    // outline: 1px dotted teal;
+    // background-color: rgba(19, 18, 18, 0.5);
+  
+    margin: 0 auto;
+    padding-top: 479px;
+    padding-bottom: 14px;
+    width: 414px;
+    height: 740px;
+
+    @include tablet-up {
+        // position: reletive для абсолютного
+        // позиціонування .luxe-hero__button
+        position: relative;
+        width: 1024px;
+        height: 720px;
+        padding-top: 468px;
+        padding-bottom: 24px;
+    }
+
+    @include desktop-up {
+        width: 1280px;
+        padding-top: 524px;
+        padding-bottom: 48px;
+    }
+}
+
+.luxe-hero__content {
+    @media screen and (max-width: 1023px) {
+        max-width: 325px;
+    }
+
+}
+
+.luxe-hero__heading {
+    margin-bottom: 18px;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: $color-white;
+
+    &--accent {
+        text-transform: uppercase;
+    }
+
+    @include tablet-up {
+        margin-bottom: 24px;
+        font-size: 36px;
+    }
+
+}
+
+.luxe-hero__text {
+margin-bottom: 16px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: $color-white;
+
+@include tablet-up {
+    max-width: 400px;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+@include desktop-up {
+    margin-bottom: 0;
+}
+
+}
+
+.luxe-hero__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet-up {
+        display: inline-flex;
+        justify-content: start;
+        gap: 40px;
+    }
+   
+}
+
+.luxe-soc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @include tablet-up {
+        flex-direction: row;
+        gap: 20px;
+    }
+    @include desktop-up {
+        display: none;
+    }
+}
+
+.luxe-soc__icon {
+   fill: $color-brand-light; 
+   transition: fill $transition-time $cubic-bezier;
+
+   &:hover, &:focus, &:active  {
+    fill: $color-white
+   }
+}
+
+.luxe-hero__button {
+width: 232px;
+height: 48px;
+cursor: pointer;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+color: $color-brand;
+background-color: $bg-button;
+border: 2px solid $color-white;
+border-radius: $border-radius-big;
+transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier, border-color $transition-time $cubic-bezier;
+
+&:hover, &:focus, &:active {
+    background-color: $color-white;
+    color: $color-brand;
+    border-color: $color-brand;
+}
+
+// Починаючи з таблета, позиціоную абсолютно
+// відносно .luxe-hero
+@include tablet-up {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
+}
+@include desktop-up {
+    right: 85px;
+    bottom: 66px;
+}
+}
+
+.luxe-hero__address-link {
+    @media screen and (max-width: 1023px), (min-width: 1280px) {
+        display: none;
+    }
+    padding: 8px 8px 8px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: 285px;
+    height: 56px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: $border-radius-small;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: $color-address;
+    fill: $color-brand;
+    transition: fill $transition-time $cubic-bezier, border-color $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
+
+    // Додав від себе
+    &:hover, &:focus {
+        fill: $color-address;
+        border-color: $color-address;
+        color: $color-brand;
+    }
+}
+
+// Костиль для того, щоб іконка не втрачала повний розмір
+// та щоб текс переносився на новий рядок як на макеті
+.map-link__text {
+    max-width: 233px;
+    &--street {
+        display: inline-block;
+    }
+}
+
+.hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 143px;
+
+    background: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 0.55) 54.17%, rgb(0 0 0 / 0) 100%);
+
+    @include tablet-up {
+        height: 116px;
+    }
+
+    @include desktop-up {
+        height: 147px;
+    }
+}

@@ -1,0 +1,436 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #605B5B;
+    ;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    width: 414px;
+    min-height: 668px;
+    background-color: #FFFDEE;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.room {
+    min-height: 780px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #FFFDEE;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.close-icon {
+    width: 100%;
+    height: 100%;
+    fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close-icon,
+.active-btn:focus .close-icon {
+    fill: var(--accent-color);
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(2) rotate(180deg);
+}
+
+
+
+.modal-title {
+    display: inline-block;
+    margin-top: 23px;
+    margin-left: 46px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.modal-form {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-label {
+    display: inline-block;
+    color: #C79002;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+    padding-left: 27px;
+    font-family: 'Montserrat';
+}
+
+.form-control {
+    position: relative;
+}
+
+.inputs-room {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.first-column-room {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.first-column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form-input {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #808080;
+    font-family: 'Times New Roman';
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #C79002;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.select-container,
+.select-container1,
+.select-container-room,
+.select-container-exit,
+.select-container-night {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.select-container .select,
+.select-container1 .select1,
+.select-container-room .select-room,
+.select-container-exit .select-exit,
+.select-container-night .select-night {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #C79002;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-container .select::after,
+.select-container1 .select1::after,
+.select-container-room .select-room::after,
+.select-container-exit .select-exit::after,
+.select-container-night .select-night::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #C79002;
+    border-right: 2px solid #C79002;
+    cursor: pointer;
+}
+
+.select-container.active .select::after,
+.select-container1.active .select1::after,
+.select-container-room.active .select-room::after,
+.select-container-exit.active .select-exit::after,
+.select-container-night.active .select-night::after {
+    border: none;
+    border-left: 2px solid #C79002;
+    border-top: 2px solid #C79002;
+}
+
+.select-container .select input,
+.select-container1 .select1 input,
+.select-container-room .select-room input,
+.select-container-exit .select-exit input,
+.select-container-night .select-night input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #808080;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+}
+
+.select-container .option-container,
+.select-container1 .option-container1,
+.select-container-room .option-container-room,
+.select-container-exit .option-container-exit,
+.select-container-night .option-container-night {
+    position: relative;
+    background: white;
+    height: 0;
+    width: 100%;
+    overflow-y: scroll;
+    transition: 0.4s;
+}
+
+.select-container.active .option-container,
+.select-container1.active .option-container1,
+.select-container-room.active .option-container-room,
+.select-container-exit.active .option-container-exit,
+.select-container-night.active .option-container-night {
+    height: 240px;
+}
+
+.select-container .option-container::-webkit-scrollbar,
+.select-container1 .option-container1::-webkit-scrollbar,
+.select-container-room .option-container-room::-webkit-scrollbar,
+.select-container-exit .option-container-exit::-webkit-scrollbar,
+.select-container-night .option-container-night::-webkit-scrollbar {
+    width: 3px;
+}
+
+.select-container .option-container::-webkit-scrollbar-thumb,
+.select-container1 .option-container1::-webkit-scrollbar-thumb,
+.select-container-room .option-container-room::-webkit-scrollbar-thumb,
+.select-container-exit .option-container-exit::-webkit-scrollbar-thumb,
+.select-container-night .option-container-night::-webkit-scrollbar-thumb {
+    background: #C79002;
+}
+
+.select-container .option-container .option,
+.select-container1 .option-container1 .option1,
+.select-container-room .option-container-room .option-room,
+.select-container-exit .option-container-exit .option-exit,
+.select-container-night .option-container-night .option-night {
+    position: relative;
+    padding-left: 15px;
+    height: 60px;
+    border-bottom: 1px solid #C79002;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.select-container .option-container .option.selected,
+.select-container1 .option-container1 .option1.selected,
+.select-container-room .option-container-room .option-room.selected,
+.select-container-exit .option-container-exit .option-exit.selected,
+.select-container-night .option-container-night .option-night.selected {
+    background-color: #F3C653;
+    pointer-events: none;
+}
+
+.select-container .option-container .option:hover,
+.select-container1 .option-container1 .option1:hover,
+.select-container-room .option-container-room .option-room:hover,
+.select-container-exit .option-container-exit .option-exit:hover {
+    background: rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+}
+
+.select-container .option-container .option label,
+.select-container1 .option-container1 .option1 label,
+.select-container-room .option-container-room .option-room label,
+.select-container-exit .option-container-exit .option-exit label,
+.select-container-night .option-container-night .option-night label {
+    color: #808080;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 64px;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+}
+
+.price {
+    border: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .modal {
+        width: 712px;
+        min-height: 414px;
+    }
+
+    .modal-room {
+        width: 712px;
+        min-height: 712px;
+    }
+
+    .modal-form {
+        display: block;
+        padding: 0;
+    }
+
+    .modal-title {
+        font-size: 40px;
+        line-height: 1.15;
+        margin-bottom: 40px;
+        margin-left: 88px;
+    }
+
+    .inputs,
+    .inputs1,
+    .inputs-room {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        width: 720px;
+        padding-left: 60px;
+        padding-right: 60px;
+        justify-content: space-between;
+    }
+
+
+
+    .select-container,
+    .select-container1,
+    .select-container-room,
+    .select-container-exit,
+    .select-container-night {
+        margin-top: 0px;
+        min-width: 288px;
+    }
+
+    .first-column1 {
+        justify-content: space-between;
+        height: 312px;
+    }
+
+    .second-column {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .second-column1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form-button {
+        width: 592px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .form-label {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .form-input,
+    .select-container .select,
+    .select-container1 .select1,
+    .select-container-room .select-room,
+    .select-container-exit .select-exit,
+    .select-container-night .select-night {
+        width: 288px;
+        height: 64px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+    }
+
+    .select-container .select input,
+    .select-container1 .select1 input,
+    .select-container .option-container .option label,
+    .select-container1 .option-container1 .option1 label,
+    .select-container-room .select-room input,
+    .select-container-exit .select-exit input,
+    .select-container-room .option-container-room .option-room label,
+    .select-container-exit .option-container-exit .option-exit label {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.05em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .modal {
+        width: 712px;
+        min-height: 522px;
+    }
+}

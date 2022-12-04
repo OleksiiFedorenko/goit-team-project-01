@@ -7,7 +7,7 @@
     @include tablet-up {
         padding-top: 48px;
         padding-bottom: 40px;
-        margin: 0;
+        
     }
 
     @include desktop-up {
@@ -43,18 +43,18 @@
 
     color: $color-text;
 
-    margin: 0;
+    
     margin-bottom: 32px;
 
     @include tablet-up {
         width: 757px;
-        margin-right: 0;
+        
     }
 }
 
 .convenience__item {
     list-style: none;
-    margin: 0;
+    
     margin-bottom: 32px;
 
     @include tablet-up {
@@ -69,7 +69,7 @@
     @include tablet-up {
         display: flex;
         gap: 80px;
-        margin-right: 0;
+        
     }
     
     @include desktop-up {
@@ -101,22 +101,23 @@
 
     color: $color-text;
 
-    margin: 0;
     margin-bottom: 16px;
 
     @include tablet-up {
         width: 400px;
-        
         margin-bottom: 0;
     }
 
 }
 
-.convenience__description {
-
+.convenience__lead {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
     @include tablet-up {
-        display: flex;
         gap: 30px;
+        flex-direction: row;
     }
 
     @include desktop-up {
@@ -124,7 +125,7 @@
     }
 }
 
-.convenience__description-info {
+.convenience__lead-info {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -134,28 +135,32 @@
 
     color: $color-text;
 
-    margin: 0;
-    margin-bottom: 16px;
 
     @include tablet-up {
         width: 450px;
-        
     }
 
     @include desktop-up {
         width: 495px;
-        
     }
+}
+
+.convenience__lead .convenience__info {
+    margin-bottom: 0;
 }
 
 .convenience__booking {
 
     @include tablet-up {
         display: flex;
+        flex-direction: column;
     }
+
+    
 }
 
 .convenience__button {
+    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -173,21 +178,22 @@
     margin-bottom: 20px;
 
     @include tablet-up {
+        display: inline-block;
         
         font-size: 24px;
         line-height: 1.21;
 
         padding: 18 38;
-        margin-left: auto;
+        right: 0;
         margin-bottom: 32px;
+        margin-left: auto;
     }
 
     @include desktop-up {
-        display: inline-flex;
         margin-left: 563px;
         margin-right: auto;
     }
-    
+
 }
 
 .convenience__link {
@@ -209,14 +215,14 @@
         font-size: 20px;
         line-height: 1.2;
 
-        justify-content: end;
+        margin-left: auto;
     }
 
     @include desktop-up {
-        display: inline-flex;
         margin-left: 563px;
         margin-right: auto;
     }
+
 }
 
 .convenience__icon {

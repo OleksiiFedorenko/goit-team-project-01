@@ -9,10 +9,6 @@
 
 .navigation {
   @include flex($justify: space-between);
-
-  @include tablet-up {
-    @include flex;
-  }
 }
 
 .header__logo {

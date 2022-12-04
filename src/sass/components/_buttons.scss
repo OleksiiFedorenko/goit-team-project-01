@@ -1,148 +1,93 @@
-.button {
-
+.main-button {
     display: block;
+    min-width: 236px;
+    padding: 12px 21px;
+
     color: $color-brand;
     font-family: Montserrat;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
+    letter-spacing: 0.02em;
     text-align: center;
+
     border-radius: 25px;
-    padding: 14px 0;
     cursor: pointer;
-    width: 236px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+
+    &--translucent {
+        background-color: $bg-button;
+        border: 2px solid $color-white;
+    
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+        }
+    }
+
+    &--dark {
+        background-color: $color-black;
+        border: 2px solid $color-white;
+    
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+            border-color: $color-brand;
+        }
+    }
+
+    &--dark-table {
+        background-color: $color-black;
+        border: 2px solid $bg-light;
+
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+            border-color: $color-brand;
+        }
+    }
 }
 
+.book-button {
+    display: block;
+    min-width: 384px;
+    padding: 19px 43px;
 
-
-.button__restorant-menu{
+    color: $color-white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
 
     background-color: $color-black;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid $bg-light;
-    padding: 15px 24px 14px; 
+    border-radius: $border-radius-big;
+    border: 1px solid $color-brand;
+
+    cursor: pointer;
+    transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+
+    @include tablet-up {
+        font-size: 24px;
+        line-height: 1.21;
+        padding: 17px 38px 16px;
+        min-width: 434px;
+    }
+
+    &--modal {
+        border-radius: $border-radius-small;
+    
+        @include tablet-up {
+            min-width: 592px;
+        }
+    }
 
     &:hover,
     &:focus {
-
-    border-color: $color-brand;
-    background-color: $color-white;
+        color: $color-black;
+        background-color: $color-brand;
+        border-color: $color-brand;
     }
-    
-    &--transparent {
-           border: 2px solid $color-white;
-            background-color: $bg-button;
-    
-            &:hover,
-            &:focus {    
-                border: 2px solid $color-white;
-                background-color: $color-white;
-            }
-        }
-    
-
-    @media screen and (min-width:1024px) {
-        margin-right: 0;
-    }
-
-    @media screen and (min-width:1280px) {
-        margin-right: 0;
-    } 
-      
-}
-
-.button__view-prices,
-.button__details{
-
-        background-color: $color-black;
-        border: 2px solid $color-white;
-                 
-        &:hover,
-        &:focus {
-            border-color: $color-brand;
-            background-color: $color-white;
-        }
-
-         &--transparent {
-            border-color: $color-white;
-            background-color: $bg-button;
-
-        &:hover,
-        &:focus {
-
-            border-color: $color-white;
-            background-color: $color-white;
-        }
-            
-        }
-               
-}
-.button__view-menu,
-.button__book-room{
-
-    border: 2px solid $color-white;
-    background-color: $bg-button;
-
-        &:hover,
-        &:focus {
-            border: 2px solid $color-white;
-            background-color: $color-white;
-        }
-   
-}
-
-.button__reservation{
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: $color-white;
-    background-color: $color-black;
-    border-radius: 25px;
-    border: 1px solid $color-brand;
-    width: 384px;
-    padding: 20px 0;
-    letter-spacing: normal;
-
-        &:hover,
-        &:focus {
-            color: $color-black;
-            border-color: $color-brand;
-            background-color: $color-brand;
-        }
-
-        @media screen and (min-width:1024px) {
-                font-size: 24px;
-                line-height: 1.21;
-                padding: 18px 38px 17px;
-                width: 434px;
-        }     
-
   }
-.button__reservation-modal{
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 500;
-        color: $color-white;
-        background-color: $color-black;
-        border-radius: 2px;
-        border: 1px solid $color-brand;
-        width: 384px;
-        padding: 20px 0;
-        letter-spacing: normal;
-    
-        &:hover,
-        &:focus {
-            color: $color-black;
-            border-color: $color-brand;
-            background-color: $color-brand;
-        }
-    
-        @media screen and (min-width:1024px) {
-            font-size: 24px;
-            line-height: 1.21;
-            padding: 18px 118px 18px 116px;
-            width: 592px;
-        }
-}

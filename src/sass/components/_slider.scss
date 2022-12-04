@@ -3,20 +3,13 @@
 // Контейнер для слайдеру
 
 .two-img-slider {
-  // width: 350px;
-  // overflow: hidden;
-
-  // @include tablet-up {
-  //   width: 448px;
-  // }
-
   width: 350px;
   overflow: hidden;
-  margin-left: 50px;
+  // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
 
   @include tablet-up {
     width: 448px;
-    margin-left: auto;
+    // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
   }
 
   @include desktop-up {
@@ -207,20 +200,21 @@
 }
 
 // Обгортка для слайдів, відсовуємо стрілки
-
 .restaurant-slider__wrapper {
   margin-bottom: 20px;
+
 
   @include tablet-up {
     margin-bottom: 32px;
   }
+  
 
   @include desktop-up {
     margin-bottom: 40px;
   }
 }
 
-// Розміри слайдів
+ // Розміри слайдів
 
 .restaurant-slider__slide {
   width: 245px;
@@ -247,15 +241,9 @@
   display: flex;
   gap: 10px;
 
-  // &--rigth {
-  //   // Коли стрілки мають бути біля правого краю слайдеру
-  //   justify-content: flex-end;
-  // }
-
   &--rigth {
     // Коли стрілки мають бути біля правого краю слайдеру
     justify-content: flex-end;
-    margin-right: 15px;
   }
 }
 

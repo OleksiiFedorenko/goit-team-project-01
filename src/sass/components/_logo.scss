@@ -8,7 +8,7 @@
 Для hero  logo--large 
 Для футеру logo--medium-brand
 В контентних секціях в залежності від кольору використовуйте :
-logo--medium-dark або logo--medium-white    */
+logo--medium-dark  logo--medium-white  logo--medium-grey   */
 
 .logo {
   padding: 0;
@@ -50,6 +50,13 @@ logo--medium-dark або logo--medium-white    */
     }
   }
   &--medium-dark {
+    color: $color-dark-grey;
+    font-size: 40px;
+    @include tablet-up {
+      font-size: 64px;
+    }
+  }
+  &--medium-grey {
     color: $color-dark-grey;
     font-size: 40px;
     @include tablet-up {

@@ -5,9 +5,11 @@
 .two-img-slider {
   width: 350px;
   overflow: hidden;
+  // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
 
   @include tablet-up {
     width: 448px;
+    // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
   }
 
   @include desktop-up {
@@ -175,22 +177,90 @@
   border-radius: $border-radius-small;
 }
 
-// Стилі по стрілкам
+// Стилі по слайдеру для сторінки ресторану
 
-.arrows {
-  // За замовчуванням стрілочки біля лівого краю слайдеру
-  display: flex;
-  gap: 10px;
+// Контейнер для слайдеру
 
-  &--rigth {
-    // Коли стрілочки мають бути біля правого краю слайдеру
-    justify-content: flex-end;
+.restaurant-slider__container {
+    overflow: hidden;
+    width: 330px;
+
+  @include tablet-up {
+    width: 428px;
+  }
+
+    @include desktop-up {
+        width: 530px;
+    }
+
+    // &--right {
+    //     // Стилізація коли слайдер має бути праворуч
+    // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.hotel-slider__wrapper {
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+
+  @include desktop-up {
+    margin-bottom: 40px;
   }
 }
 
-.arrow-left,
-.arrow-right {
-  fill: $color-black;
+// Розміри слайдів
+
+.hotel-slider__slide {
+  width: 194px;
+
+  @include desktop-up {
+    width: 254px;
+  }
+}
+
+// Слайдер для сторінки ресторану
+
+
+// Обгортка для слайдів, відсовуємо стрілки
+.restaurant-slider__wrapper {
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
+}
+
+ // Розміри слайдів
+
+.restaurant-slider__slide {
+    width: 245px;
+
+    @include tablet-up {
+        width: 194px;
+    }
+
+    @include desktop-up {
+        width: 245px;
+    }
+}
+
+// Скруглення кутів для зображень
+
+.restaurant-slider__picture {
+  border-radius: $border-radius-small;
+}
+
+// Стилі по стрілкам
+
+.arrows {
   // За замовчуванням стрілки біля лівого краю слайдеру
   display: flex;
   gap: 10px;
@@ -210,11 +280,6 @@
   border: none;
 
   transition: fill $transition-time $cubic-bezier;
-
-  &:hover,
-  &:focus {
-    fill: $color-brand;
-  }
 
   &--white {
     // Коли стрілки мають бути білими

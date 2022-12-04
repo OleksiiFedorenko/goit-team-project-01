@@ -182,48 +182,21 @@
 // Контейнер для слайдеру
 
 .restaurant-slider__container {
-    overflow: hidden;
-    width: 330px;
+  overflow: hidden;
+  width: 330px;
 
   @include tablet-up {
     width: 428px;
   }
 
-    @include desktop-up {
-        width: 530px;
-    }
-
-    // &--right {
-    //     // Стилізація коли слайдер має бути праворуч
-    // }
-}
-
-// Обгортка для слайдів, відсовуємо стрілки
-
-.hotel-slider__wrapper {
-  margin-bottom: 20px;
-
-  @include tablet-up {
-    margin-bottom: 32px;
-  }
-
   @include desktop-up {
-    margin-bottom: 40px;
+    width: 530px;
   }
+
+  // &--right {
+  //     // Стилізація коли слайдер має бути праворуч
+  // }
 }
-
-// Розміри слайдів
-
-.hotel-slider__slide {
-  width: 194px;
-
-  @include desktop-up {
-    width: 254px;
-  }
-}
-
-// Слайдер для сторінки ресторану
-
 
 // Обгортка для слайдів, відсовуємо стрілки
 .restaurant-slider__wrapper {

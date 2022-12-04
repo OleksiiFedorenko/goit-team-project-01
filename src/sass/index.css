@@ -135,6 +135,285 @@ ul {
   }
 }
 
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 414px;
+}
+@media screen and (min-width: 1024px) {
+  .hero-slider {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-slider {
+    width: 1280px;
+  }
+}
+
+.hero-slider__image {
+  text-align: center;
+}
+
+.hero-slider__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-slider__nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .hero-slider__nav {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-slider__nav {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.hero-slider__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  fill: #f3c653;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.hero-slider__button:hover, .hero-slider__button:focus-visible {
+  fill: #fff;
+}
+
+.hero-slider__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.luxe-hero {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 479px;
+  padding-bottom: 14px;
+  width: 414px;
+  height: 740px;
+}
+@media screen and (min-width: 1024px) {
+  .luxe-hero {
+    position: relative;
+    width: 1024px;
+    height: 720px;
+    padding-top: 468px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .luxe-hero {
+    width: 1280px;
+    padding-top: 524px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .luxe-hero__content {
+    max-width: 325px;
+  }
+}
+
+.luxe-hero__heading {
+  margin-bottom: 18px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.luxe-hero__heading--accent {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .luxe-hero__heading {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+}
+
+.luxe-hero__text {
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .luxe-hero__text {
+    max-width: 400px;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .luxe-hero__text {
+    margin-bottom: 0;
+  }
+}
+
+.luxe-hero__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .luxe-hero__box {
+    display: inline-flex;
+    justify-content: start;
+    gap: 40px;
+  }
+}
+
+.luxe-soc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .luxe-soc {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .luxe-soc {
+    display: none;
+  }
+}
+
+.luxe-soc__icon {
+  fill: rgba(243, 198, 83, 0.7);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.luxe-soc__icon:hover, .luxe-soc__icon:focus, .luxe-soc__icon:active {
+  fill: #fff;
+}
+
+.luxe-hero__button {
+  width: 232px;
+  height: 48px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #fff;
+  border-radius: 25px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.luxe-hero__button:hover, .luxe-hero__button:focus, .luxe-hero__button:active {
+  background-color: #fff;
+  color: #f3c653;
+  border-color: #f3c653;
+}
+@media screen and (min-width: 1024px) {
+  .luxe-hero__button {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .luxe-hero__button {
+    right: 85px;
+    bottom: 66px;
+  }
+}
+
+.luxe-hero__address-link {
+  padding: 8px 8px 8px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 285px;
+  height: 56px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #e5e5e5;
+  fill: #f3c653;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1023px), (min-width: 1280px) {
+  .luxe-hero__address-link {
+    display: none;
+  }
+}
+.luxe-hero__address-link:hover, .luxe-hero__address-link:focus {
+  fill: #e5e5e5;
+  border-color: #e5e5e5;
+  color: #f3c653;
+}
+
+.map-link__text {
+  max-width: 233px;
+}
+.map-link__text--street {
+  display: inline-block;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 143px;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+}
+@media screen and (min-width: 1024px) {
+  .hero-gradient {
+    height: 116px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-gradient {
+    height: 147px;
+  }
+}
+
 /*  Logo styling
 
 Приклад коду лого:
@@ -146,7 +425,7 @@ ul {
 Для футеру logo--medium-brand
 В контентних секціях в залежності від кольору використовуйте :
 logo--medium-dark або logo--medium-white    */
-.logo, .hero__title {
+.logo {
   padding: 0;
   font-family: Film P3, Arial, sans-serif;
   text-transform: uppercase;
@@ -166,12 +445,12 @@ logo--medium-dark або logo--medium-white    */
     font-size: 40px;
   }
 }
-.logo--large, .hero__title {
+.logo--large {
   color: #fff;
   font-size: 96px;
 }
 @media screen and (min-width: 1024px) {
-  .logo--large, .hero__title {
+  .logo--large {
     font-size: 128px;
   }
 }
@@ -236,6 +515,112 @@ logo--medium-dark або logo--medium-white    */
   border-radius: 2px;
 }
 
+.three-img-slider__container {
+  overflow: hidden;
+  width: 374px;
+}
+@media screen and (min-width: 1024px) {
+  .three-img-slider__container {
+    width: 662px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .three-img-slider__container {
+    width: 874px;
+  }
+}
+
+.three-img-slider__wrapper {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .three-img-slider__wrapper {
+    margin-bottom: 24px;
+  }
+}
+
+.three-img-slider__slide-1 {
+  width: 274px;
+}
+@media screen and (min-width: 1024px) {
+  .three-img-slider__slide-1 {
+    width: 270px;
+  }
+}
+
+.three-img-slider__slide-2 {
+  width: 182px;
+}
+@media screen and (min-width: 1024px) {
+  .three-img-slider__slide-2 {
+    width: 162px;
+  }
+}
+
+.three-img-slider__slide-3 {
+  width: 182px;
+}
+@media screen and (min-width: 1024px) {
+  .three-img-slider__slide-3 {
+    width: 162px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .three-img-slider__slide-3 {
+    width: 270px;
+  }
+}
+
+.three-img-slider__picture {
+  border-radius: 2px;
+}
+
+.container--dark {
+  background-color: #000;
+}
+
+.hotel-slider__container {
+  overflow: hidden;
+  width: 284px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-slider__container {
+    width: 428px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-slider__container {
+    width: 548px;
+  }
+}
+
+.hotel-slider__wrapper {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-slider__wrapper {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-slider__wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+.hotel-slider__slide {
+  width: 194px;
+}
+@media screen and (min-width: 1280px) {
+  .hotel-slider__slide {
+    width: 254px;
+  }
+}
+
+.hotel-slider__picture {
+  border-radius: 2px;
+}
+
 .arrows {
   display: flex;
   gap: 10px;
@@ -250,12 +635,14 @@ logo--medium-dark або logo--medium-white    */
   border: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.arrow-left--white, .arrow-right--white {
+  fill: #fff;
+}
 .arrow-left:hover, .arrow-left:focus, .arrow-right:hover, .arrow-right:focus {
   fill: #f3c653;
 }
 
 .hero {
-  position: relative;
   padding-top: 181px;
   padding-bottom: 102px;
   height: 740px;
@@ -308,7 +695,69 @@ logo--medium-dark або logo--medium-white    */
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
   }
 }
-.hero__title {
+.hero--colored {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/restaurant-hero-m.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--colored .hero--colored {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero--colored {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/restaurant-hero-t.jpg);
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .hero--colored {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/restaurant-hero-t@2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero--colored {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/restaurant-hero-d.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero--colored {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/restaurant-hero-d@2x.jpg);
+  }
+}
+.hero--light {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--light .hero--light {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero--light {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .hero--light {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/hotel-hero.suit-hero-t@2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero--light {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero--light {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/hotel-hero.suit-hero-d@2x.jpg);
+  }
+}
+.hero__container {
+  position: relative;
+}
+
+.hero__logo {
   margin-top: 0;
   margin-bottom: 24px;
   max-width: 303px;
@@ -316,18 +765,18 @@ logo--medium-dark або logo--medium-white    */
   margin-left: auto;
 }
 @media screen and (min-width: 1024px) {
-  .hero__title {
+  .hero__logo {
     margin-bottom: 16px;
     max-width: 404px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__title {
+  .hero__logo {
     margin-bottom: 32px;
   }
 }
 
-.hero__subtitle {
+.hero__title {
   margin-top: 0;
   margin-bottom: 40px;
   max-width: 294px;
@@ -340,7 +789,7 @@ logo--medium-dark або logo--medium-white    */
   line-height: 1.25;
 }
 @media screen and (min-width: 1024px) {
-  .hero__subtitle {
+  .hero__title {
     margin-bottom: 56px;
     max-width: 368px;
     font-size: 20px;
@@ -348,12 +797,26 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__subtitle {
+  .hero__title {
     margin-bottom: 64px;
   }
 }
 
-.hero__phrase {
+.hotel-title {
+  margin-bottom: 178px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-title {
+    margin-bottom: 226px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-title {
+    margin-bottom: 249px;
+  }
+}
+
+.hero__slogan {
   margin-top: 0;
   margin-bottom: 113px;
   max-width: 318px;
@@ -368,7 +831,7 @@ logo--medium-dark або logo--medium-white    */
   text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
-  .hero__phrase {
+  .hero__slogan {
     margin-bottom: 145px;
     max-width: 358px;
     font-size: 36px;
@@ -376,14 +839,14 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__phrase {
+  .hero__slogan {
     margin-bottom: 144px;
   }
 }
 
 .location {
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
   display: flex;
   gap: 8px;
@@ -408,7 +871,7 @@ logo--medium-dark або logo--medium-white    */
 @media screen and (min-width: 1024px) {
   .location {
     left: 47px;
-    bottom: 64px;
+    bottom: 0px;
     top: auto;
     gap: 10px;
     width: 285px;
@@ -425,12 +888,13 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 
-.location__address {
-  width: 233px;
+.location__icon {
+  flex-shrink: 0;
 }
-@media screen and (max-width: 1023px) {
-  .location__address {
-    width: 176px;
+@media screen and (min-width: 1024px) {
+  .location__icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -447,22 +911,6 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 
-.hero-buttons__item {
-  display: flex;
-  justify-content: center;
-  width: 236px;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  border-radius: 25px;
-  border: 2px solid #fff;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #f3c653;
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-}
 @media screen and (max-width: 1023px) {
   .hero-buttons__item {
     margin-right: auto;
@@ -476,25 +924,15 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.socials__icon {
-  fill: rgba(243, 198, 83, 0.7);
-}
-
 .hero__socials {
   position: absolute;
   left: 15px;
-  bottom: 20px;
+  bottom: -82px;
 }
 @media screen and (min-width: 1024px) {
   .hero__socials {
     left: 47px;
-    bottom: 15px;
+    bottom: -49px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -503,64 +941,6 @@ logo--medium-dark або logo--medium-white    */
   }
 }
 
-.hero--restaurant {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/restaurant-hero-m.jpg);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero--restaurant .hero--restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero--restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/restaurant-hero-t.jpg);
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .hero--restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/restaurant-hero-t@2x.jpg);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero--restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/restaurant-hero-d.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero--restaurant {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/restaurant-hero-d@2x.jpg);
-  }
-}
-.hero--hotel {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero--hotel .hero--hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero--hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
-  }
-}
-@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
-  .hero--hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/tablet/hotel-hero.suit-hero-t@2x.jpg);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero--hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero--hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pages/desktop/hotel-hero.suit-hero-d@2x.jpg);
-  }
-}
 .menu-link {
   text-decoration: none;
   color: #f3c653;

@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
     padding-top: 181px;
     padding-bottom: 102px;
     height: 740px;
@@ -122,6 +121,11 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
       }
 }
 
+.hero__container {
+  position: relative;
+}
+
+
  .hero__logo {
     margin-top: 0;
     margin-bottom: 24px;
@@ -217,7 +221,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
 
 .location {
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
 
 
@@ -246,7 +250,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
 
     @include tablet-up {
       left: 47px;
-      bottom: 64px;
+      bottom: 0px;
       top: auto;
       gap: 10px;
       width: 285px;
@@ -330,18 +334,17 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   .hero__socials{
     position: absolute;
     left: 15px;
-    bottom: 20px;
+    bottom: -82px;
 
     @include tablet-up {
       left: 47px;
-      bottom: 15px;
+      bottom: -49px;
       }
       
     @include desktop-up{
         display: none;
       }
   }
-
 
 
 .menu-link {

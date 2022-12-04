@@ -1,0 +1,97 @@
+.about-restaurant{
+    padding: 16px 0 28px 0;
+    position: relative;
+   @include tablet-up{
+    padding: 120px 0 32px 0;
+   }
+   &__wrapper-container{
+    @include tablet-up {
+   @include flex($justify:space-between);
+   
+    display: inline-block;
+   
+   
+   }
+}
+   
+    &__wrapper {
+       padding-bottom: 28px;
+       @include tablet-up{
+        padding-bottom: 142px;
+       }
+    }
+    &__title {
+      font-family: 'Times New Roman';
+       font-weight: 400;
+       font-size: 20px;
+       line-height: 1.15;
+       margin-bottom: 12px;
+       color: $color-title-light;
+       @include tablet-up{
+        font-size: 32px;
+        line-height: 1.156;
+        margin-bottom: 4px;
+       }
+    }
+    &__logo {
+      margin-bottom: 12px;
+      @include tablet-up{
+      margin-bottom: 24px;
+      }
+      }
+   &__text{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-text-dark;
+    width: 258px;
+      @include tablet-up{
+      font-size: 16px;
+      line-height: 1.25;
+      width: 439px;
+      @include desktop-up{
+        width: 518px;
+      }
+      
+  }
+   }
+   &__wrapper-industrial{
+   @include flex($justify: flex-end);
+   padding-bottom: 32px;
+   @include tablet-up{
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    padding-bottom: 0px;
+   }
+   @include desktop-up{
+    right: 180px
+   }
+   }
+   &__wrapper-modern{
+       @include flex;
+       padding-bottom: 32px;
+       @include tablet-up{
+        @include flex($justify:flex-start);
+       }
+   }
+   &__second-text{
+      margin-left: 20px;
+       font-family: 'Montserrat';
+       font-size: 12px;
+           line-height: 1.25;
+           letter-spacing: 0.02em;
+           color: $color-brand-dark;
+           width: 163px;
+           @include tablet-up{
+            margin-left: 48px;
+            width: 312px;
+            font-size: 16px;
+           }
+   
+   }
+  }
+  
+   

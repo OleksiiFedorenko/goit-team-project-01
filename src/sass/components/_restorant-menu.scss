@@ -12,10 +12,17 @@
 }
 
 .menu-list{
-    
-    @media screen and (min-width:1024px){
-        display: flex;
-        }
+margin-bottom: 32px;
+
+    @media screen and (min-width:1024px) {
+        margin-bottom: 60px;
+display: flex;
+            }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 40px;
+            }
+        
+     
 }
 table{
         width: 100%;

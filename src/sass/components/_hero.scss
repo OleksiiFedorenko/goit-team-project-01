@@ -125,7 +125,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   position: relative;
 }
 
-
  .hero__logo {
     margin-top: 0;
     margin-bottom: 24px;
@@ -169,7 +168,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
     @include desktop-up{
       margin-bottom: 64px;
     }
-
   }
 
 
@@ -199,7 +197,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-
   @include tablet-up {
     margin-bottom: 145px;
     max-width: 358px;
@@ -217,7 +214,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   top: -117px;
   right: 15px;
 
-
   display: flex;
   gap: 8px;
   width: 210px;
@@ -226,7 +222,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   padding-top: 8px;
   padding-bottom: 9px;
   padding-left: 6px;
-  // padding-right: 0;
   border: 1px solid $color-brand-translucent;
   border-radius: $border-radius-small;
 
@@ -239,7 +234,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: left;
-
 
     @include tablet-up {
       left: 47px;
@@ -257,7 +251,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
     @include desktop-up{
       left: 85px;
     }
-
 }
 
 .location__icon {
@@ -279,49 +272,37 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   @include desktop-up{
     gap: 60px;
   }
-
 }
 
 .hero__main-button {
-@include mobile-only{
-  margin-right: auto;
-  margin-left: auto;
+  @include mobile-only{
+    margin-right: auto;
+    margin-left: auto;
 
-   &:not(:last-of-type){
-   margin-bottom: 24px;
-  }
+    &:not(:last-of-type){
+      margin-bottom: 24px;
+    }
 
-   &:last-of-type{
-  margin-bottom: 58px;
+    &:last-of-type{
+      margin-bottom: 58px;
+    }
   }
 }
+
+.hero__socials {
+  position: absolute;
+  left: 15px;
+  bottom: -82px;
+
+  @include tablet-up {
+    left: 47px;
+    bottom: -49px;
+    }
+    
+  @include desktop-up{
+      display: none;
+    }
 }
-
-// .socials {
-//     display: flex;
-//     justify-content: center;
-//     gap: 20px;
-//   }
-
-//   .socials__icon{
-//     fill: rgba(243, 198, 83, 0.7);
-//   }
-
-
-  .hero__socials{
-    position: absolute;
-    left: 15px;
-    bottom: -82px;
-
-    @include tablet-up {
-      left: 47px;
-      bottom: -49px;
-      }
-      
-    @include desktop-up{
-        display: none;
-      }
-  }
 
 
 .menu-link {

@@ -3,20 +3,13 @@
 // Контейнер для слайдеру
 
 .two-img-slider {
-  // width: 350px;
-  // overflow: hidden;
-
-  // @include tablet-up {
-  //   width: 448px;
-  // }
-
   width: 350px;
   overflow: hidden;
-  margin-left: 50px;
+  // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
 
   @include tablet-up {
     width: 448px;
-    margin-left: auto;
+    // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
   }
 
   @include desktop-up {
@@ -192,9 +185,9 @@
     overflow: hidden;
     width: 330px;
 
-    @include tablet-up {
-        width: 428px;
-    }
+  @include tablet-up {
+    width: 428px;
+  }
 
     @include desktop-up {
         width: 530px;
@@ -207,19 +200,45 @@
 
 // Обгортка для слайдів, відсовуємо стрілки
 
-.restaurant-slider__wrapper {
-    margin-bottom: 20px;
+.hotel-slider__wrapper {
+  margin-bottom: 20px;
 
-    @include tablet-up {
-        margin-bottom: 32px;
-    }
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
 
-    @include desktop-up {
-        margin-bottom: 40px;
-    }
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
 }
 
 // Розміри слайдів
+
+.hotel-slider__slide {
+  width: 194px;
+
+  @include desktop-up {
+    width: 254px;
+  }
+}
+
+// Слайдер для сторінки ресторану
+
+
+// Обгортка для слайдів, відсовуємо стрілки
+.restaurant-slider__wrapper {
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
+}
+
+ // Розміри слайдів
 
 .restaurant-slider__slide {
     width: 245px;
@@ -236,7 +255,7 @@
 // Скруглення кутів для зображень
 
 .restaurant-slider__picture {
-    border-radius: $border-radius-small;
+  border-radius: $border-radius-small;
 }
 
 // Стилі по стрілкам
@@ -246,15 +265,9 @@
   display: flex;
   gap: 10px;
 
-  // &--rigth {
-  //   // Коли стрілки мають бути біля правого краю слайдеру
-  //   justify-content: flex-end;
-  // }
-
   &--rigth {
     // Коли стрілки мають бути біля правого краю слайдеру
     justify-content: flex-end;
-    margin-right: 15px;
   }
 }
 

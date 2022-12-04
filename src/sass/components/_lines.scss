@@ -1,0 +1,57 @@
+// restorant menu
+
+.restorant-menu__container {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        width: 1024px;
+        height: 100%;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        height: 100%;
+    }
+
+}
+
+.rectangle {
+    position: absolute;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        width: 245px;
+        height: 616px;
+        top: 0;
+        left: 50%;
+        border-width: 0 1px 0 0;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 302px;
+        height: 616px;
+        top: 0;
+        right: 50%;
+        border-width: 0 0 0 1px;
+    }
+
+
+}
+
+.rectangle1 {
+    position: absolute;
+    border: 1px solid rgba(186, 186, 186, 0.4);
+    filter: blur(0.5px);
+
+    @media screen and (min-width:1280px) {
+        width: 302px;
+        height: 616px;
+        top: 0;
+        left: 50%;
+        border-width: 0 1px 0 1px;
+    }
+}
+

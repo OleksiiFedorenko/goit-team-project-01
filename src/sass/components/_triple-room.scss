@@ -43,22 +43,13 @@
 		
 				}
 
-			&__logo-title {
-				font-family: 'Film P3';
-				font-weight: 700;
-				font-size: 40px;
-				line-height: 1.075;
-				letter-spacing: 0.3em;
-
+			&__logo {
 				margin-bottom: 32px;
-				text-align: right;
-				text-transform: uppercase;
-				color: #494848;
-				
+				margin-left: 257px;
+
 				@media screen and (min-width: 1024px) {
-				
-				margin-bottom: 62px;
-				padding-right: 17px;
+				margin-bottom: 72px;
+				margin-left: 715px;
 				
 				font-size: 64px;
 				line-height: 1.07;
@@ -66,8 +57,7 @@
 				
 				@media screen and (min-width: 1280px) {
 				
-				margin-bottom: 72px;
-				padding-right: 57px;
+				margin-left: 851px;
 				}
 				}
 

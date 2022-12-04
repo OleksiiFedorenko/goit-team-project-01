@@ -96,6 +96,7 @@
 
   @include tablet-up {
     width: 678px;
+    margin-right: -13px;
   }
 
   @include desktop-up {

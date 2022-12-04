@@ -4,7 +4,7 @@ new Swiper('.two-img-slider', {
         prevEl: '.arrow-left'
     },
     
-    slidesPerView: 1.32,
+    slidesPerView: "auto",
 
     spaceBetween: 20,
 
@@ -12,8 +12,6 @@ new Swiper('.two-img-slider', {
 
     breakpoints: {
         1024: {
-            slidesPerView: 2,
-
             spaceBetween: 40,
         }
     },

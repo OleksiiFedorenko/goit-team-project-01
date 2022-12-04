@@ -2,15 +2,16 @@
     position: relative;
     top: 0;
     left: 0;
+height: 100%;
 
     @media screen and (min-width:1024px) and (max-width:1279px) {
         width: 1024px;
-        height: 100%;
+      
     }
 
     @media screen and (min-width:1280px) {
         width: 1280px;
-        height: 100%;
+        
     }
 }
 

@@ -30,6 +30,12 @@
 }
 // ?
 
+// Забираємо скруглення зображень
+
+.hero-slider__picture {
+    border-radius: 0;
+}
+
 
 // Стрілки
 .hero-slider__nav {

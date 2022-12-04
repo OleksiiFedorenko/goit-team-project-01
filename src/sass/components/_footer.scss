@@ -19,12 +19,13 @@ a {
 
 .footer__logo {
   display: flex;
-  padding-left: 59px;
+  padding-left: 44px;
 
   @include tablet-up {
     margin-right: 163px;
     padding-left: 0;
   }
+
   @include desktop-up {
     margin-right: 231px;
   }
@@ -63,11 +64,10 @@ a {
   }
 }
 
-.container {
-  padding: 0;
-}
+
 .footer__navigation {
   @include flex($justify: space-between);
+
   @include tablet-up {
     @include flex($justify: center);
   }
@@ -81,7 +81,7 @@ a {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 500;
-  padding-right: 41px;
+  padding-right: 26px;
   color: $color-brand;
 
   @include tablet-up {
@@ -96,11 +96,12 @@ a {
 .footer__navigation-pages {
   display: block;
 }
+
 .footer__navigation-socials {
   @include flex;
   gap: 20px;
   margin-top: 32px;
-  padding-right: 41px;
+  padding-right: 26px;
 
   @include tablet-up {
     flex-direction: column;
@@ -109,6 +110,7 @@ a {
     gap: 12px;
     padding: 0;
   }
+
   @include desktop-up {
     margin-left: 199px;
   }

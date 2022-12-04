@@ -1,6 +1,3 @@
-.double-room {
-  outline: 2px solid blue;
-}
 .double-room__wrap {
   text-align: left;
   position: relative;
@@ -131,6 +128,7 @@
   }
 }
 .double-room__arrows {
+  gap: 34px;
   justify-content: flex-end;
   @include mobile-only {
     margin-right: 170px;

@@ -1,5 +1,8 @@
-.double-room__wrap {
-  text-align: left;
+.triple-room {
+  background-color: $bg-dark;
+}
+.triple-room__wrap {
+  text-align: right;
   position: relative;
   padding: 32px 0 32px;
   @include tablet-up {
@@ -9,7 +12,7 @@
     padding: 72px 0 112px;
   }
 }
-.double-room__subtitle {
+.triple-room__subtitle {
   font-size: 20px;
   line-height: 1.15;
   font-weight: 400;
@@ -20,37 +23,19 @@
     margin-bottom: 4px;
   }
 }
-.double-room__logo {
+.triple-room__logo {
+  display: block;
   margin-bottom: 32px;
+  margin-right: -12px;
   @include tablet-up {
     margin-bottom: 62px;
+    margin-right: -20px;
   }
   @include desktop-up {
     margin-bottom: 72px;
   }
 }
-.double-room__title {
-  font-size: 24px;
-  line-height: 1.15;
-  font-weight: 700;
-  font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: $color-black;
-  margin-bottom: 12px;
-  @include tablet-up {
-    font-size: 30px;
-    margin-bottom: 16px;
-  }
-  @include desktop-up {
-    font-size: 36px;
-    margin-bottom: 24px;
-  }
-  &--lowercase {
-    text-transform: lowercase;
-  }
-}
-.double-room__text {
+.triple-room__text {
   max-width: 258px;
   font-size: 12px;
   line-height: 1.25;
@@ -58,10 +43,15 @@
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   letter-spacing: 0.02em;
   color: $color-text-dark;
+}
+.double-room__text-wrap {
+  display: inline-block;
+
+  text-align: left;
   margin-bottom: 32px;
   @include tablet-up {
     font-size: 16px;
-    margin-bottom: 174px;
+    margin-bottom: 169px;
     max-width: 439px;
   }
   @include desktop-up {
@@ -70,15 +60,15 @@
     max-width: 400px;
   }
 }
-.double-room__image-wrap {
-  text-align: right;
-  // margin-bottom: 32px;
+
+.triple-room__image-wrap {
+  text-align: left;
   margin-bottom: 298px;
   @include tablet-up {
     margin: 0;
     position: absolute;
     top: -32px;
-    left: 50%;
+    right: 50%;
   }
 }
 .double-room__image {
@@ -90,16 +80,14 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
-
-.double-room__sl-wrapper {
+.triple-room__sl-wrapper {
   @include tablet-up {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-
-.double-room__nav {
+.triple-room__nav {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -107,30 +95,20 @@
   @include tablet-up {
     margin-bottom: 69px;
   }
-
-  @include desktop-up {
-    margin-bottom: 77px;
-  }
-  margin-bottom: 77px;
-}
-
-.link-unstyled {
-  text-decoration: none;
-  font-style: normal;
 }
 
 /*     Slider styling     */
-.hotel-slider--left-pos {
+.hotel-slider--right-pos {
   @include mobile-only {
     position: absolute;
     top: 640;
-    right: 130px;
+    left: 115px;
   }
 }
-.double-room__arrows {
+.triple-room__arrows {
   gap: 34px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   @include mobile-only {
-    margin-right: 170px;
+    margin-left: 170px;
   }
 }

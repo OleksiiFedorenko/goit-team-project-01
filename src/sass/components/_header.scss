@@ -4,11 +4,15 @@
   left: 0;
   width: 100%;
 
-  background-color: black;
+  // background-color: black;
 }
 
 .navigation {
   @include flex($justify: space-between);
+
+  @include tablet-up {
+    @include flex;
+  }
 }
 
 .header__logo {

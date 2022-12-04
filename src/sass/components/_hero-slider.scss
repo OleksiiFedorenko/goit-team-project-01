@@ -189,7 +189,7 @@ color: $color-white;
 
 .luxe-soc__icon {
    fill: $color-brand-light; 
-   transition: color $transition-time $cubic-bezier;
+   transition: fill $transition-time $cubic-bezier;
 
    &:hover, &:focus, &:active  {
     fill: $color-white

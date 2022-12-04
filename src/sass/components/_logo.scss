@@ -14,7 +14,7 @@ logo--medium-dark або logo--medium-white    */
   padding: 0;
   font-family: Film P3, Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 30%;
+  letter-spacing: 0.3em;
   vertical-align: middle;
   display: inline-block;
   line-height: 1.08;
@@ -55,7 +55,7 @@ logo--medium-dark або logo--medium-white    */
     @include tablet-up {
       font-size: 64px;
     }
-    @include desktop-up{
+    @include desktop-up {
       color: $color-mid-grey;
     }
   }

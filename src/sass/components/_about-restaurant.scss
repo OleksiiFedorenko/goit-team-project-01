@@ -4,10 +4,7 @@
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
-   
     display: inline-block;
-   
-   
    }
 }
 

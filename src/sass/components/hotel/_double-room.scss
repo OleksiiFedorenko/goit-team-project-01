@@ -1,0 +1,136 @@
+.double-room__wrap {
+  text-align: left;
+  position: relative;
+  padding: 32px 0 32px;
+  @include tablet-up {
+    padding: 64px 0 104px;
+  }
+  @include tablet-up {
+    padding: 72px 0 112px;
+  }
+}
+.double-room__subtitle {
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  margin-bottom: 8px;
+  @include tablet-up {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+.double-room__logo {
+  margin-bottom: 32px;
+  @include tablet-up {
+    margin-bottom: 62px;
+  }
+  @include desktop-up {
+    margin-bottom: 72px;
+  }
+}
+.double-room__title {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-black;
+  margin-bottom: 12px;
+  @include tablet-up {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  @include desktop-up {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  &--lowercase {
+    text-transform: lowercase;
+  }
+}
+.double-room__text {
+  max-width: 258px;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  color: $color-text-dark;
+  margin-bottom: 32px;
+  @include tablet-up {
+    font-size: 16px;
+    margin-bottom: 174px;
+    max-width: 439px;
+  }
+  @include desktop-up {
+    margin-bottom: 188px;
+    font-weight: 700;
+    max-width: 400px;
+  }
+}
+.double-room__image-wrap {
+  text-align: right;
+  // margin-bottom: 32px;
+  margin-bottom: 298px;
+  @include tablet-up {
+    margin: 0;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+  }
+}
+.double-room__image {
+  // outline: 2px solid orangered;
+  display: inline-block;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @include tablet-up {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.double-room__sl-wrapper {
+  @include tablet-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.double-room__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  @include tablet-up {
+    margin-bottom: 69px;
+  }
+
+  @include desktop-up {
+    margin-bottom: 77px;
+  }
+  margin-bottom: 77px;
+}
+
+.link-unstyled {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/*     Slider styling     */
+.hotel-slider--left-pos {
+  @include mobile-only {
+    position: absolute;
+    top: 640;
+    right: 130px;
+  }
+}
+.double-room__arrows {
+  gap: 34px;
+  justify-content: flex-end;
+  @include mobile-only {
+    margin-right: 170px;
+  }
+}

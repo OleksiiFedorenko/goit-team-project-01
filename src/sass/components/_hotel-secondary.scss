@@ -1,4 +1,4 @@
-.restaurant-secondary {
+.hotel-secondary {
   padding-top: 24px;
   padding-bottom: 40px;
   margin-left: auto;
@@ -6,43 +6,43 @@
   width: 414px;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/pages/mobile/restaurant-details-background-m.jpg);
+    url(../images/pages/mobile/hotel-details-background-m.jpg);
   background-size: cover;
   background-position: center;
 
-  @include tablet-up {
+  @media screen and(min-width:1024px) {
     width: 1024px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../images/pages/tablet/restaurant-details-background-t.jpg);
+      url(../images/pages/tablet/hotel-details-background-t.jpg);
     background-size: cover;
     background-position: center;
   }
 
-  @include desktop-up {
+  @media screen and(min-width:1280px) {
     width: 1280px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../images/pages/desktop/restaurant-details-background-d.jpg);
+      url(../images/pages/desktop/hotel-details-background-d.jpg);
     background-size: cover;
     background-position: center;
   }
 }
 
-.restaurant-secondary__content {
-  padding: 0 17px 0 125px;
-  text-align: start;
+.hotel-secondary__content {
+  padding: 0 125px 0 17px;
+  text-align: end;
 
   @include tablet-up {
-    padding: 0 150px 0 230px;
+    padding: 0 230px 0 150px;
   }
 
   @include desktop-up {
-    padding: 0 262px 0 253px;
+    padding: 0 253px 0 262px;
   }
 }
 
-.restaurant-secondary__content .logo {
+.hotel-secondary__content .logo {
+  margin-left: auto;
   margin-right: -15px;
-  margin-bottom: 12px;
   letter-spacing: 0.3em;
 
   @include tablet-up {
@@ -50,7 +50,7 @@
   }
 }
 
-.restaurant-secondary__title {
+.hotel-secondary__title {
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 1.2;
@@ -64,7 +64,7 @@
   }
 }
 
-.restaurant-secondary__text {
+.hotel-secondary__text {
   text-align: start;
   margin-bottom: 48px;
   font-family: 'Montserrat';
@@ -80,59 +80,55 @@
   }
 }
 
-.restaurant-secondary__flex-container {
+.hotel-secondary__flex-container {
   @include tablet-up {
-    display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    display: flex;
     align-items: flex-end;
 
   }
 }
 
-.restaurant-secondary__swiper-container.three-img-slider__container {
-  margin-left: auto;
-  margin-right: -15px;
+.hotel-secondary__swiper-container.three-img-slider__container {
+  margin-left: -15px;
 
   @include tablet-up {
     width: 678px;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 29px;
   }
 
   @include desktop-up {
     width: 855px;
+    margin-right: 32px;
 
   }
 }
 
-.restaurant-secondary__arrows {
+.hotel-secondary__arrows {
   margin-bottom: 32px;
-
+  justify-content: flex-end;
 
   @include tablet-up {
     margin-bottom: 0px;
   }
 }
 
-.restaurant-secondary__list {
+.hotel-secondary__list {
   @include tablet-up {
     padding-bottom: 60px;
-    margin-right: 29px;
-  }
 
-  @include desktop-up {
-    margin-right: 32px;
   }
 }
 
-.restaurant-secondary__list-item {
+.hotel-secondary__list-item {
 
   &:first-child {
     margin-bottom: 12px;
   }
 }
 
-.restaurant-secondary__button {
+.hotel-secondary__button {
   margin-right: auto;
   margin-left: auto;
 }

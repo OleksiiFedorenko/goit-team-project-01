@@ -162,13 +162,3 @@
     padding-bottom: 38px;
   }
 }
-
-.socials__icon {
-  @include flex;
-  fill: $color-brand;
-  transition: color $transition-time $cubic-bezier;
-
-  &:hover, &:focus, &:active  {
-   fill: $color-white
-  }
-}

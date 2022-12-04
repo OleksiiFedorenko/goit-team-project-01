@@ -2,18 +2,19 @@
 
 // Контейнер для слайдеру
 
-.two-img-slider {
-  width: 350px;
+//bugfix-треба виправити слайдери всюду і видалити звідси two-img-slider
+.two-img-slider__container, .two-img-slider {
+  width: 330px;
   overflow: hidden;
   // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
 
   @include tablet-up {
-    width: 448px;
+    width: 428px;
     // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
   }
 
   @include desktop-up {
-    width: 568px;
+    width: 548px;
   }
 
   // &--right {
@@ -39,6 +40,16 @@
   }
 }
 
+// Розміри слайдів
+
+.two-img-slider__slide {
+  width: 194px;
+
+  @include desktop-up {
+    width: 254px;
+  }
+}
+
 // Скруглення кутів для зображень
 
 .two-img-slider__picture {
@@ -50,8 +61,8 @@
 // Контейнер для слайдеру
 
 .three-img-slider__container {
-  overflow: hidden;
   width: 374px;
+  overflow: hidden;
 
   @include tablet-up {
     width: 662px;
@@ -127,8 +138,8 @@
 // Контейнер для слайдеру
 
 .hotel-slider__container {
-  overflow: hidden;
   width: 284px;
+  overflow: hidden;
 
   @include tablet-up {
     width: 428px;
@@ -183,8 +194,8 @@
 // Контейнер для слайдеру
 
 .restaurant-slider__container {
-  overflow: hidden;
   width: 330px;
+  overflow: hidden;
 
   @include tablet-up {
     width: 428px;

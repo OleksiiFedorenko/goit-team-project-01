@@ -9,6 +9,10 @@
 
 .navigation {
   @include flex($justify: space-between);
+
+  @include tablet-up {
+    @include flex;
+  }
 }
 
 .header__logo {
@@ -16,13 +20,13 @@
   padding-bottom: 9px;
 
   @include tablet-up {
-    margin-right: 87px;
+    margin-right: 83px;
     padding-top: 28px;
     padding-bottom: 28px;
   }
 
   @include desktop-up {
-    margin-right: 96px;
+    margin-right: 92px;
   }
 }
 
@@ -140,7 +144,7 @@
 .socials__icon {
   fill: $color-brand;
 
-  @include tablet-up {
-    margin-right: 8px;
-  }
+  // @include tablet-up {
+  //   margin-right: 8px;
+  // }
 }

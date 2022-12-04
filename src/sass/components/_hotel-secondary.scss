@@ -94,11 +94,13 @@
 
   @include tablet-up {
     width: 678px;
-    margin-left: -13px;
+    margin-left: 0px;
+    margin-right: 29px;
   }
 
   @include desktop-up {
     width: 855px;
+    margin-right: 32px;
 
   }
 }
@@ -110,11 +112,6 @@
   @include tablet-up {
     margin-bottom: 0px;
   }
-}
-
-.hotel-secondary__arrows .arrow-left,
-.hotel-secondary__arrows .arrow-right {
-  fill: $color-white;
 }
 
 .hotel-secondary__list {
@@ -132,16 +129,6 @@
 }
 
 .hotel-secondary__button {
-  @include flex;
   margin-right: auto;
   margin-left: auto;
-  width: 236px;
-  height: 48px;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: $color-brand;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #FFFFFF;
-  border-radius: 25px;
 }

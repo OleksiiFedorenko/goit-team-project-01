@@ -277,14 +277,14 @@ margin-bottom: 32px;
 
  @mixin left-coner ($width, $height) {
      width: $width;
-     height: $heigh;
+     height: $height;
      left: 0;
      border-width: 0 1px 0 0;
  }
 
  @mixin right-coner ($width, $height) {
      width: $width;
-     height: $heigh;
+     height: $height;
      right: 0;
      border-width: 0 0 0 1px;
  }

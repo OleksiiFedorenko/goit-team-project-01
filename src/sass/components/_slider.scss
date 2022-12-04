@@ -43,7 +43,11 @@
 // Розміри слайдів
 
 .two-img-slider__slide {
-  width: 194px;
+  width: 245px;
+
+  @include tablet-up {
+    width: 194px;
+  }
 
   @include desktop-up {
     width: 254px;

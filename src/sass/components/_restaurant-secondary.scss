@@ -122,6 +122,11 @@
 .restaurant-secondary__list {
   @include tablet-up {
     padding-bottom: 60px;
+    margin-right: 29px;
+  }
+
+  @include desktop-up {
+    margin-right: 32px;
   }
 }
 

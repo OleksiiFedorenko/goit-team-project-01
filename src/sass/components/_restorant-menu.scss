@@ -184,56 +184,135 @@ margin-bottom: 32px;
 
 }
 
-.restorant-menu__container{
-    position: relative;
-        top: 0;
-        left: 0;
-        @media screen and (min-width:1024px) and (max-width:1279px) {
-           width: 1024px;
-        height: 100%; 
-        }
-        @media screen and (min-width:1280px){
-           width: 1280px;
-        height: 100%; 
-        }
+// .restorant-menu__container{
+//     position: relative;
+//         top: 0;
+//         left: 0;
+//         @media screen and (min-width:1024px) and (max-width:1279px) {
+//            width: 1024px;
+//         height: 100%; 
+//         }
+//         @media screen and (min-width:1280px){
+//            width: 1280px;
+//         height: 100%; 
+//         }
         
-}
-.rectangle{
-    position: absolute;
-    border: 1px solid rgba(186, 186, 186, 0.4);
-    filter: blur(0.5px);
+// }
+// .rectangle{
+//     position: absolute;
+//     border: 1px solid rgba(186, 186, 186, 0.4);
+//     filter: blur(0.5px);
 
-    @media screen and (min-width:1024px) and (max-width:1279px) {
-    width: 245px;
-    height: 616px;
-    top: 0;
-    left: 50%;    
-    border-width:0 1px 0 0;   
-    }
+//     @media screen and (min-width:1024px) and (max-width:1279px) {
+//     width: 245px;
+//     height: 616px;
+//     top: 0;
+//     left: 50%;    
+//     border-width:0 1px 0 0;   
+//     }
 
-    @media screen and (min-width:1280px){
-    width: 302px;
-    height: 616px;
-    top: 0;
-    right: 50%;    
-    border-width:0 0 0 1px;   
-    }
+//     @media screen and (min-width:1280px){
+//     width: 302px;
+//     height: 616px;
+//     top: 0;
+//     right: 50%;    
+//     border-width:0 0 0 1px;   
+//     }
     
    
-}
-.rectangle1{
-    position: absolute;
-        border: 1px solid rgba(186, 186, 186, 0.4);
-        filter: blur(0.5px);
+// }
+// .rectangle1{
+//     position: absolute;
+//         border: 1px solid rgba(186, 186, 186, 0.4);
+//         filter: blur(0.5px);
 
-         @media screen and (min-width:1280px) {
-    width: 302px;
-    height: 616px;
-    top: 0;
-    left:50%;    
-    border-width:0 1px 0 1px;   
-    }
-}
+//          @media screen and (min-width:1280px) {
+//     width: 302px;
+//     height: 616px;
+//     top: 0;
+//     left:50%;    
+//     border-width:0 1px 0 1px;   
+//     }
+// }
    
-    
+ // линии
+ 
+ %positioning-lines {
+     position: relative;
+     top: 0;
+     left: 0;
 
+     @media screen and (min-width:1024px) and (max-width:1279px) {
+         width: 1024px;
+         height: 100%;
+     }
+
+     @media screen and (min-width:1280px) {
+         width: 1280px;
+         height: 100%;
+     }
+ }
+
+ %positioning-rectangle {
+     position: absolute;
+     border: 1px solid rgba(186, 186, 186, 0.4);
+     filter: blur(0.5px);
+     top: 0;
+
+ }
+
+ @mixin left-rect($width, $height) {
+     width: $width;
+     height: $height;
+     right: 50%;
+     border-width: 0 0 0 1px
+ }
+
+ @mixin right-rect($width, $height) {
+     width: $width;
+     height: $height;
+     left: 50%;
+     border-width: 0 1px 0 1px
+ }
+
+ @mixin left-coner ($width, $height) {
+     width: $width;
+     height: $heigh;
+     left: 0;
+     border-width: 0 1px 0 0;
+ }
+
+ @mixin right-coner ($width, $height) {
+     width: $width;
+     height: $heigh;
+     right: 0;
+     border-width: 0 0 0 1px;
+ }
+
+
+
+ .restorant-menu__container {
+     @extend %positioning-lines;
+ }
+
+ .rectangle {
+     @extend %positioning-rectangle;
+
+     @media screen and (min-width:1024px) and (max-width:1279px) {
+         @include right-coner (265px, 616px);
+     }
+
+     @media screen and (min-width:1280px) {
+         @include left-rect(302px, 616px);
+     }
+
+
+ }
+
+ .rectangle1 {
+     @extend %positioning-rectangle;
+
+     @media screen and (min-width:1280px) {
+         @include right-rect(302px, 616px);
+     }
+ }

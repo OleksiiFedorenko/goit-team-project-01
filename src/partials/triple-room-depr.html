@@ -1,0 +1,73 @@
+<section class="triple-room">
+	<div class="container">
+		<p class="triple-room__logo-subtitle">Amet minim mollit non</p>
+		<a href="./index.html" class="logo logo--medium-dark triple-room__logo">Mimiho</a>
+		<div class="triple-room__thumb">
+			<h2 class="triple-room__title">Трьохмісний номер</h2>
+			<p class="triple-room__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+				officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+		</div>
+		<picture>
+			<source srcset="./images/pages/mobile/hotel-room-m.jpg 1x, ./images/pages/mobile/hotel-room-m@2x.jpg 2x"
+				media="(max-width: 1023px)" />
+			<source srcset="./images/pages/tablet/hotel-room-t.jpg 1x, ./images/pages/tablet/hotel-room-t@2x.jpg 2x"
+				media="(max-width: 1279px)" />
+			<source srcset="./images/pages/desktop/hotel-room-d.jpg 1x, ./images/pages/desktop/hotel-room-d@2x.jpg 2x"
+				media="(min-width: 1280px)" />
+			<img class="triple-room__image" src="./images/pages/mobile/hotel-room-m.jpg" alt="Ліжко біля вікна" />
+		</picture>
+
+		<!-- Slider -->
+		<div class="hotel-slider__container hotel-slider__container--right">
+			<div class="hotel-slider swiper-container">
+				<div class="hotel-slider__wrapper swiper-wrapper">
+					<div class="hotel-slider__slide swiper-slide">
+						<picture>
+							<source media="(min-width: 1280px)" srcset="
+		                ./images/sliders/desktop/hotel-sink-d.jpg    1x,
+		                ./images/sliders/desktop/hotel-sink-d@2x.jpg 2x
+		              " />
+							<img class="hotel-slider__picture" srcset="
+		                ./images/sliders/mobile/hotel-sink-m.jpg    1x,
+		                ./images/sliders/mobile/hotel-sink-m@2x.jpg 2x
+		              " src="./images/sliders/mobile/hotel-sink-m.jpg" alt="Раковина" />
+						</picture>
+					</div>
+
+					<div class="hotel-slider__slide swiper-slide">
+						<picture>
+							<source media="(min-width: 1280px)" srcset="
+		                ./images/sliders/desktop/teacup-trees-d.jpg    1x,
+		                ./images/sliders/desktop/teacup-trees-d@2x.jpg 2x
+		              " />
+							<img class="hotel-slider__picture" srcset="
+		                ./images/sliders/mobile/teacup-trees-m.jpg    1x,
+		                ./images/sliders/mobile/teacup-trees-m@2x.jpg 2x
+		              " src="./images/sliders/mobile/teacup-trees-m.jpg" alt="Чашка на фоні дерев" />
+						</picture>
+					</div>
+				</div>
+
+				<div class="arrows arrows-tripleroom">
+					<button class="arrow-left arrow-left--desktop" type="button">
+						<svg width="32" height="32">
+							<use href="./images/icons.svg#icon-arrow-left"></use>
+						</svg>
+					</button>
+					<button class="arrow-right arrow-right--desktop" type="button">
+						<svg width="32" height="32">
+							<use href="./images/icons.svg#icon-arrow-right"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttons -->
+
+		<a class="link main-button main-button--dark button-tripledetails" href="./suite.html">Детальніше</a>
+
+		<button class="main-button main-button--translucent button-tripleprices" type="button">Переглянути ціни</button>
+
+	</div>
+</section>

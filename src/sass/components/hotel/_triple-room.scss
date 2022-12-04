@@ -1,8 +1,9 @@
-.double-room {
-  outline: 2px solid blue;
+.container {
+  outline: 1px solid orangered;
 }
-.double-room__wrap {
-  text-align: left;
+.triple-room__wrap {
+  outline: 3px solid green;
+  text-align: right;
   position: relative;
   padding: 32px 0 32px;
   @include tablet-up {

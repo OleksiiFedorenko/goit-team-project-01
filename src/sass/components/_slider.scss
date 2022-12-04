@@ -3,11 +3,20 @@
 // Контейнер для слайдеру
 
 .two-img-slider {
+  // width: 350px;
+  // overflow: hidden;
+
+  // @include tablet-up {
+  //   width: 448px;
+  // }
+
   width: 350px;
   overflow: hidden;
+  margin-left: 50px;
 
   @include tablet-up {
     width: 448px;
+    margin-left: auto;
   }
 
   @include desktop-up {
@@ -182,9 +191,15 @@
   display: flex;
   gap: 10px;
 
+  // &--rigth {
+  //   // Коли стрілки мають бути біля правого краю слайдеру
+  //   justify-content: flex-end;
+  // }
+
   &--rigth {
     // Коли стрілки мають бути біля правого краю слайдеру
     justify-content: flex-end;
+    margin-right: 15px;
   }
 }
 

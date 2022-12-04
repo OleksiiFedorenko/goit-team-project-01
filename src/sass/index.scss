@@ -1,10 +1,16 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/fonts';
-
 @import './base/base';
 @import './base/reset';
 @import './base/container';
+
 @import './components/logo';
 @import './components/hotel/double-room';
+
+@import './components/about-restaurant';
+
+@import './components/hero-slider';
+@import './components/logo';
+
 @import './components/slider';

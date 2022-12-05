@@ -238,8 +238,8 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   &:hover,
   &:focus{
     color: $color-brand;
-    fill: $color-white;
-    border: 1px solid $color-white;
+    fill: $color-address;
+    border-color: $color-address;
   }
 
     @include tablet-up {

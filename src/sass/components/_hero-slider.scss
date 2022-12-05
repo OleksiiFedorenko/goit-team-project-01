@@ -289,6 +289,14 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
     }
 }
 
+
+.luxe-hero__address-icon{
+    @include tablet-up{
+        width: 24px;
+        height: 24px;
+      }
+}
+
 // Костиль для того, щоб іконка не втрачала повний розмір
 // та щоб текс переносився на новий рядок як на макеті
 .map-link__text {

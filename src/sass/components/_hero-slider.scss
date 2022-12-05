@@ -30,6 +30,12 @@
 }
 // ?
 
+// Забираємо скруглення зображень
+
+.hero-slider__picture {
+    border-radius: 0;
+}
+
 
 // Стрілки
 .hero-slider__nav {
@@ -88,6 +94,9 @@
     // outline: 1px dotted teal;
     // background-color: rgba(19, 18, 18, 0.5);
   
+    @media screen and (max-width: 413px) {
+        max-width: 100%;
+    }
     margin: 0 auto;
     padding-top: 479px;
     padding-bottom: 14px;
@@ -113,6 +122,7 @@
 
 .luxe-hero__content {
     @media screen and (max-width: 1023px) {
+        
         max-width: 325px;
     }
 
@@ -233,10 +243,20 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
 }
 
 .luxe-hero__address-link {
-    @media screen and (max-width: 1023px), (min-width: 1280px) {
-        display: none;
+    @media screen and (max-width: 1023px) {
+        position: absolute;
+        top: 64px;
+        right: 15px;
+
+        display: inline-flex;
+        gap: 8px;
+        width: 210px;
+        height: 47px;
+        padding-left: 6px;
+        font-size: 12px;
+        line-height: 1.25;
     }
-    padding: 8px 8px 8px 10px;
+
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -263,11 +283,18 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
         border-color: $color-address;
         color: $color-brand;
     }
+
+    @include desktop-up {
+        display: none;
+    }
 }
 
 // Костиль для того, щоб іконка не втрачала повний розмір
 // та щоб текс переносився на новий рядок як на макеті
 .map-link__text {
+    @media screen and (max-width: 1023px) {
+        max-width: 170px;
+    }
     max-width: 233px;
     &--street {
         display: inline-block;

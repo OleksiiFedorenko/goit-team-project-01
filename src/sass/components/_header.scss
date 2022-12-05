@@ -4,8 +4,6 @@
   left: 0;
   width: 100%;
   z-index: 1;
-
-  background-color: rgba(19, 18, 18, 0.3);
 }
 
 .navigation {
@@ -160,15 +158,5 @@
    
     padding-top: 38px;
     padding-bottom: 38px;
-  }
-}
-
-.socials__icon {
-  @include flex;
-  fill: $color-brand;
-  transition: color $transition-time $cubic-bezier;
-
-  &:hover, &:focus, &:active  {
-   fill: $color-white
   }
 }

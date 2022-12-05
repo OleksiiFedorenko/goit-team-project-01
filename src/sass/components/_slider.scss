@@ -2,18 +2,19 @@
 
 // Контейнер для слайдеру
 
-.two-img-slider {
-  width: 350px;
+//bugfix-треба виправити слайдери всюду і видалити звідси two-img-slider
+.two-img-slider__container, .two-img-slider {
+  width: 330px;
   overflow: hidden;
   // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
 
   @include tablet-up {
-    width: 448px;
+    width: 428px;
     // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
   }
 
   @include desktop-up {
-    width: 568px;
+    width: 548px;
   }
 
   // &--right {
@@ -39,10 +40,18 @@
   }
 }
 
-// Скруглення кутів для зображень
+// Розміри слайдів
 
-.two-img-slider__picture {
-  border-radius: $border-radius-small;
+.two-img-slider__slide {
+  width: 245px;
+
+  @include tablet-up {
+    width: 194px;
+  }
+
+  @include desktop-up {
+    width: 254px;
+  }
 }
 
 // Стилі по слайдеру з 3ма зображеннями
@@ -50,8 +59,8 @@
 // Контейнер для слайдеру
 
 .three-img-slider__container {
-  overflow: hidden;
   width: 374px;
+  overflow: hidden;
 
   @include tablet-up {
     width: 662px;
@@ -110,12 +119,6 @@
   }
 }
 
-// Скруглення кутів для зображень
-
-.three-img-slider__picture {
-  border-radius: $border-radius-small;
-}
-
 // Фон щоб було видно білі стрілки
 
 .container--dark {
@@ -127,8 +130,8 @@
 // Контейнер для слайдеру
 
 .hotel-slider__container {
-  overflow: hidden;
   width: 284px;
+  overflow: hidden;
 
   @include tablet-up {
     width: 428px;
@@ -139,11 +142,12 @@
   }
 
   // &--right {
-  //     // Стилізація коли слайдер має бути праворуч
+  //   // Стилізація коли слайдер має бути праворуч
+
   // }
 
   // &--left {
-  //     // Стилізація коли слайдер має бути ліворуч
+  //   // Стилізація коли слайдер має бути ліворуч
   // }
 }
 
@@ -171,19 +175,13 @@
   }
 }
 
-// Скруглення кутів для зображень
-
-.hotel-slider__picture {
-  border-radius: $border-radius-small;
-}
-
 // Стилі по слайдеру для сторінки ресторану
 
 // Контейнер для слайдеру
 
 .restaurant-slider__container {
-  overflow: hidden;
   width: 330px;
+  overflow: hidden;
 
   @include tablet-up {
     width: 428px;
@@ -202,10 +200,12 @@
 .restaurant-slider__wrapper {
   margin-bottom: 20px;
 
+
   @include tablet-up {
     margin-bottom: 32px;
   }
   
+
   @include desktop-up {
     margin-bottom: 40px;
   }
@@ -214,21 +214,15 @@
  // Розміри слайдів
 
 .restaurant-slider__slide {
+  width: 245px;
+
+  @include tablet-up {
+    width: 194px;
+  }
+
+  @include desktop-up {
     width: 245px;
-
-    @include tablet-up {
-        width: 194px;
-    }
-
-    @include desktop-up {
-        width: 245px;
-    }
-}
-
-// Скруглення кутів для зображень
-
-.restaurant-slider__picture {
-  border-radius: $border-radius-small;
+  }
 }
 
 // Стилі по стрілкам

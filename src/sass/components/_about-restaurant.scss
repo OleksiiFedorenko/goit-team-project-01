@@ -1,16 +1,30 @@
 .about-restaurant{
-    padding: 16px 0 28px 0;
+  // outline: 2px dashed teal;
+  @include tablet-up{
     position: relative;
-   @include tablet-up{
-    padding: 120px 0 32px 0;
-   }
+  }
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0 20px 0;
+
+  @include tablet-up {
+    width: 1024px;
+    padding: 120px 0 262px 0;
+  }
+
+  @include desktop-up {
+    width: 1280px;
+  }
+&__container{
+  @include mobile-only{
+    position: relative;
+  }
+  
+}
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
-   
     display: inline-block;
-   
-   
    }
 }
    
@@ -70,9 +84,16 @@
     right: 180px
    }
    }
+   &__picture-shadow{
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    @include tablet-up{
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+   }
    &__wrapper-modern{
        @include flex;
-       padding-bottom: 32px;
+       margin-bottom: 32px;
+
        @include tablet-up{
         @include flex($justify:flex-start);
        }
@@ -94,4 +115,68 @@
    }
   }
   
-   
+.about-restaurant__slider {
+  margin-left: auto;
+  margin-right: -15px;
+
+  @include tablet-up {
+      position: absolute;
+      right: 60px;
+      bottom: 32px;
+  }
+}
+.about-restaurant__slider-shadow{
+  position: absolute;
+  right: 0;
+  bottom: 58px;
+
+  width: 245px;
+  height: 245px;
+  margin-right: 85px;
+
+  background-color: rgb(0 0 0 / 0.10);
+  border-radius: $border-radius-small;
+  box-shadow: 2px 2px 60px 2px rgb(0 0 0 / 0.25);
+
+  @include tablet-up{
+    width: 194px;
+    height: 194px;
+    margin-bottom: 44px;
+    margin-right: 279px;
+    @include desktop-up{
+      width: 254px;
+      height: 254px;
+      margin-bottom: 52px;
+      margin-right: 339px;
+    }
+  }
+  
+}
+.about-restaurant__slider-shadow-second{
+  position: absolute;
+  right: 0;
+  bottom: 58px;
+
+  width: 60px;
+  height: 245px;
+  
+  background-color: rgb(0 0 0 / 0.10);
+  border-radius: $border-radius-small;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  @include tablet-up{
+    bottom: 57px;
+
+    width: 194px;
+    height: 194px;
+    margin-right: 45px;
+    margin-bottom: 44px;
+
+    @include desktop-up{
+    background-color: transparent;
+    box-shadow: none;
+    }
+  }
+ 
+}
+

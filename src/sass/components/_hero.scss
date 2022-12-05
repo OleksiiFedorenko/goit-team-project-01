@@ -1,0 +1,320 @@
+.hero {
+    padding-top: 181px;
+    padding-bottom: 102px;
+    height: 740px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $bg-footer;
+    background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/homepage-hero-m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    @include tablet-up {
+        padding-top: 188px;
+        padding-bottom: 64px;
+        height: 720px;
+    }
+
+    @include desktop-up {
+        padding-top: 164px;
+        padding-bottom: 65px;
+    }
+}
+
+@include double-background {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/homepage-hero-m@2x.jpg);
+    }
+  }
+
+  @include tablet-up {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t.jpg);
+    }
+
+  @include double-background {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t@2x.jpg);
+      }
+    }
+  }
+
+  @include desktop-up {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d.jpg);
+    }
+    
+  @include double-background {
+    .hero {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d@2x.jpg);
+    }
+   }
+ }
+
+ .hero--colored {
+  background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/restaurant-hero-m.jpg);
+
+  @include double-background {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
+    }
+  }
+}
+  @include tablet-up {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/restaurant-hero-t.jpg);
+    }
+
+  @include double-background {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/restaurant-hero-t@2x.jpg);
+      }
+    }
+      }
+
+  @include desktop-up {
+    .hero--colored {
+     background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/restaurant-hero-d.jpg);
+     }
+    
+  @include double-background {
+    .hero--colored {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/restaurant-hero-d@2x.jpg);
+     }
+  }
+}
+
+
+.hero--light{
+background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
+
+@include double-background {
+  .hero--light {
+    background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
+  }
+}
+}
+@include tablet-up {
+  .hero--light {
+    background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
+  }
+
+  @include double-background {
+    .hero--light {
+      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/hotel-hero.suit-hero-t@2x.jpg);
+    }
+  }
+}
+
+    @include desktop-up {
+      .hero--light {
+        background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
+      }
+  
+  @include double-background {
+        .hero--light {
+          background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/hotel-hero.suit-hero-d@2x.jpg);
+        }
+      }
+}
+
+.hero__container {
+  position: relative;
+}
+
+ .hero__logo {
+    margin-top: 0;
+    margin-bottom: 24px;
+    max-width: 303px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include tablet-up {
+     margin-bottom: 16px;
+     max-width: 404px;
+   }
+
+    @include desktop-up{
+     margin-bottom: 32px;
+   }
+}
+
+.hotel-hero__logo{
+  margin-bottom: 32px;
+}
+
+ .hero__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 294px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $color-white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @include tablet-up {
+      margin-bottom: 56px;
+      max-width: 368px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    
+    @include desktop-up{
+      margin-bottom: 64px;
+    }
+  }
+
+
+  .hotel-title{
+    margin-bottom: 178px;
+
+    @include tablet-up{
+      margin-bottom: 226px;
+    }
+
+    @include desktop-up{
+      margin-bottom: 249px;
+    }
+  }
+
+.hero__slogan{
+  margin-top: 0;
+  margin-bottom: 113px;
+  max-width: 318px;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color-white;
+  font-family: Times New Roman, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include tablet-up {
+    margin-bottom: 145px;
+    max-width: 358px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+  
+  @include desktop-up{
+    margin-bottom: 144px;
+  }
+}
+
+.location {
+  position: absolute;
+  top: -117px;
+  right: 15px;
+
+  display: flex;
+  gap: 8px;
+  width: 210px;
+  height: 47px;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  padding-left: 6px;
+  border: 1px solid $color-brand-translucent;
+  border-radius: $border-radius-small;
+
+  text-decoration: none;
+  fill: $color-brand;
+  color: $color-address;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+    @include tablet-up {
+      left: 47px;
+      bottom: 0px;
+      top: auto;
+      gap: 10px;
+      width: 285px;
+      height: 56px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 8px;
+      font-size: 16px;
+    }
+    
+    @include desktop-up{
+      left: 85px;
+    }
+}
+
+.location__icon {
+  flex-shrink: 0;
+
+  @include tablet-up{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.hero-buttons{
+  @include tablet-up{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+  }
+
+  @include desktop-up{
+    gap: 60px;
+  }
+}
+
+.hero__main-button {
+  @include mobile-only{
+    margin-right: auto;
+    margin-left: auto;
+
+    &:not(:last-of-type){
+      margin-bottom: 24px;
+    }
+
+    &:last-of-type{
+      margin-bottom: 58px;
+    }
+  }
+}
+
+.restaurant-hero__main-button{
+  @include mobile-only {
+    &:last-of-type{
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.hero__socials {
+  position: absolute;
+  left: 15px;
+  bottom: -82px;
+
+  @include tablet-up {
+    left: 47px;
+    bottom: -49px;
+    }
+    
+  @include desktop-up{
+      display: none;
+    }
+}
+
+
+.menu-link {
+  width: 232px;
+  text-decoration: none;
+  color: $color-brand;
+}

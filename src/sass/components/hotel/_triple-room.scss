@@ -26,10 +26,9 @@
 .triple-room__logo {
   display: block;
   margin-bottom: 32px;
-  margin-right: -12px;
+  margin-right: -0.3em;
   @include tablet-up {
     margin-bottom: 62px;
-    margin-right: -20px;
   }
   @include desktop-up {
     margin-bottom: 72px;

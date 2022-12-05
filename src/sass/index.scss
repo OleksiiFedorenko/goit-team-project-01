@@ -1,8 +1,26 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/fonts';
-
 @import './base/base';
 @import './base/reset';
 @import './base/container';
-@import './components/restorant-menu';
+
+@import './components/logo';
+
+@import './components/slider';
+@import './components/buttons';
+@import './components/hero-slider';
+@import './components/socials';
+
+@import './components/about-restaurant';
+@import './components/convenience';
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/hotel-secondary';
+@import './components/hotel/double-room';
+@import './components/hotel/triple-room';
+@import './components/hotel-section';
+@import './components/restaurant-secondary';
+@import './components/restaurant-menu';
+@import './components/section-contacts';

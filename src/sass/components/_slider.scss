@@ -1,0 +1,260 @@
+// Стилі по слайдеру з 2ма зображеннями
+
+// Контейнер для слайдеру
+
+//bugfix-треба виправити слайдери всюду і видалити звідси two-img-slider
+.two-img-slider__container, .two-img-slider {
+  width: 330px;
+  overflow: hidden;
+  // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
+
+  @include tablet-up {
+    width: 428px;
+    // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
+  }
+
+  @include desktop-up {
+    width: 548px;
+  }
+
+  // &--right {
+  //     // Стилізація коли слайдер має бути праворуч
+  // }
+
+  // &--left {
+  //     // Стилізація коли слайдер має бути ліворуч
+  // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.two-img-slider__wrapper {
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
+}
+
+// Розміри слайдів
+
+.two-img-slider__slide {
+  width: 245px;
+
+  @include tablet-up {
+    width: 194px;
+  }
+
+  @include desktop-up {
+    width: 254px;
+  }
+}
+
+// Стилі по слайдеру з 3ма зображеннями
+
+// Контейнер для слайдеру
+
+.three-img-slider__container {
+  width: 374px;
+  overflow: hidden;
+
+  @include tablet-up {
+    width: 662px;
+  }
+
+  @include desktop-up {
+    width: 874px;
+  }
+
+  // &--right {
+  //     // Стилізація коли слайдер має бути праворуч
+  // }
+
+  // &--left {
+  //     // Стилізація коли слайдер має бути ліворуч
+  // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.three-img-slider__wrapper {
+  margin-bottom: 16px;
+
+  @include tablet-up {
+    margin-bottom: 24px;
+  }
+}
+
+// Розміри слайдів
+
+.three-img-slider__slide-1 {
+  width: 274px;
+
+  @include tablet-up {
+    width: 270px;
+  }
+}
+
+.three-img-slider__slide-2 {
+  width: 182px;
+
+  @include tablet-up {
+    width: 162px;
+  }
+}
+
+.three-img-slider__slide-3 {
+  width: 182px;
+
+  @include tablet-up {
+    width: 162px;
+  }
+
+  @include desktop-up {
+    width: 270px;
+  }
+}
+
+// Фон щоб було видно білі стрілки
+
+.container--dark {
+  background-color: $color-black;
+}
+
+// Стилі по слайдеру для сторінки готелю
+
+// Контейнер для слайдеру
+
+.hotel-slider__container {
+  width: 284px;
+  overflow: hidden;
+
+  @include tablet-up {
+    width: 428px;
+  }
+
+  @include desktop-up {
+    width: 548px;
+  }
+
+  // &--right {
+  //   // Стилізація коли слайдер має бути праворуч
+
+  // }
+
+  // &--left {
+  //   // Стилізація коли слайдер має бути ліворуч
+  // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+
+.hotel-slider__wrapper {
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
+}
+
+// Розміри слайдів
+
+.hotel-slider__slide {
+  width: 194px;
+
+  @include desktop-up {
+    width: 254px;
+  }
+}
+
+// Стилі по слайдеру для сторінки ресторану
+
+// Контейнер для слайдеру
+
+.restaurant-slider__container {
+  width: 330px;
+  overflow: hidden;
+
+  @include tablet-up {
+    width: 428px;
+  }
+
+  @include desktop-up {
+    width: 530px;
+  }
+
+  // &--right {
+  //     // Стилізація коли слайдер має бути праворуч
+  // }
+}
+
+// Обгортка для слайдів, відсовуємо стрілки
+.restaurant-slider__wrapper {
+  margin-bottom: 20px;
+
+
+  @include tablet-up {
+    margin-bottom: 32px;
+  }
+  
+
+  @include desktop-up {
+    margin-bottom: 40px;
+  }
+}
+
+ // Розміри слайдів
+
+.restaurant-slider__slide {
+  width: 245px;
+
+  @include tablet-up {
+    width: 194px;
+  }
+
+  @include desktop-up {
+    width: 245px;
+  }
+}
+
+// Стилі по стрілкам
+
+.arrows {
+  // За замовчуванням стрілки біля лівого краю слайдеру
+  display: flex;
+  gap: 10px;
+
+  &--rigth {
+    // Коли стрілки мають бути біля правого краю слайдеру
+    justify-content: flex-end;
+  }
+}
+
+.arrow-left,
+.arrow-right {
+  // За замовчуванням стрілки чорного кольору
+  fill: $color-black;
+
+  background-color: transparent;
+  border: none;
+
+  transition: fill $transition-time $cubic-bezier;
+
+  &--white {
+    // Коли стрілки мають бути білими
+    fill: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $color-brand;
+  }
+}

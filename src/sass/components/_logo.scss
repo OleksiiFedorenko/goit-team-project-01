@@ -1,0 +1,72 @@
+/*  Logo styling
+
+Приклад коду лого:
+<a class="logo mmmm" href="./index.html">Mimiho</a>
+Додається загальний клас logo + модіфікатор mmmm
+Замість mmmm використовуйте класи:
+Для хедеру logo--small 
+Для hero  logo--large 
+Для футеру logo--medium-brand
+В контентних секціях в залежності від кольору використовуйте :
+logo--medium-dark  logo--medium-white  logo--medium-grey   */
+
+.logo {
+  padding: 0;
+  font-family: Film P3, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1.08;
+  text-decoration: none;
+  font-style: normal;
+
+  &--small {
+    color: $color-white;
+    font-size: 36px;
+    @include tablet-up {
+      font-size: 40px;
+    }
+  }
+  &--large {
+    color: $color-white;
+    font-size: 96px;
+    @include tablet-up {
+      font-size: 128px;
+    }
+  }
+  &--medium-brand {
+    color: $color-brand;
+    font-size: 40px;
+    @include tablet-up {
+      font-size: 64px;
+    }
+  }
+  &--medium-white {
+    color: $color-white;
+    font-size: 40px;
+    @include tablet-up {
+      font-size: 64px;
+    }
+  }
+  &--medium-dark {
+    color: $color-dark-grey;
+    font-size: 40px;
+    @include tablet-up {
+      font-size: 64px;
+    }
+    @include desktop-up {
+      color: $color-mid-grey;
+    }
+  }
+  &--medium-grey {
+    color: $color-dark-grey;
+    font-size: 40px;
+    @include tablet-up {
+      font-size: 64px;
+    }
+    @include desktop-up {
+      color: $color-mid-grey;
+    }
+  }
+}

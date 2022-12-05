@@ -1,42 +1,94 @@
-.button {
+.main-button {
     display: block;
+    min-width: 236px;
+    padding: 12px 21px;
+
     color: $color-brand;
     font-family: Montserrat;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
+    letter-spacing: 0.02em;
     text-align: center;
-    border-radius: 25px;
-    padding: 14px 0;
+
+    border-radius: $border-radius-big;
     cursor: pointer;
-    width: 236px;
+
+    transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+
+    &--translucent {
+        background-color: $bg-button;
+        border: 2px solid $color-white;
+    
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+        }
+    }
+
+    &--dark {
+        background-color: $color-black;
+        border: 2px solid $color-white;
+    
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+            border-color: $color-brand;
+        }
+    }
+
+    &--dark-table {
+        background-color: $color-black;
+        border: 2px solid $bg-light;
+
+        &:hover,
+        &:focus {
+            background-color: $color-white;
+            border-color: $color-brand;
+        }
+    }
 }
 
+.book-button {
+    display: block;
+    min-width: 384px;
+    padding: 19px 42px;
 
+    color: $color-white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
 
-.button__restorant-menu {   
     background-color: $color-black;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: $bg-light;
-    border-style: solid;
-    border: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 15px 24px 14px;
+    border-radius: $border-radius-big;
+    border: 1px solid $color-brand;
+
+    cursor: pointer;
+    transition: background-color $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
+
+    @include tablet-up {
+        font-size: 24px;
+        line-height: 1.21;
+        padding: 17px 37px 16px;
+        min-width: 434px;
+    }
+
+    &--modal {
+        border-radius: $border-radius-small;
+    
+        @include tablet-up {
+            min-width: 592px;
+        }
+    }
 
     &:hover,
     &:focus {
-        border: none;
-        background-color: $color-white;
+        color: $color-black;
+        background-color: $color-brand;
+        border-color: $color-brand;
     }
-
-    @media screen and (min-width:1024px) {
-        margin-right: 0;
-    }
-
-    @media screen and (min-width:1280px) {
-        margin-right: 0;
-    }
-
-
-}
+  }

@@ -210,15 +210,10 @@
   align-items: center;
   margin-top: 20px;
   transition: color $transition-time $cubic-bezier;
+  
   &:hover,
   &:focus{
    color: $color-brand;
-  }
-  &:hover .convenience__icon{
-    fill: $color-brand;
-  }
-  &:focus .convenience__icon{
-    fill: $color-brand;
   }
 
   @include tablet-up {
@@ -237,13 +232,16 @@
 .convenience__icon {
   fill: currentColor;
   margin-left: 12px;
-   transition: fill $transition-time $cubic-bezier;
+  transition: fill $transition-time $cubic-bezier;
+
   @include tablet-up {
     margin-left: 16px;
+  }
+
+  .convenience__link:hover &,
+  .convenience__link:focus & {
+    fill: $color-brand;
   }
   
 }
 
-.convenience__icon-style {
-  color: $color-brand-dark;
-}

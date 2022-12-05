@@ -1,4 +1,4 @@
-.restorant-menu{
+.restaurant-menu{
     padding: 32px 0;
     background-color: $bg-dark;
 
@@ -41,7 +41,7 @@ table tr {
     padding: 4px 0;
    }
 
-.restorant-menu__section-title {
+.restaurant-menu__section-title {
 font-family: 'Times New Roman', Times, serif;
 font-weight: 700;
 color: $color-black;
@@ -141,125 +141,95 @@ margin-bottom: 32px;
         }
 }
 
-.button {
-
-    display: block;
-    color: $color-brand;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: center;
-    border-radius: 25px;
-    padding: 14px 0;
-    cursor: pointer;
-    width: 236px;
-}
-
-
-
-.button__restorant-menu {
-
-    background-color: $color-black;
+.restaurant-menu__button {
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid $bg-light;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 15px 24px 14px;
 
-    &:hover,
-    &:focus {
-
-        border-color: $color-brand;
-        background-color: $color-white;
-    }
-
-
-    @media screen and (min-width:1024px) {
+    @include tablet-up {
         margin-right: 0;
     }
 }
 
 
    
- // линии
+//  // линии
  
- %positioning-lines {
-     position: relative;
-     top: 0;
-     left: 0;
+//  %positioning-lines {
+//      position: relative;
+//      top: 0;
+//      left: 0;
 
-     @media screen and (min-width:1024px) and (max-width:1279px) {
-         width: 1024px;
-         height: 100%;
-     }
+//      @media screen and (min-width:1024px) and (max-width:1279px) {
+//          width: 1024px;
+//          height: 100%;
+//      }
 
-     @media screen and (min-width:1280px) {
-         width: 1280px;
-         height: 100%;
-     }
- }
+//      @media screen and (min-width:1280px) {
+//          width: 1280px;
+//          height: 100%;
+//      }
+//  }
 
- %positioning-rectangle {
-     position: absolute;
-     border: 1px solid rgba(186, 186, 186, 0.4);
-     filter: blur(0.5px);
-     top: 0;
+//  %positioning-rectangle {
+//      position: absolute;
+//      border: 1px solid rgba(186, 186, 186, 0.4);
+//      filter: blur(0.5px);
+//      top: 0;
 
- }
+//  }
 
- @mixin left-rect($width, $height) {
-     width: $width;
-     height: $height;
-     right: 50%;
-     border-width: 0 0 0 1px
- }
+//  @mixin left-rect($width, $height) {
+//      width: $width;
+//      height: $height;
+//      right: 50%;
+//      border-width: 0 0 0 1px
+//  }
 
- @mixin right-rect($width, $height) {
-     width: $width;
-     height: $height;
-     left: 50%;
-     border-width: 0 1px 0 1px
- }
+//  @mixin right-rect($width, $height) {
+//      width: $width;
+//      height: $height;
+//      left: 50%;
+//      border-width: 0 1px 0 1px
+//  }
 
- @mixin left-coner ($width, $height) {
-     width: $width;
-     height: $height;
-     left: 0;
-     border-width: 0 1px 0 0;
- }
+//  @mixin left-coner ($width, $height) {
+//      width: $width;
+//      height: $height;
+//      left: 0;
+//      border-width: 0 1px 0 0;
+//  }
 
- @mixin right-coner ($width, $height) {
-     width: $width;
-     height: $height;
-     right: 0;
-     border-width: 0 0 0 1px;
- }
-
-
-
- .restorant-menu__container {
-     @extend %positioning-lines;
- }
-
- .rectangle {
-     @extend %positioning-rectangle;
-
-     @media screen and (min-width:1024px) and (max-width:1279px) {
-         @include right-coner (265px, 616px);
-     }
-
-     @media screen and (min-width:1280px) {
-         @include left-rect(302px, 616px);
-     }
+//  @mixin right-coner ($width, $height) {
+//      width: $width;
+//      height: $height;
+//      right: 0;
+//      border-width: 0 0 0 1px;
+//  }
 
 
- }
 
- .rectangle1 {
-     @extend %positioning-rectangle;
+//  .restaurant-menu__container {
+//      @extend %positioning-lines;
+//  }
 
-     @media screen and (min-width:1280px) {
-         @include right-rect(302px, 616px);
-     }
- }
+//  .rectangle {
+//      @extend %positioning-rectangle;
+
+//      @media screen and (min-width:1024px) and (max-width:1279px) {
+//          @include right-coner (265px, 616px);
+//      }
+
+//      @media screen and (min-width:1280px) {
+//          @include left-rect(302px, 616px);
+//      }
+
+
+//  }
+
+//  .rectangle1 {
+//      @extend %positioning-rectangle;
+
+//      @media screen and (min-width:1280px) {
+//          @include right-rect(302px, 616px);
+//      }
+//  }

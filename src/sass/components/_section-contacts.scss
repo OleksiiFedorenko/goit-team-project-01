@@ -164,6 +164,12 @@
   }
 }
 
+
+.contacts__address{
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__map-box{
   height: 220px;
   margin-top: 32px;

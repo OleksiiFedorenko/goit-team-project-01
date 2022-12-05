@@ -301,13 +301,13 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
 // Костиль для того, щоб іконка не втрачала повний розмір
 // та щоб текс переносився на новий рядок як на макеті
 .map-link__text {
+    display: flex;
+    flex-direction: column;
+    
     @media screen and (max-width: 1023px) {
         max-width: 170px;
     }
     max-width: 233px;
-    &--street {
-        display: inline-block;
-    }
 }
 
 .hero-gradient {

@@ -1,8 +1,10 @@
 .contacts {
   font-family: 'Montserrat';
-  padding-top: 36px;
-  padding-bottom: 32px;
   background-color: $bg-light;
+}
+
+.contacts__gradient{
+  padding-top: 36px;
   padding-bottom: 32px;
 
   @include tablet-up {
@@ -14,6 +16,7 @@
     padding-bottom: 74px;
   }
 }
+
 
 .contacts__container {
   @include tablet-up {

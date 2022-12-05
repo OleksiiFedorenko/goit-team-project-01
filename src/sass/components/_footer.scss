@@ -3,12 +3,7 @@ a {
 }
 
 .footer {
-  padding: 40px 0;
   background-color: $color-black;
-
-  @include tablet-up {
-    padding: 80px 0;
-  }
 }
 
 .footer__block {

@@ -1,0 +1,235 @@
+.restaurant-menu{
+    padding: 32px 0;
+    background-color: $bg-dark;
+
+    @media screen and (min-width:1024px) {
+        padding: 58px 0 40px;
+    }
+    @media screen and (min-width:1280px) {
+        padding: 58px 0 60px;
+    }
+    
+}
+
+.menu-list{
+    //todo Позиціоную таблиці між собою на флексах
+    //todo спочатку вертикально, потім - горизонтально
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 32px;
+
+    @include tablet-up {
+        flex-direction: row;
+        gap: 88px;
+        margin-bottom: 60px;
+            }
+    @include desktop-up {
+        gap: 140px;
+        margin-bottom: 40px;
+            }
+        
+     
+}
+.menu__table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+table tr {
+    padding: 4px 0;
+   }
+
+.restaurant-menu__section-title {
+font-family: 'Times New Roman', Times, serif;
+font-weight: 700;
+color: $color-black;
+font-size: 32px;
+line-height: 1.16;
+text-transform: uppercase;
+margin-bottom: 32px;
+
+@media screen and (min-width:1024px) {
+    margin-bottom: 40px;
+}
+}
+
+.dish-type{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: $color-black;
+    text-align: left;
+
+    @media screen and (min-width:1024px) {
+            margin-bottom: 20px;
+        }
+    @media screen and (min-width:1280px) {
+            font-size: 24px;
+            line-height: 1.167;
+        }
+       }
+
+
+//todo флекс
+.menu-list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablet-up {
+        gap: 20px;
+    }
+}
+
+.dish{
+    font-family:Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.214;
+    color: $color-black;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+    display: inline-block;
+
+    @media screen and (min-width:1280px) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+.menu-list__ingredients{
+    font-family:Montserrat;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-black;
+    letter-spacing: 0.02em;
+    
+}
+.menu-list__weight{
+     font-family:Montserrat;
+     font-weight: 300;
+    font-size: 14px;
+    line-height: 1.214;
+    color: $color-black;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-left: 40px;
+
+    @media screen and (min-width:1024px) {
+        padding-left: 50px;
+    }
+    @media screen and (min-width:1280px) {
+        padding-left: 76px;
+    }
+}
+.menu-list__cost{
+    font-family:Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.214;
+    color: $color-black;
+    letter-spacing: 0.02em;
+    text-align: right;
+
+    @media screen and (min-width:1280px) {
+            font-size: 16px;
+            line-height: 1.25;
+        }
+}
+
+.restaurant-menu__button {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet-up {
+        margin-right: 0;
+    }
+}
+
+
+   
+//  // линии
+ 
+//  %positioning-lines {
+//      position: relative;
+//      top: 0;
+//      left: 0;
+
+//      @media screen and (min-width:1024px) and (max-width:1279px) {
+//          width: 1024px;
+//          height: 100%;
+//      }
+
+//      @media screen and (min-width:1280px) {
+//          width: 1280px;
+//          height: 100%;
+//      }
+//  }
+
+//  %positioning-rectangle {
+//      position: absolute;
+//      border: 1px solid rgba(186, 186, 186, 0.4);
+//      filter: blur(0.5px);
+//      top: 0;
+
+//  }
+
+//  @mixin left-rect($width, $height) {
+//      width: $width;
+//      height: $height;
+//      right: 50%;
+//      border-width: 0 0 0 1px
+//  }
+
+//  @mixin right-rect($width, $height) {
+//      width: $width;
+//      height: $height;
+//      left: 50%;
+//      border-width: 0 1px 0 1px
+//  }
+
+//  @mixin left-coner ($width, $height) {
+//      width: $width;
+//      height: $height;
+//      left: 0;
+//      border-width: 0 1px 0 0;
+//  }
+
+//  @mixin right-coner ($width, $height) {
+//      width: $width;
+//      height: $height;
+//      right: 0;
+//      border-width: 0 0 0 1px;
+//  }
+
+
+
+//  .restaurant-menu__container {
+//      @extend %positioning-lines;
+//  }
+
+//  .rectangle {
+//      @extend %positioning-rectangle;
+
+//      @media screen and (min-width:1024px) and (max-width:1279px) {
+//          @include right-coner (265px, 616px);
+//      }
+
+//      @media screen and (min-width:1280px) {
+//          @include left-rect(302px, 616px);
+//      }
+
+
+//  }
+
+//  .rectangle1 {
+//      @extend %positioning-rectangle;
+
+//      @media screen and (min-width:1280px) {
+//          @include right-rect(302px, 616px);
+//      }
+//  }

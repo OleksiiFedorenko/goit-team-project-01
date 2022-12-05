@@ -143,9 +143,6 @@
       width: 312px;
       font-size: 16px;
     }
-
-    @include desktop-up {
-    }
   }
 
   &__second-image {
@@ -183,6 +180,18 @@
     @include desktop-up {
       padding-left: 294px;
       padding-bottom: 116px;
+    }
+  }
+
+  &__slider {
+    @include mobile-only {
+      width: 245px;
+    }
+  }
+
+  &__slider-img {
+    @include mobile-only {
+      height: 245px;
     }
   }
 }

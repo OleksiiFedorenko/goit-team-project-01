@@ -1,6 +1,18 @@
 .about-restaurant{
-    position: relative;
-   
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0 20px 0;
+
+  @include tablet-up {
+    width: 1024px;
+    padding: 120px 0 262px 0;
+  }
+
+  @include desktop-up {
+    width: 1280px;
+  }
+
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
@@ -76,7 +88,8 @@
    }
    &__wrapper-modern{
        @include flex;
-       padding-bottom: 32px;
+       margin-bottom: 32px;
+
        @include tablet-up{
         @include flex($justify:flex-start);
        }
@@ -97,3 +110,14 @@
    
    }
   }
+  
+.about-restaurant__slider {
+  margin-left: auto;
+  margin-right: -15px;
+
+  @include tablet-up {
+      position: absolute;
+      right: 60px;
+      bottom: 32px;
+  }
+}

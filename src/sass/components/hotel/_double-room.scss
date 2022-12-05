@@ -24,9 +24,11 @@
   margin-bottom: 32px;
   @include tablet-up {
     margin-bottom: 62px;
+    
   }
   @include desktop-up {
     margin-bottom: 72px;
+    color: $color-dark-grey;
   }
 }
 .double-room__title {

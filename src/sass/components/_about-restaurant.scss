@@ -1,6 +1,8 @@
 .about-restaurant{
   // outline: 2px dashed teal;
-  position: relative;
+  @include tablet-up{
+    position: relative;
+  }
   margin-left: auto;
   margin-right: auto;
   padding: 16px 0 20px 0;
@@ -13,7 +15,12 @@
   @include desktop-up {
     width: 1280px;
   }
-
+&__container{
+  @include mobile-only{
+    position: relative;
+  }
+  
+}
    &__wrapper-container{
     @include tablet-up {
    @include flex($justify:space-between);
@@ -77,6 +84,12 @@
     right: 180px
    }
    }
+   &__picture-shadow{
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    @include tablet-up{
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+   }
    &__wrapper-modern{
        @include flex;
        margin-bottom: 32px;
@@ -111,5 +124,45 @@
       right: 60px;
       bottom: 32px;
   }
+}
+.about-restaurant__slider-shadow{
+  position: absolute;
+  width: 245px;
+  height: 245px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  right: 0;
+  bottom: 58px;
+  margin-right: 85px;
+  @include tablet-up{
+    width: 194px;
+    height: 194px;
+    margin-bottom: 44px;
+    margin-right: 279px;
+    @include desktop-up{
+      width: 254px;
+      height: 254px;
+      margin-bottom: 52px;
+      margin-right: 339px;
+    }
+  }
+  
+}
+.about-restaurant__slider-shadow-second{
+  position: absolute;
+  width: 60px;
+  height: 245px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  right: 0;
+  bottom: 58px;
+  @include tablet-up{
+    width: 194px;
+    height: 194px;
+    margin-right: 45px;
+    margin-bottom: 44px;
+    @include desktop-up{
+    box-shadow: none;
+    }
+  }
+ 
 }
 

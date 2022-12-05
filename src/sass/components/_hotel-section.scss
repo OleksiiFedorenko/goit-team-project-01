@@ -260,21 +260,22 @@
 
   &__slider-shadow {
     position: absolute;
-    bottom: 76px;
+    bottom: 77px;
     left: 0;
     width: 65px;
     height: 245px;
+    background-color: rgb(0 0 0 / 0.10);
     border-radius: $border-radius-small;
     box-shadow: 2px 2px 60px 2px #00000040;
     @include tablet-up {
-      bottom: 100px;
+      bottom: 101px;
       left: 47px;
       width: 194px;
       height: 194px;
     }
 
     @include desktop-up {
-      bottom: 126px;
+      bottom: 127px;
       left: 85px;
       width: 245px;
       height: 245px;
@@ -284,21 +285,22 @@
   &__slider-shadow-second {
     position: absolute;
     width: 245px;
-    bottom: 76px;
+    bottom: 77px;
     left: 85px;
     height: 245px;
+    background-color: rgb(0 0 0 / 0.10);
     border-radius: $border-radius-small;
     box-shadow: 2px 2px 60px 2px #00000040;
 
     @include tablet-up {
-      bottom: 100px;
+      bottom: 101px;
       left: 281px;
       width: 194px;
       height: 194px;
     }
 
     @include desktop-up {
-      bottom: 126px;
+      bottom: 127px;
       left: 370px;
       width: 245px;
       height: 245px;

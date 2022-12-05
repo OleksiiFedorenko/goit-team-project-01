@@ -3,15 +3,27 @@
     top: 0;
     width: 100%;
     height: 100%;
+
+    // !!! Для роботи скрипта відкриття модалки 
+    // !!! не вистачало значення opacity:1;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity $transition-time $cubic-bezier, visibility $transition-time $cubic-bezier;
+    z-index: 10;
+
+    // !!! Я б радив підібрати колір з прозорістю (rgba)
+    // !!! і задати його через змінну $
     background-color: #605B5B;
-    ;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(2) rotate(180deg);
 }
 
 .modal {
@@ -23,7 +35,8 @@
     min-height: 668px;
     background-color: #FFFDEE;
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
+
 }
 
 .room {
@@ -34,30 +47,20 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    background-color: #FFFDEE;
+    background-color: inherit;
     width: 24px;
     height: 24px;
     cursor: pointer;
     border: none;
+    // !!! Замінив іконку в спрайті на коректну, підключив
+    // !!! Колір конкретно цієї іконки задається через stroke (не через fill)
+    stroke: $color-black;
+    transition: stroke $transition-time $cubic-bezier;
+
+    &:hover, &:focus, &:active {
+        stroke: $color-brand;
+    }
 }
-
-.close-icon {
-    width: 100%;
-    height: 100%;
-    fill: #000000;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn:hover .close-icon,
-.active-btn:focus .close-icon {
-    fill: var(--accent-color);
-}
-
-.backdrop.is-hidden .modal {
-    transform: scale(2) rotate(180deg);
-}
-
-
 
 .modal-title {
     display: inline-block;
@@ -299,25 +302,14 @@
     cursor: pointer;
 }
 
-.form-button {
+// !!! Cелектор для кнопки модалки
+// !!! Основні стилі в _buttons.scss, тут лише позиціонування
+.book-button--modal {
     display: block;
-    margin: 0 auto;
-    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
     margin-bottom: 60px;
-    width: 100%;
-    height: 64px;
-    background-color: black;
-    cursor: pointer;
-    padding: 10px 52px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    border: 1px solid #F3C653;
-    border-radius: 2px;
 }
 
 .price {
@@ -386,12 +378,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .form-button {
-        width: 592px;
-        font-size: 24px;
-        line-height: 1.2;
     }
 
     .form-label {

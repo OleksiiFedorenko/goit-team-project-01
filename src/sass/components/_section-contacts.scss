@@ -106,6 +106,15 @@
   background: $color-white;
   border-radius: 2px;
   fill: $color-brand-dark;
+
+  transition: color $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $color-brand-dark;
+    color: $color-brand-dark;
+  }
 }
 
 .contacts__link--tel-restorant {

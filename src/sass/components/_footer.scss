@@ -1,7 +1,3 @@
-a {
-  text-decoration: none;
-}
-
 .footer {
   padding: 40px 0;
   background-color: $color-black;
@@ -36,7 +32,8 @@ a {
   fill: $color-brand-light;
 
   transition: border-color $transition-time $cubic-bezier,
-    fill $transition-time $cubic-bezier;
+    fill $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
 
   @include tablet-up {
     @include flex($justify: space-between);
@@ -77,8 +74,7 @@ a {
     fill: $color-white;
   }
 
-  transition: border-color $transition-time $cubic-bezier,
-    fill $transition-time $cubic-bezier;
+  transition: fill $transition-time $cubic-bezier;
 
   @include tablet-up {
     display: none;

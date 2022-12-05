@@ -3,11 +3,11 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 0 28px 0;
+  padding: 16px 0 20px 0;
 
   @include tablet-up {
     width: 1024px;
-    padding: 120px 0 32px 0;
+    padding: 120px 0 262px 0;
   }
 
   @include desktop-up {
@@ -79,7 +79,8 @@
    }
    &__wrapper-modern{
        @include flex;
-       padding-bottom: 32px;
+       margin-bottom: 32px;
+
        @include tablet-up{
         @include flex($justify:flex-start);
        }
@@ -101,4 +102,13 @@
    }
   }
   
+.about-restaurant__slider {
+  margin-left: auto;
+
+  @include tablet-up {
+      position: absolute;
+      right: 60px;
+      bottom: 32px;
+  }
+}
 

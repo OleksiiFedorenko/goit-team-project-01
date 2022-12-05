@@ -55,9 +55,6 @@ logo--medium-dark  logo--medium-white  logo--medium-grey   */
     @include tablet-up {
       font-size: 64px;
     }
-    @include desktop-up {
-      color: $color-mid-grey;
-    }
   }
   &--medium-grey {
     color: $color-dark-grey;

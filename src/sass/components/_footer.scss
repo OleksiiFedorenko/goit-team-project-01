@@ -1,7 +1,3 @@
-a {
-  text-decoration: none;
-}
-
 .footer {
   padding: 40px 0;
   background-color: $color-black;
@@ -35,6 +31,10 @@ a {
   display: none;
   fill: $color-brand-light;
 
+  transition: border-color $transition-time $cubic-bezier,
+    fill $transition-time $cubic-bezier,
+    color $transition-time $cubic-bezier;
+
   @include tablet-up {
     @include flex($justify: space-between);
     color: $color-brand;
@@ -54,16 +54,32 @@ a {
     width: 143px;
     height: 40px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-white;
+    fill: $color-white;
+    color: $color-white;
+  }
 }
 
 .footer__socials-mobile {
   fill: $color-brand-light;
 
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-white;
+    fill: $color-white;
+  }
+
+  transition: fill $transition-time $cubic-bezier;
+
   @include tablet-up {
     display: none;
   }
 }
-
 
 .footer__navigation {
   @include flex($justify: space-between);
@@ -91,6 +107,13 @@ a {
 
 .footer__item {
   color: $color-brand;
+  transition: color $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
 }
 
 .footer__navigation-pages {

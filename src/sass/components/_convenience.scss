@@ -209,7 +209,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  transition: color $transition-time $cubic-bezier fill $transition-time $cubic-bezier;
+  transition: color $transition-time $cubic-bezier, fill $transition-time $cubic-bezier;
   &:hover,
   &:focus{
    color: $color-brand;

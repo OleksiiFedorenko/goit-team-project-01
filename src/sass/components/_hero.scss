@@ -289,6 +289,14 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   }
 }
 
+.restaurant-hero__main-button{
+  @include mobile-only {
+    &:last-of-type{
+      margin-bottom: 24px;
+    }
+  }
+}
+
 .hero__socials {
   position: absolute;
   left: 15px;
@@ -306,6 +314,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
 
 
 .menu-link {
+  width: 232px;
   text-decoration: none;
   color: $color-brand;
 }

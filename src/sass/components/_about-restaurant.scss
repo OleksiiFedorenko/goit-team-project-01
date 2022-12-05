@@ -104,6 +104,7 @@
   
 .about-restaurant__slider {
   margin-left: auto;
+  margin-right: -15px;
 
   @include tablet-up {
       position: absolute;

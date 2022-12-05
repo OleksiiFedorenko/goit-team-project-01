@@ -5,16 +5,19 @@
   }
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 0 20px 0;
 
-  @include tablet-up {
-    width: 1024px;
-    padding: 120px 0 262px 0;
+
+  &__gradient{
+    padding: 16px 0 20px 0;
+
+    @include tablet-up {
+      padding: 120px 0 262px 0;
+    }
   }
 
-  @include desktop-up {
-    width: 1280px;
-  }
+
+
+
 &__container{
   @include mobile-only{
     position: relative;

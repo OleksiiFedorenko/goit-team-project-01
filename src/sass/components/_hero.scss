@@ -234,6 +234,13 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: left;
+  transition: color $transition-time $cubic-bezier, fill $transition-time $cubic-bezier, border $transition-time $cubic-bezier;
+  &:hover,
+  &:focus{
+    color: $color-brand;
+    fill: $color-address;
+    border-color: $color-address;
+  }
 
     @include tablet-up {
       left: 47px;
@@ -289,6 +296,14 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   }
 }
 
+.restaurant-hero__main-button{
+  @include mobile-only {
+    &:last-of-type{
+      margin-bottom: 24px;
+    }
+  }
+}
+
 .hero__socials {
   position: absolute;
   left: 15px;
@@ -306,6 +321,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
 
 
 .menu-link {
+  width: 232px;
   text-decoration: none;
   color: $color-brand;
 }

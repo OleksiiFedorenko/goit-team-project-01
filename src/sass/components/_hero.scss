@@ -234,6 +234,13 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: left;
+  transition: color $transition-time $cubic-bezier, fill $transition-time $cubic-bezier, border $transition-time $cubic-bezier;
+  &:hover,
+  &:focus{
+    color: $color-brand;
+    fill: $color-white;
+    border: 1px solid $color-white;
+  }
 
     @include tablet-up {
       left: 47px;

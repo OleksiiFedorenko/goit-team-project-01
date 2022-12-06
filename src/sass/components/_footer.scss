@@ -86,6 +86,9 @@
 
 .footer__navigation {
   @include flex($justify: space-between);
+  @include mobile-only{
+    gap: 85px;
+  }
 
   @include tablet-up {
     @include flex($justify: center);

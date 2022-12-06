@@ -8,6 +8,9 @@
 
 .navigation {
   @include flex($justify: space-between);
+  @include mobile-only{
+    gap: 52px;
+  }
 }
 
 .header__logo {

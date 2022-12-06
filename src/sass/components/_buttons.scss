@@ -50,6 +50,11 @@
 }
 
 .book-button {
+    @media screen and (max-width: 413px) {
+        width: 100%;
+        
+    }
+
     display: block;
     width: 384px;
     height: 64px;
@@ -70,10 +75,11 @@
     @include tablet-up {
         font-size: 24px;
         line-height: 1.21;
-        padding: 17px 38px 16px;
+        // padding: 17px 38px 16px;
         width: 434px;
     }
     &--modal {
+        width: 384px;
         border-radius: $border-radius-small;
         @include tablet-up {
             width: 592px;

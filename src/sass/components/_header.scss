@@ -14,16 +14,17 @@
   padding-top: 16px;
   padding-bottom: 9px;
 
+    &:hover, &:focus, &:active {
+        color: $color-brand;
+      }
+
   @include tablet-up {
     padding-top: 28px;
     padding-bottom: 28px;
   }
 }
 
-// !!!
 .navigation__box {
-  // outline: 1px solid teal;
-
   @include desktop-up {
     display: flex;
     gap: 59px;
@@ -51,8 +52,6 @@
 .navigation__item {
   margin-right: 6px;
 
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
 
@@ -65,7 +64,7 @@
   }
 
   &:hover, &:focus, &:active  {
-    color: $color-white
+    color: $color-white;
    }
 }
 
@@ -94,7 +93,6 @@
     @include flex;
     padding: 8px;
 
-    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
@@ -118,21 +116,6 @@
   @include flex;
   padding: 0;
   gap: 20px;
-}
-
-.navigation__contacts {
-  display: none;
-
-  @include tablet-up {
-    @include flex;
-
-    margin-right: 20px;
-
-    margin-right: 72px;
-    min-width: 144px;
-    max-width: 264px;
-    height: 40px;
-  }
 }
 
 .navigation__contacts-mobile {

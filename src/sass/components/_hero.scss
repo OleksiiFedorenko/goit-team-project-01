@@ -30,7 +30,7 @@
     }
   }
 
-  @include tablet-up {
+  @include tablet-bg {
     .hero {
       background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/homepage-hero-t.jpg);
     }
@@ -42,7 +42,7 @@
     }
   }
 
-  @include desktop-up {
+  @include desktop-bg {
     .hero {
       background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/homepage-hero-d.jpg);
     }
@@ -58,12 +58,11 @@
   background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/restaurant-hero-m.jpg);
 
   @include double-background {
-    .hero--colored {
       background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/restaurant-hero-m@2x.jpg);
-    }
   }
 }
-  @include tablet-up {
+
+  @include tablet-bg {
     .hero--colored {
       background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/restaurant-hero-t.jpg);
     }
@@ -75,7 +74,7 @@
     }
       }
 
-  @include desktop-up {
+  @include desktop-bg {
     .hero--colored {
      background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/restaurant-hero-d.jpg);
      }
@@ -89,15 +88,15 @@
 
 
 .hero--light{
-background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
+  background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m.jpg);
 
-@include double-background {
-  .hero--light {
+  @include double-background {
     background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mobile/hotel-hero.suit-hero-m@2x.jpg);
   }
+
 }
-}
-@include tablet-up {
+
+@include tablet-bg {
   .hero--light {
     background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/tablet/hotel-hero.suit-hero-t.jpg);
   }
@@ -109,7 +108,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   }
 }
 
-    @include desktop-up {
+    @include desktop-bg {
       .hero--light {
         background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/desktop/hotel-hero.suit-hero-d.jpg);
       }

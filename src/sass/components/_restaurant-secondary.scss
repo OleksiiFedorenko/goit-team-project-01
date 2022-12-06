@@ -8,20 +8,31 @@
   background-size: cover;
   background-position: center;
 
+  @include double-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/mobile/restaurant-details-background-m@2x.jpg);
+  }
+
   @include tablet-bg {
     max-width: 1024px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../images/pages/tablet/restaurant-details-background-t.jpg);
-    background-size: cover;
-    background-position: center;
+    
+      @include double-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/pages/tablet/restaurant-details-background-t@2x.jpg);
+      }
   }
 
   @include desktop-bg {
     max-width: 1280px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../images/pages/desktop/restaurant-details-background-d.jpg);
-    background-size: cover;
-    background-position: center;
+    
+      @include double-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/pages/desktop/restaurant-details-background-d@2x.jpg)
+      }
   }
 }
 

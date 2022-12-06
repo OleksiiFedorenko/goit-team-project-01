@@ -1,46 +1,56 @@
 .triple-room {
   background-color: $bg-dark;
 }
+
 .triple-room__wrap {
   text-align: right;
   position: relative;
   padding: 32px 0 32px;
+
   @include tablet-up {
     padding: 66px 0 40px;
   }
+
   @include desktop-up {
     padding: 72px 0 40px;
   }
 }
-.triple-room__wrapper{
- @include tablet-up{
-  padding-right: 17px;
- }
+
+.triple-room__wrapper {
+  @include tablet-up {
+    padding-right: 17px;
+  }
 }
+
 .triple-room__subtitle {
   font-size: 20px;
   line-height: 1.15;
   font-weight: 400;
   font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
   margin-bottom: 8px;
+
   @include tablet-up {
     font-size: 32px;
     margin-bottom: 4px;
   }
 }
+
 .triple-room__logo {
   display: block;
   margin-bottom: 32px;
   margin-right: -12px;
+
   @include tablet-up {
     margin-bottom: 62px;
     margin-right: -20px;
   }
+
   @include desktop-up {
     margin-bottom: 72px;
     color: $color-dark-grey;
   }
 }
+
 .triple-room__text {
   max-width: 242px;
   font-size: 12px;
@@ -48,21 +58,25 @@
   font-weight: 600;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   letter-spacing: 0.02em;
-  @include tablet-up{
+
+  @include tablet-up {
     max-width: 400px;
     font-size: 16px;
     font-weight: 700;
   }
 }
+
 .double-room__text-wrap {
   display: inline-block;
 
   text-align: left;
   margin-bottom: 32px;
+
   @include tablet-up {
     margin-bottom: 169px;
     padding-right: 20px;
   }
+
   @include desktop-up {
     margin-bottom: 188px;
     font-weight: 700;
@@ -72,7 +86,8 @@
 
 .triple-room__image-wrap {
   text-align: left;
-  margin-bottom: 298px;
+  margin-bottom: 32px;
+
   @include tablet-up {
     margin: 0;
     position: absolute;
@@ -80,27 +95,33 @@
     right: 50%;
   }
 }
+
 .double-room__image {
   // outline: 2px solid orangered;
   display: inline-block;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
   @include tablet-up {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
+
 .triple-room__sl-wrapper {
   @include tablet-up {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
   }
 }
+
 .triple-room__nav {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
+
   @include tablet-up {
     margin-bottom: 69px;
   }
@@ -109,13 +130,66 @@
 /*     Slider styling     */
 .hotel-slider--right-pos {
   @include mobile-only {
-    position: absolute;
-    top: 640;
-    left: 115px;
+    margin-left: auto;
+    margin-right: -15px;
   }
 }
+
 .triple-room__arrows {
   @include mobile-only {
     justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+}
+
+.hotel-slider__shadow-triple {
+  position: absolute;
+  bottom: 222px;
+  right: -15px;
+
+  width: 74px;
+  height: 194px;
+  background-color: rgb(0 0 0 / 0.1);
+  border-radius: $border-radius-small;
+  box-shadow: 2px 2px 60px 2px #00000040;
+
+  @include tablet-up {
+    bottom: 110px;
+    right: 0;
+    width: 194px;
+    height: 194px;
+  }
+
+  @include desktop-up {
+    right: 0;
+    bottom: 118px;
+    width: 254px;
+    height: 254px;
+  }
+}
+
+.hotel-slider__shadow-triple-second {
+  position: absolute;
+  bottom: 222px;
+  right: 75px;
+
+  width: 194px;
+  height: 194px;
+  background-color: rgb(0 0 0 / 0.1);
+  border-radius: $border-radius-small;
+  box-shadow: 2px 2px 60px 2px #00000040;
+
+  @include tablet-up {
+    bottom: 110px;
+    right: 234px;
+    width: 194px;
+    height: 194px;
+  }
+
+  @include desktop-up {
+    right: 294px;
+    bottom: 118px;
+    width: 254px;
+    height: 254px;
   }
 }

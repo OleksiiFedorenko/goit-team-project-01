@@ -3,19 +3,30 @@
   width: 414px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  
 
   @include tablet-up {
     // position: relative;
     width: 1024px;
-    padding-top: 0;
-    padding-bottom: 32px;
   }
 
   @include desktop-up {
     width: 1280px;
-    padding-bottom: 50px;
+  }
+
+  &__gradient {
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    @include tablet-up{
+      padding-top: 0;
+      padding-bottom: 32px;
+    }
+
+    @include desktop-up{
+      padding-bottom: 50px;
+    }
+
   }
 
   &__control {

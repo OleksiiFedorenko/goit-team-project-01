@@ -1,6 +1,4 @@
 .restaurant-secondary {
-  padding-top: 24px;
-  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   width: 414px;
@@ -25,6 +23,11 @@
     background-size: cover;
     background-position: center;
   }
+}
+
+.restaurant-secondary__gradient{
+  padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .restaurant-secondary__content {

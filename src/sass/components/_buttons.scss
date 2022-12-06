@@ -1,4 +1,7 @@
 .main-button {
+    @media screen and (max-width: 413px) {
+        width: 100%;
+    }
     display: block;
     min-width: 236px;
     padding: 12px 21px;
@@ -52,9 +55,7 @@
 .book-button {
     @media screen and (max-width: 413px) {
         width: 100%;
-        
     }
-
     display: block;
     width: 384px;
     height: 64px;
@@ -79,6 +80,9 @@
         width: 434px;
     }
     &--modal {
+        @media screen and (max-width: 413px) {
+            width: 100%;
+        }
         width: 384px;
         border-radius: $border-radius-small;
         @include tablet-up {

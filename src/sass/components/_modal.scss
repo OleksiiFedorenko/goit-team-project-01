@@ -41,6 +41,10 @@
     border-radius: 4px;
     transition: transform $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
 
+    @media screen and (max-width: 413px) {
+        width: 100%;
+    }
+
     @include tablet-up {
         width: 712px;
         padding: 60px;

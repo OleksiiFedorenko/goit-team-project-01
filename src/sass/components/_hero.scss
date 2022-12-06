@@ -139,6 +139,11 @@
     @include desktop-up{
      margin-bottom: 32px;
    }
+
+   @media screen and (max-width: 414px) {
+    min-width: 289px;
+    letter-spacing: 0.27em;
+   }
 }
 
 .hotel-hero__logo{
@@ -168,6 +173,12 @@
     }
   }
 
+
+  .hero__title--small{
+    @media screen and (max-width: 414px){
+      font-size: 15px;
+    }
+  }
 
   .hotel-title{
     margin-bottom: 178px;
@@ -204,6 +215,10 @@
   
   @include desktop-up{
     margin-bottom: 144px;
+  }
+
+  @media screen and (max-width: 347px){
+    margin-bottom: 75px;
   }
 }
 
@@ -326,4 +341,8 @@
   width: 232px;
   text-decoration: none;
   color: $color-brand;
+
+  @media screen and (max-width: 413px){
+    width: 100%;
+  }
 }

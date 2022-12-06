@@ -17,6 +17,14 @@
   display: flex;
   padding-left: 44px;
 
+  transition: color $transition-time $cubic-bezier;
+
+      &:hover,
+        &:focus,
+        &:active {
+          color: $color-white;
+        }
+
   @include tablet-up {
     margin-right: 163px;
     padding-left: 0;

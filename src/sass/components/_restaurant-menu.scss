@@ -2,11 +2,11 @@
     padding: 32px 0;
     background-color: $bg-dark;
 
-    @media screen and (min-width:1024px) {
+    @include tablet-up {
         padding: 58px 0 40px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop-up {
         padding: 58px 0 60px;
     }
 }
@@ -53,7 +53,7 @@ table tr {
         font-size: 28px;
     }
 
-    @media screen and (min-width:1024px) {
+    @include tablet-up {
         margin-bottom: 40px;
     }
 }
@@ -67,11 +67,11 @@ table tr {
     color: $color-black;
     text-align: left;
 
-    @media screen and (min-width:1024px) {
+    @include tablet-up {
         margin-bottom: 20px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop-up {
         font-size: 24px;
         line-height: 1.167;
     }
@@ -98,7 +98,7 @@ table tr {
     margin-bottom: 4px;
     display: inline-block;
 
-    @media screen and (min-width:1280px) {
+    @include desktop-up {
         font-size: 16px;
         line-height: 1.25;
     }
@@ -131,11 +131,11 @@ table tr {
         padding-left: 30px;
     }
 
-    @media screen and (min-width:1024px) {
+    @include tablet-up {
         padding-left: 50px;
     }
 
-    @media screen and (min-width:1280px) {
+    @include desktop-up {
         padding-left: 67px;
     }
 }
@@ -149,7 +149,7 @@ table tr {
     letter-spacing: 0.02em;
     text-align: right;
 
-    @media screen and (min-width:1280px) {
+    @include desktop-up {
         font-size: 16px;
         line-height: 1.25;
     }

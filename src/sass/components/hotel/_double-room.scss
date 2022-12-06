@@ -129,9 +129,7 @@
   }
 }
 .double-room__arrows {
-  gap: 34px;
-  justify-content: flex-end;
-  @include mobile-only {
-    margin-right: 170px;
+  @include tablet-up {
+    justify-content: flex-end;
   }
 }

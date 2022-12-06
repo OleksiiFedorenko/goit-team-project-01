@@ -121,11 +121,9 @@
 }
 
 .luxe-hero__content {
-    @media screen and (max-width: 1023px) {
-        
-        max-width: 325px;
-    }
-
+@include mobile-only {
+    max-width: 325px;
+}
 }
 
 .luxe-hero__heading {
@@ -243,11 +241,11 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
 }
 
 .luxe-hero__address-link {
-    @media screen and (max-width: 1023px) {
+    @include mobile-only {
         position: absolute;
         top: 64px;
         right: 15px;
-
+    
         display: inline-flex;
         gap: 8px;
         width: 210px;
@@ -304,9 +302,10 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
     display: flex;
     flex-direction: column;
     
-    @media screen and (max-width: 1023px) {
-        max-width: 170px;
-    }
+@include mobile-only {
+    max-width: 170px;
+}
+
     max-width: 233px;
 }
 

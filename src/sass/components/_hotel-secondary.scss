@@ -10,21 +10,21 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and(min-width:1024px) {
-    width: 1024px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../images/pages/tablet/hotel-details-background-t.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+@include tablet-up {
+  width: 1024px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/tablet/hotel-details-background-t.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-  @media screen and(min-width:1280px) {
-    width: 1280px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../images/pages/desktop/hotel-details-background-d.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+@include desktop-up {
+  width: 1280px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/desktop/hotel-details-background-d.jpg);
+  background-size: cover;
+  background-position: center;
+}
 }
 
 .hotel-secondary__content {

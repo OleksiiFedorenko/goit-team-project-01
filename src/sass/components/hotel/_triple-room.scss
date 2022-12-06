@@ -115,9 +115,7 @@
   }
 }
 .triple-room__arrows {
-  gap: 34px;
-  justify-content: flex-start;
   @include mobile-only {
-    margin-left: 170px;
+    justify-content: flex-end;
   }
 }

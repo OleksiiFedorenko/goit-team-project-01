@@ -60,7 +60,8 @@
 
 .contacts__item {
   display: flex;
-  @media screen and(max-width: 1023px) {
+
+  @include mobile-only {
     align-items: center;
   }
 
@@ -154,7 +155,7 @@
   letter-spacing: 0.01em;
   border: 0.5px solid $color-brand;
 
-  @media screen and(max-width: 1023px) {
+  @include mobile-only {
     margin-left: auto;
   }
 

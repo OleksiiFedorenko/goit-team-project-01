@@ -262,6 +262,7 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
     gap: 10px;
     width: 285px;
     height: 56px;
+    padding-left: 10px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: $border-radius-small;
 
@@ -289,16 +290,24 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
     }
 }
 
+
+.luxe-hero__address-icon{
+    @include tablet-up{
+        width: 24px;
+        height: 24px;
+      }
+}
+
 // Костиль для того, щоб іконка не втрачала повний розмір
 // та щоб текс переносився на новий рядок як на макеті
 .map-link__text {
+    display: flex;
+    flex-direction: column;
+    
     @media screen and (max-width: 1023px) {
         max-width: 170px;
     }
     max-width: 233px;
-    &--street {
-        display: inline-block;
-    }
 }
 
 .hero-gradient {

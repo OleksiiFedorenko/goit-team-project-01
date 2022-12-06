@@ -267,6 +267,11 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   }
 }
 
+.location__text{
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-buttons{
   @include tablet-up{
     display: flex;

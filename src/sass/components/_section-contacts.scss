@@ -140,6 +140,7 @@
 }
 
 .contacts__icon {
+  flex-shrink: 0;
   margin-right: 8px;
 }
 
@@ -163,10 +164,18 @@
   }
 }
 
-.contacts__map {
-  margin-top: 32px;
-  width: 100%;
+
+.contacts__address{
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__map-box{
   height: 220px;
+  margin-top: 32px;
+  border-radius: 2px;
+  border: 1px solid $color-text-light;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
   @include tablet-up {
     width: 535px;
@@ -176,4 +185,9 @@
   @include desktop-up {
     width: 634px;
   }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;  
 }

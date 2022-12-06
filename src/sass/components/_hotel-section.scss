@@ -3,19 +3,30 @@
   width: 414px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  
 
   @include tablet-up {
     // position: relative;
     width: 1024px;
-    padding-top: 0;
-    padding-bottom: 32px;
   }
 
   @include desktop-up {
     width: 1280px;
-    padding-bottom: 50px;
+  }
+
+  &__gradient {
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    @include tablet-up{
+      padding-top: 0;
+      padding-bottom: 32px;
+    }
+
+    @include desktop-up{
+      padding-bottom: 50px;
+    }
+
   }
 
   &__control {
@@ -42,7 +53,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    @media screen and(max-width: 1023px) {
+
+    @include mobile-only {
       margin-bottom: 28px;
     }
   }
@@ -69,23 +81,9 @@
   &__logo {
     margin-top: 6px;
     margin-right: -15px;
-    font-family: 'Film P3';
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.075;
-    letter-spacing: 0.3em;
-    color: #494848;
 
     @include tablet-up {
       margin-top: 4px;
-      font-size: 64px;
-      line-height: 1.078;
-    }
-
-    @include desktop-up {
-      color: $color-mid-grey;
     }
   }
 

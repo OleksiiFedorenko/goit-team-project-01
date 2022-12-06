@@ -24,6 +24,7 @@
   margin-bottom: 32px;
   @include tablet-up {
     margin-bottom: 62px;
+    
   }
   @include desktop-up {
     margin-bottom: 72px;
@@ -128,9 +129,7 @@
   }
 }
 .double-room__arrows {
-  gap: 34px;
-  justify-content: flex-end;
-  @include mobile-only {
-    margin-right: 170px;
+  @include tablet-up {
+    justify-content: flex-end;
   }
 }

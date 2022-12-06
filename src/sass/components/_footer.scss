@@ -1,10 +1,5 @@
 .footer {
-  padding: 40px 0;
   background-color: $color-black;
-
-  @include tablet-up {
-    padding: 80px 0;
-  }
 }
 
 .footer__block {
@@ -16,6 +11,14 @@
 .footer__logo {
   display: flex;
   padding-left: 44px;
+
+  transition: color $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
 
   @include tablet-up {
     margin-right: 163px;
@@ -32,8 +35,7 @@
   fill: $color-brand-light;
 
   transition: border-color $transition-time $cubic-bezier,
-    fill $transition-time $cubic-bezier,
-    color $transition-time $cubic-bezier;
+    fill $transition-time $cubic-bezier, color $transition-time $cubic-bezier;
 
   @include tablet-up {
     @include flex($justify: space-between);

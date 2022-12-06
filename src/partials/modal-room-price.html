@@ -1,0 +1,78 @@
+<div class="modal" data-modal="price">
+  <button type="button" class="close-btn js-modal-close" data-modal-close>
+    <svg class="close-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <form name="contact-form" class="modal-form">
+    <h2 class="modal-title">Ціна на номер</h2>
+    <p class="modal-subtitle">Двомісний люкс</p>
+
+    <div class="inputs-box">
+      <!-- <div class="field">
+            <div class="form-control">
+              <input
+                type="text"
+                name="lux"
+                class="form-input price"
+                placeholder="Двомісний люкс"
+                readonly
+              />
+            </div>
+            <label for="person-name" class="form-label price"
+              >Категорія номеру</label
+            >
+          </div> -->
+
+      <div class="select-container-night">
+        <div class="select-night">
+          <input
+            type="text"
+            id="input-night"
+            placeholder="1"
+            onfocus="this.blur();"
+          />
+          <!-- <input type="text" id="input-night" placeholder="1" /> -->
+        </div>
+        <div class="option-container-night">
+          <div class="option-night">
+            <label>1</label>
+          </div>
+          <div class="option-night">
+            <label>2</label>
+          </div>
+          <div class="option-night">
+            <label>3</label>
+          </div>
+          <div class="option-night">
+            <label>4</label>
+          </div>
+          <div class="option-night">
+            <label>5</label>
+          </div>
+          <div class="option-night">
+            <label>6</label>
+          </div>
+        </div>
+        <label for="input-night" class="form-label">Кількість ночей?</label>
+      </div>
+
+      <div class="field">
+        <div class="form-control">
+          <input
+            type="number"
+            name="price-room"
+            id="price-room"
+            class="form-input"
+            placeholder="1000"
+          />
+        </div>
+        <label for="price-room" class="form-label">грн</label>
+      </div>
+    </div>
+  </form>
+  <button type="submit" class="book-button book-button--modal">
+    Оформити бронювання
+  </button>
+</div>

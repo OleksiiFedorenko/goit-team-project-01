@@ -3,9 +3,7 @@
     <div class="container">
       <div class="double-room__wrap">
         <h3 class="double-room__subtitle">Amet minim mollit non</h3>
-        <a class="logo logo--medium-dark double-room__logo" href="./index.html"
-          >Mimiho</a
-        >
+        <span class="logo logo--medium-dark double-room__logo">Mimiho</span>
         <h2 class="double-room__title">Двомісний номер</h2>
         <p class="double-room__text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -121,7 +119,12 @@
               href="./suite.html"
               >Детальніше</a
             >
-            <button class="main-button main-button--dark" type="button">
+            <button
+              class="js-open-modal main-button main-button--dark"
+              type="button"
+              data-modal="price"
+              id="open-modal"
+            >
               Переглянути ціни
             </button>
           </div>

@@ -1,6 +1,4 @@
-.hotel-secondary {
-  padding-top: 24px;
-  padding-bottom: 40px;
+.hotel-secondary { 
   margin-left: auto;
   margin-right: auto;
   width: 414px;
@@ -10,21 +8,26 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and(min-width:1024px) {
-    width: 1024px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../images/pages/tablet/hotel-details-background-t.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+@include tablet-up {
+  width: 1024px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/tablet/hotel-details-background-t.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-  @media screen and(min-width:1280px) {
-    width: 1280px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../images/pages/desktop/hotel-details-background-d.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+@include desktop-up {
+  width: 1280px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/pages/desktop/hotel-details-background-d.jpg);
+  background-size: cover;
+  background-position: center;
+}
+}
+
+.hotel-secondary__gradient{
+  padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .hotel-secondary__content {
@@ -44,6 +47,7 @@
   margin-left: auto;
   margin-right: -15px;
   letter-spacing: 0.3em;
+  margin-bottom: 12px;
 
   @include tablet-up {
     margin-bottom: 16px;

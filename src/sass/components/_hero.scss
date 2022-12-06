@@ -153,7 +153,6 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
     margin-right: auto;
     margin-left: auto;
     color: $color-white;
-    font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
@@ -190,7 +189,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   margin-right: auto;
   margin-left: auto;
   color: $color-white;
-  font-family: Times New Roman, serif;
+  font-family: 'Times New Roman', serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.16;
@@ -228,12 +227,18 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   text-decoration: none;
   fill: $color-brand;
   color: $color-address;
-  font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-align: left;
+  transition: color $transition-time $cubic-bezier, fill $transition-time $cubic-bezier, border $transition-time $cubic-bezier;
+  &:hover,
+  &:focus{
+    color: $color-brand;
+    fill: $color-address;
+    border-color: $color-address;
+  }
 
     @include tablet-up {
       left: 47px;
@@ -260,6 +265,11 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
     width: 24px;
     height: 24px;
   }
+}
+
+.location__text{
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-buttons{
@@ -289,6 +299,14 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
   }
 }
 
+.restaurant-hero__main-button{
+  @include mobile-only {
+    &:last-of-type{
+      margin-bottom: 24px;
+    }
+  }
+}
+
 .hero__socials {
   position: absolute;
   left: 15px;
@@ -306,6 +324,7 @@ background-image: linear-gradient($bg-arrow, $bg-arrow), url(../images/pages/mob
 
 
 .menu-link {
+  width: 232px;
   text-decoration: none;
   color: $color-brand;
 }

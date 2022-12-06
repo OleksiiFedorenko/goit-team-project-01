@@ -121,11 +121,9 @@
 }
 
 .luxe-hero__content {
-    @media screen and (max-width: 1023px) {
-        
-        max-width: 325px;
-    }
-
+@include mobile-only {
+    max-width: 325px;
+}
 }
 
 .luxe-hero__heading {
@@ -243,11 +241,11 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
 }
 
 .luxe-hero__address-link {
-    @media screen and (max-width: 1023px) {
+    @include mobile-only {
         position: absolute;
         top: 64px;
         right: 15px;
-
+    
         display: inline-flex;
         gap: 8px;
         width: 210px;
@@ -262,6 +260,7 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
     gap: 10px;
     width: 285px;
     height: 56px;
+    padding-left: 10px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: $border-radius-small;
 
@@ -289,16 +288,25 @@ transition: background-color $transition-time $cubic-bezier, color $transition-t
     }
 }
 
+
+.luxe-hero__address-icon{
+    @include tablet-up{
+        width: 24px;
+        height: 24px;
+      }
+}
+
 // Костиль для того, щоб іконка не втрачала повний розмір
 // та щоб текс переносився на новий рядок як на макеті
 .map-link__text {
-    @media screen and (max-width: 1023px) {
-        max-width: 170px;
-    }
+    display: flex;
+    flex-direction: column;
+    
+@include mobile-only {
+    max-width: 170px;
+}
+
     max-width: 233px;
-    &--street {
-        display: inline-block;
-    }
 }
 
 .hero-gradient {

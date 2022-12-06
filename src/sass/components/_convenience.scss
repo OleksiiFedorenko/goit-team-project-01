@@ -1,6 +1,8 @@
 .convenience {
   background-color: $bg-light;
+}
 
+.convenience__gradient{
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -209,6 +211,12 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  transition: color $transition-time $cubic-bezier;
+  
+  &:hover,
+  &:focus{
+   color: $color-brand;
+  }
 
   @include tablet-up {
     font-size: 20px;
@@ -226,12 +234,16 @@
 .convenience__icon {
   fill: currentColor;
   margin-left: 12px;
+  transition: fill $transition-time $cubic-bezier;
 
   @include tablet-up {
     margin-left: 16px;
   }
+
+  .convenience__link:hover &,
+  .convenience__link:focus & {
+    fill: $color-brand;
+  }
+  
 }
 
-.convenience__icon-style {
-  color: $color-brand-dark;
-}

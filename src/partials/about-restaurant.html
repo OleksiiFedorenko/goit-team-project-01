@@ -1,156 +1,159 @@
 <section class="about-restaurant">
-  <div class="container about-restaurant__container">
-    <div class="about-restaurant__wrapper-container">
-      <div class="about-restaurant__wrapper">
-        <h2 class="visually-hidden">Про наш ресторан</h2>
-        <h3 class="about-restaurant__title">Amet minim mollit non</h3>
-        <a
-          href="/src/index.html"
-          class="logo logo--medium-dark about-restaurant__logo"
-          >MIMIHO</a
-        >
-        <p class="about-restaurant__text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
+  <div class="gradient about-restaurant__gradient">
+    <div class="container about-restaurant__container">
+      <div class="about-restaurant__wrapper-container">
+        <div class="about-restaurant__wrapper">
+          <h2 class="visually-hidden">Про наш ресторан</h2>
+          <h3 class="about-restaurant__title">Amet minim mollit non</h3>
+          <span class="logo logo--medium-dark about-restaurant__logo"
+            >MIMIHO</span
+          >
+          <p class="about-restaurant__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="about-restaurant__wrapper-industrial">
+          <picture class="about-restaurant__picture-shadow">
+            <source
+              srcset="
+                /src/images/pages/desktop/chefs-cooking-d.jpg    1x,
+                /src/images/pages/desktop/chefs-cooking-d@2x.jpg 2x
+              "
+              media="(min-wdith: 1280px)"
+            />
+            <source
+              srcset="
+                /src/images/pages/tablet/chefs-cooking-t.jpg    1x,
+                /src/images/pages/tablet/chefs-cooking-t@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                /src/images/pages/mobile/chefs-cooking-m.jpg    1x,
+                /src/images/pages/mobile/chefs-cooking-m@2x.jpg 2x
+              "
+            />
+            <img
+              src="/src/images/pages/mobile/chefs-cooking-m.jpg"
+              alt="Готовка іжі"
+            />
+          </picture>
+        </div>
       </div>
-      <div class="about-restaurant__wrapper-industrial">
-        <picture class="about-restaurant__picture-shadow">
+
+      <div class="about-restaurant__wrapper-modern">
+        <picture>
           <source
             srcset="
-              /src/images/pages/desktop/chefs-cooking-d.jpg    1x,
-              /src/images/pages/desktop/chefs-cooking-d@2x.jpg 2x
+              /src/images/pages/desktop/raw-meat-d.jpg    1x,
+              /src/images/pages/desktop/raw-meat-d@2x.jpg 2x
             "
-            media="(min-wdith: 1280px)"
+            media="(min-wdith: 1240px)"
           />
           <source
             srcset="
-              /src/images/pages/tablet/chefs-cooking-t.jpg    1x,
-              /src/images/pages/tablet/chefs-cooking-t@2x.jpg 2x
+              /src/images/pages/tablet/raw-meat-t.jpg    1x,
+              /src/images/pages/tablet/raw-meat-t@2x.jpg 2x
             "
             media="(min-width: 1024px)"
           />
           <source
             srcset="
-              /src/images/pages/mobile/chefs-cooking-m.jpg    1x,
-              /src/images/pages/mobile/chefs-cooking-m@2x.jpg 2x
+              /src/images/pages/mobile/raw-meat-m.jpg    1x,
+              /src/images/pages/mobile/raw-meat-m@2x.jpg 2x
             "
           />
           <img
-            src="/src/images/pages/mobile/chefs-cooking-m.jpg"
-            alt="Готовка іжі"
+            src="/src/images/pages/mobile/raw-meat-m.jpg"
+            alt="Свіжий стейк"
           />
         </picture>
+        <p class="about-restaurant__second-text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
       </div>
-    </div>
 
-    <div class="about-restaurant__wrapper-modern">
-      <picture>
-        <source
-          srcset="
-            /src/images/pages/desktop/raw-meat-d.jpg    1x,
-            /src/images/pages/desktop/raw-meat-d@2x.jpg 2x
-          "
-          media="(min-wdith: 1240px)"
-        />
-        <source
-          srcset="
-            /src/images/pages/tablet/raw-meat-t.jpg    1x,
-            /src/images/pages/tablet/raw-meat-t@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            /src/images/pages/mobile/raw-meat-m.jpg    1x,
-            /src/images/pages/mobile/raw-meat-m@2x.jpg 2x
-          "
-        />
-        <img src="/src/images/pages/mobile/raw-meat-m.jpg" alt="Свіжий стейк" />
-      </picture>
-      <p class="about-restaurant__second-text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
+      <div class="about-restaurant__slider restaurant-slider__container">
+        <div class="restaurant-slider swiper-container">
+          <div class="restaurant-slider__wrapper swiper-wrapper">
+            <div class="restaurant-slider__slide swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sliders/desktop/flour-hands-d.jpg    1x,
+                    ./images/sliders/desktop/flour-hands-d@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/sliders/tablet/flour-hands-t.jpg    1x,
+                    ./images/sliders/tablet/flour-hands-t@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="restaurant-slider__picture"
+                  srcset="
+                    ./images/sliders/mobile/flour-hands-m.jpg    1x,
+                    ./images/sliders/mobile/flour-hands-m@2x.jpg 2x
+                  "
+                  src="./images/sliders/mobile/flour-hands-m.jpg"
+                  alt="Руки в борошні"
+                />
+              </picture>
+            </div>
 
-    <div class="about-restaurant__slider restaurant-slider__container">
-      <div class="restaurant-slider swiper-container">
-        <div class="restaurant-slider__wrapper swiper-wrapper">
-          <div class="restaurant-slider__slide swiper-slide">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/sliders/desktop/flour-hands-d.jpg    1x,
-                  ./images/sliders/desktop/flour-hands-d@2x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./images/sliders/tablet/flour-hands-t.jpg    1x,
-                  ./images/sliders/tablet/flour-hands-t@2x.jpg 2x
-                "
-              />
-              <img
-                class="restaurant-slider__picture"
-                srcset="
-                  ./images/sliders/mobile/flour-hands-m.jpg    1x,
-                  ./images/sliders/mobile/flour-hands-m@2x.jpg 2x
-                "
-                src="./images/sliders/mobile/flour-hands-m.jpg"
-                alt="Руки в борошні"
-              />
-            </picture>
+            <div class="restaurant-slider__slide swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sliders/desktop/dumplings-d.jpg    1x,
+                    ./images/sliders/desktop/dumplings-d@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/sliders/tablet/dumplings-t.jpg    1x,
+                    ./images/sliders/tablet/dumplings-t@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="restaurant-slider__picture"
+                  srcset="
+                    ./images/sliders/mobile/dumplings-m.jpg    1x,
+                    ./images/sliders/mobile/dumplings-m@2x.jpg 2x
+                  "
+                  src="./images/sliders/mobile/dumplings-m.jpg"
+                  alt="Хінкалі"
+                />
+              </picture>
+            </div>
           </div>
 
-          <div class="restaurant-slider__slide swiper-slide">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/sliders/desktop/dumplings-d.jpg    1x,
-                  ./images/sliders/desktop/dumplings-d@2x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./images/sliders/tablet/dumplings-t.jpg    1x,
-                  ./images/sliders/tablet/dumplings-t@2x.jpg 2x
-                "
-              />
-              <img
-                class="restaurant-slider__picture"
-                srcset="
-                  ./images/sliders/mobile/dumplings-m.jpg    1x,
-                  ./images/sliders/mobile/dumplings-m@2x.jpg 2x
-                "
-                src="./images/sliders/mobile/dumplings-m.jpg"
-                alt="Хінкалі"
-              />
-            </picture>
+          <div class="arrows arrows--rigth">
+            <button class="arrow-left" type="button">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="arrow-right" type="button">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
-
-        <div class="arrows arrows--rigth">
-          <button class="arrow-left" type="button">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <button class="arrow-right" type="button">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
       </div>
+      <div class="about-restaurant__slider-shadow"></div>
+      <div class="about-restaurant__slider-shadow-second"></div>
     </div>
-    <div class="about-restaurant__slider-shadow"></div>
-    <div class="about-restaurant__slider-shadow-second"></div>
   </div>
 </section>

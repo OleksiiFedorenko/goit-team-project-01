@@ -1,42 +1,37 @@
 .backdrop {
     position: fixed;
     top: 0;
+
     width: 100%;
     height: 100%;
 
-    // !!! Для роботи скрипта відкриття модалки 
-    // !!! не вистачало значення opacity:1;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity $transition-time $cubic-bezier, visibility $transition-time $cubic-bezier;
     z-index: 10;
-
-    // !!! Я б радив підібрати колір з прозорістю (rgba)
-    // !!! і задати його через змінну $
-    background-color: rgba(26, 22, 22, 0.7);
-
-    
-}
-
-.is-hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    transition: opacity $transition-time $cubic-bezier, visibility $transition-time $cubic-bezier;
+
+    background-color: rgba(26, 22, 22, 0.7);
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
-.backdrop.is-hidden .modal {
-    transform: scale(2) rotate(180deg);
-}
 
 .modal {
+    opacity: 0;
+    z-index: 11;
+    pointer-events: none;
+
     // !!! Намагався зробити респонсив 
     // @media screen and (max-width: 414px) {
     //     width: 100%;
     // }
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
+    transform: translate(-50%, -50%) scale(0.5) rotate(180deg);
     width: 414px;
     // min-height: 668px;
     padding: 60px 15px;
@@ -46,11 +41,24 @@
     border-radius: 4px;
     transition: transform $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
 
+    @media screen and (max-width: 413px) {
+        width: 100%;
+    }
+
     @include tablet-up {
         width: 712px;
         padding: 60px;
     }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    }
+
 }
+
 
 .room {
     min-height: 780px;
@@ -108,11 +116,12 @@
     color: #808080;
 }
 
-// .modal-form {
-//     display: block;
-//     // padding-left: 15px;
-//     // padding-right: 15px;
-// }
+.modal-form {
+    width: 100%;
+    // display: block;
+    // padding-left: 15px;
+    // padding-right: 15px;
+}
 
 .form-label {
     display: inline-block;

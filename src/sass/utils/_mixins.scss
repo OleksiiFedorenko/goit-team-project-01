@@ -22,6 +22,18 @@
     }
 }
 
+@mixin tablet-bg {
+    @media screen and (min-width: 415px) {
+        @content;
+    }
+}
+
+@mixin desktop-bg {
+    @media screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
 @mixin double-background {
 
     @media (min-device-pixel-ratio: 2),

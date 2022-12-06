@@ -2,34 +2,41 @@
   text-align: left;
   position: relative;
   padding: 32px 0 32px;
-  
+
   @include tablet-up {
     padding: 64px 0 40px;
   }
+
   @include desktop-up {
     padding: 72px 0 40px;
   }
 }
+
 .double-room__subtitle {
   font-size: 20px;
   line-height: 1.15;
   font-weight: 400;
   font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
   margin-bottom: 8px;
+
   @include tablet-up {
     font-size: 32px;
     margin-bottom: 4px;
   }
 }
+
 .double-room__logo {
   margin-bottom: 32px;
+
   @include tablet-up {
     margin-bottom: 62px;
   }
+
   @include desktop-up {
     margin-bottom: 72px;
   }
 }
+
 .double-room__title {
   font-size: 24px;
   line-height: 1.15;
@@ -39,18 +46,22 @@
   letter-spacing: 0.05em;
   color: $color-black;
   margin-bottom: 12px;
+
   @include tablet-up {
     font-size: 30px;
     margin-bottom: 16px;
   }
+
   @include desktop-up {
     font-size: 36px;
     margin-bottom: 24px;
   }
+
   &--lowercase {
     text-transform: lowercase;
   }
 }
+
 .double-room__text {
   max-width: 258px;
   font-size: 12px;
@@ -60,21 +71,25 @@
   letter-spacing: 0.02em;
   color: $color-text-dark;
   margin-bottom: 32px;
+
   @include tablet-up {
     font-size: 16px;
     margin-bottom: 174px;
     max-width: 439px;
   }
+
   @include desktop-up {
     margin-bottom: 188px;
     font-weight: 700;
     max-width: 400px;
   }
 }
+
 .double-room__image-wrap {
   text-align: right;
-  // margin-bottom: 32px;
-  margin-bottom: 298px;
+  margin-bottom: 32px;
+
+  // margin-bottom: 298px;
   @include tablet-up {
     margin: 0;
     position: absolute;
@@ -82,11 +97,13 @@
     left: 50%;
   }
 }
+
 .double-room__image {
   // outline: 2px solid orangered;
   display: inline-block;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
   @include tablet-up {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
@@ -105,6 +122,7 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+
   @include tablet-up {
     margin-bottom: 69px;
   }
@@ -112,6 +130,7 @@
   @include desktop-up {
     margin-bottom: 77px;
   }
+
   margin-bottom: 77px;
 }
 
@@ -122,27 +141,32 @@
 
 /*     Slider styling     */
 .hotel-slider--left-pos {
-  @include mobile-only {
-    position: absolute;
-    top: 640;
-    right: 130px;
+  margin-left: -15px;
+
+  @include tablet-up {
+    margin-left: 0;
   }
 }
 
 .double-room__arrows {
   margin-left: 15px;
+
   @include tablet-up {
     justify-content: flex-end;
   }
 }
+
 .hotel-slider__shadow {
-  display: none;
   position: absolute;
+  bottom: 279px;
+  left: 75px;
+  width: 194px;
+  height: 194px;
   background-color: rgb(0 0 0 / 0.1);
   border-radius: $border-radius-small;
   box-shadow: 2px 2px 60px 2px #00000040;
+
   @include tablet-up {
-    display: block;
     bottom: 110px;
     left: 234px;
     width: 194px;
@@ -159,13 +183,15 @@
 
 .hotel-slider__shadow-second {
   position: absolute;
-  display: none;
+  bottom: 279px;
+  left: -15px;
+  width: 74px;
+  height: 194px;
   background-color: rgb(0 0 0 / 0.1);
   border-radius: $border-radius-small;
   box-shadow: 2px 2px 60px 2px #00000040;
 
   @include tablet-up {
-    display: block;
     bottom: 110px;
     left: 0;
     width: 194px;
@@ -177,32 +203,5 @@
     left: 0;
     width: 254px;
     height: 254px;
-  }
-}
-
-.hotel-slider__shadow--m {
-  @include mobile-only {
-    position: absolute;
-    z-index: 0;
-    top: 640px;
-    left: 60px;
-    width: 194px;
-    height: 194px;
-    background-color: rgb(0 0 0 / 0.1);
-    border-radius: $border-radius-small;
-    box-shadow: 2px 2px 60px 2px #00000040;
-  }
-}
-
-.hotel-slider__shadow-second--m {
-  @include mobile-only {
-    position: absolute;
-    top: 640;
-    left: -30px;
-    width: 74px;
-    height: 194px;
-    background-color: rgb(0 0 0 / 0.1);
-    border-radius: $border-radius-small;
-    box-shadow: 2px 2px 60px 2px #00000040;
   }
 }

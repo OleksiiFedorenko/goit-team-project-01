@@ -1,17 +1,17 @@
 .hotel-section {
   position: relative;
-  width: 414px;
+  max-width: 414px;
   margin-left: auto;
   margin-right: auto;
   
 
   @include tablet-up {
     // position: relative;
-    width: 1024px;
+    max-width: 1024px;
   }
 
   @include desktop-up {
-    width: 1280px;
+    max-width: 1280px;
   }
 
   &__gradient {

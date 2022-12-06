@@ -1,20 +1,27 @@
 .about-restaurant{
   // outline: 2px dashed teal;
-  @include tablet-up{
-    position: relative;
-  }
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 0 20px 0;
-
-  @include tablet-up {
+  
+  @include tablet-up{
     width: 1024px;
-    padding: 120px 0 262px 0;
+    position: relative;
   }
-
+ 
   @include desktop-up {
     width: 1280px;
   }
+
+
+  &__gradient{
+    padding: 16px 0 20px 0;
+
+    @include tablet-up {
+      padding: 120px 0 262px 0;
+    }
+  }
+
+
 &__container{
   @include mobile-only{
     position: relative;

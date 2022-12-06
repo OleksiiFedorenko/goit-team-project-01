@@ -1,19 +1,32 @@
 .hotel-section {
+  position: relative;
   width: 414px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  
 
   @include tablet-up {
+    // position: relative;
     width: 1024px;
-    padding-top: 0;
-    padding-bottom: 32px;
   }
 
   @include desktop-up {
     width: 1280px;
-    padding-bottom: 50px;
+  }
+
+  &__gradient {
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    @include tablet-up{
+      padding-top: 0;
+      padding-bottom: 32px;
+    }
+
+    @include desktop-up{
+      padding-bottom: 50px;
+    }
+
   }
 
   &__control {
@@ -40,7 +53,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    @media screen and(max-width: 1023px) {
+
+    @include mobile-only {
       margin-bottom: 28px;
     }
   }
@@ -66,23 +80,10 @@
 
   &__logo {
     margin-top: 6px;
-    font-family: 'Film P3';
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.075;
-    letter-spacing: 0.3em;
-    color: #494848;
+    margin-right: -15px;
 
     @include tablet-up {
       margin-top: 4px;
-      font-size: 64px;
-      line-height: 1.078;
-    }
-
-    @include desktop-up {
-      color: $color-mid-grey;
     }
   }
 
@@ -183,14 +184,123 @@
     }
   }
 
+  &__slider-container {
+    width: 330px;
+    overflow: hidden;
+    margin-left: -15px;
+    @include tablet-up {
+      width: 428px;
+      margin-left: 0px;
+    }
+    @include desktop-up {
+      width: 530px;
+    }
+  }
+  &__slider-image {
+    width: 330px;
+    overflow: hidden;
+
+    @include tablet-up {
+      width: 428px;
+    }
+    @include desktop-up {
+      width: 530px;
+    }
+  }
+  &__slider-wrapper {
+    margin-bottom: 20px;
+
+    @include tablet-up {
+      margin-bottom: 32px;
+    }
+
+    @include desktop-up {
+      margin-bottom: 40px;
+    }
+  }
+
   &__slider {
     @include mobile-only {
+      width: 245px;
+    }
+
+    @include tablet-up {
+      width: 194px;
+    }
+
+    @include desktop-up {
       width: 245px;
     }
   }
 
   &__slider-img {
     @include mobile-only {
+      height: 245px;
+    }
+    @include desktop-up {
+      width: 245px;
+    }
+  }
+
+  &__arrows {
+    margin-left: 15px;
+    display: flex;
+    gap: 32px;
+
+    @include tablet-up {
+      margin-left: 0;
+    }
+  }
+
+  &__arrow-button {
+    padding: 0;
+  }
+
+  &__slider-shadow {
+    position: absolute;
+    bottom: 77px;
+    left: 0;
+    width: 65px;
+    height: 245px;
+    background-color: rgb(0 0 0 / 0.10);
+    border-radius: $border-radius-small;
+    box-shadow: 2px 2px 60px 2px #00000040;
+    @include tablet-up {
+      bottom: 101px;
+      left: 47px;
+      width: 194px;
+      height: 194px;
+    }
+
+    @include desktop-up {
+      bottom: 127px;
+      left: 85px;
+      width: 245px;
+      height: 245px;
+    }
+  }
+
+  &__slider-shadow-second {
+    position: absolute;
+    width: 245px;
+    bottom: 77px;
+    left: 85px;
+    height: 245px;
+    background-color: rgb(0 0 0 / 0.10);
+    border-radius: $border-radius-small;
+    box-shadow: 2px 2px 60px 2px #00000040;
+
+    @include tablet-up {
+      bottom: 101px;
+      left: 281px;
+      width: 194px;
+      height: 194px;
+    }
+
+    @include desktop-up {
+      bottom: 127px;
+      left: 370px;
+      width: 245px;
       height: 245px;
     }
   }

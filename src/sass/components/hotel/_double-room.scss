@@ -6,7 +6,7 @@
     padding: 64px 0 104px;
   }
   @include tablet-up {
-    padding: 72px 0 112px;
+    padding: 72px 0 40px;
   }
 }
 .double-room__subtitle {
@@ -24,7 +24,6 @@
   margin-bottom: 32px;
   @include tablet-up {
     margin-bottom: 62px;
-    
   }
   @include desktop-up {
     margin-bottom: 72px;
@@ -128,8 +127,59 @@
     right: 130px;
   }
 }
+
 .double-room__arrows {
+  margin-left: 15px;
   @include tablet-up {
     justify-content: flex-end;
+  }
+}
+
+.hotel-slider__shadow {
+  position: absolute;
+  // bottom: 58px;
+  // left: 90px;
+  width: 194px;
+  height: 194px;
+  background-color: rgb(0 0 0 / 0.1);
+  border-radius: $border-radius-small;
+  box-shadow: 2px 2px 60px 2px #00000040;
+  @include tablet-up {
+    bottom: 110px;
+    left: 234px;
+    width: 194px;
+    height: 194px;
+  }
+
+  @include desktop-up {
+    left: 294px;
+    bottom: 118px;
+    width: 254px;
+    height: 254px;
+  }
+}
+
+.hotel-slider__shadow-second {
+  position: absolute;
+  // bottom: 58px;
+  // left: 0;
+  width: 74px;
+  height: 194px;
+  background-color: rgb(0 0 0 / 0.1);
+  border-radius: $border-radius-small;
+  box-shadow: 2px 2px 60px 2px #00000040;
+
+  @include tablet-up {
+    bottom: 110px;
+    left: 0;
+    width: 194px;
+    height: 194px;
+  }
+
+  @include desktop-up {
+    bottom: 118px;
+    left: 0;
+    width: 254px;
+    height: 254px;
   }
 }

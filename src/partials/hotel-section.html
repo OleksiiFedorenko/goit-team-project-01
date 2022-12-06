@@ -1,244 +1,260 @@
 <section class="hotel-section">
-  <div class="container">
-    <div class="hotel-section__control">
-      <h2 class="visually-hidden">Amet minim mollit non</h2>
-      <div class="hotel-section__container-text">
-        <p class="hotel-section__slogan">Amet minim mollit non</p>
-        <p class="hotel-section__logo logo logo--medium-grey">Mimiho</p>
+  <div class="gradient hotel-section__gradient">
+    <div class="container">
+      <div class="hotel-section__control">
+        <h2 class="visually-hidden">Amet minim mollit non</h2>
+        <div class="hotel-section__container-text">
+          <p class="hotel-section__slogan">Amet minim mollit non</p>
+          <p class="hotel-section__logo logo logo--medium-grey">Mimiho</p>
 
-        <p class="hotel-section__text">
+          <p class="hotel-section__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/pages/mobile/hotel-room-m.jpg    1x,
+              ./images/pages/mobile/hotel-room-m@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/pages/tablet/hotel-room-t.jpg    1x,
+              ./images/pages/tablet/hotel-room-t@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/pages/desktop/hotel-room-d.jpg    1x,
+              ./images/pages/desktop/hotel-room-d@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="hotel-section__image"
+            src="./images/pages/mobile/hotel-room-m.jpg"
+            alt="Кімната готелю"
+          />
+        </picture>
+      </div>
+      <div class="hotel-section__thumb">
+        <p class="hotel-section__text-brown">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
+        <picture>
+          <source
+            srcset="
+              ./images/pages/mobile/cozy-lobby-m.jpg    1x,
+              ./images/pages/mobile/cozy-lobby-m@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              ./images/pages/tablet/cozy-lobby-t.jpg    1x,
+              ./images/pages/tablet/cozy-lobby-t@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/pages/desktop/cozy-lobby-d.jpg    1x,
+              ./images/pages/desktop/cozy-lobby-d@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="hotel-section__second-image"
+            src="./images/pages/mobile/cozy-lobby-m.jpg"
+            alt="Лобі"
+          />
+        </picture>
       </div>
-      <picture>
-        <source
-          srcset="
-            ./images/pages/mobile/hotel-room-m.jpg    1x,
-            ./images/pages/mobile/hotel-room-m@2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-        />
-        <source
-          srcset="
-            ./images/pages/tablet/hotel-room-t.jpg    1x,
-            ./images/pages/tablet/hotel-room-t@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./images/pages/desktop/hotel-room-d.jpg    1x,
-            ./images/pages/desktop/hotel-room-d@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <img
-          class="hotel-section__image"
-          src="./images/pages/mobile/hotel-room-m.jpg"
-          alt="Кімната готелю"
-        />
-      </picture>
-    </div>
-    <div class="hotel-section__thumb">
-      <p class="hotel-section__text-brown">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-      <picture>
-        <source
-          srcset="
-            ./images/pages/mobile/cozy-lobby-m.jpg    1x,
-            ./images/pages/mobile/cozy-lobby-m@2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-        />
-        <source
-          srcset="
-            ./images/pages/tablet/cozy-lobby-t.jpg    1x,
-            ./images/pages/tablet/cozy-lobby-t@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./images/pages/desktop/cozy-lobby-d.jpg    1x,
-            ./images/pages/desktop/cozy-lobby-d@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <img
-          class="hotel-section__second-image"
-          src="./images/pages/mobile/cozy-lobby-m.jpg"
-          alt="Лобі"
-        />
-      </picture>
-    </div>
-    <div class="two-img-slider__container hotel-section__slider-container">
-      <div
-        class="two-img-slider swiper-container hotel-section__slider-image"
-        dir="rtl"
-      >
+      <div class="two-img-slider__container hotel-section__slider-container">
         <div
-          class="two-img-slider__wrapper swiper-wrapper hotel-section__slider-wrapper"
+          class="two-img-slider swiper-container hotel-section__slider-image"
+          dir="rtl"
         >
-          <div class="two-img-slider__slide swiper-slide hotel-section__slider">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/sliders/desktop/reception-red-d.jpg    1x,
-                  ./images/sliders/desktop/reception-red-d@2x.jpg 2x
-                "
-                width="245"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./images/sliders/tablet/reception-red-t.jpg    1x,
-                  ./images/sliders/tablet/reception-red-t@2x.jpg 2x
-                "
-                width="194"
-              />
-              <source
-                media="(max-width: 1023px)"
-                srcset="
-                  ./images/sliders/mobile/reception-red-m.jpg    1x,
-                  ./images/sliders/mobile/reception-red-m@2x.jpg 2x
-                "
-                width="245"
-              />
+          <div
+            class="two-img-slider__wrapper swiper-wrapper hotel-section__slider-wrapper"
+          >
+            <div
+              class="two-img-slider__slide swiper-slide hotel-section__slider"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sliders/desktop/reception-red-d.jpg    1x,
+                    ./images/sliders/desktop/reception-red-d@2x.jpg 2x
+                  "
+                  width="245"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/sliders/tablet/reception-red-t.jpg    1x,
+                    ./images/sliders/tablet/reception-red-t@2x.jpg 2x
+                  "
+                  width="194"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/sliders/mobile/reception-red-m.jpg    1x,
+                    ./images/sliders/mobile/reception-red-m@2x.jpg 2x
+                  "
+                  width="245"
+                />
 
-              <img
-                class="two-img-slider__picture hotel-section__slider-img"
-                src="./images/sliders/mobile/reception-red-m.jpg"
-                alt="Рецепція"
-              />
-            </picture>
+                <img
+                  class="two-img-slider__picture hotel-section__slider-img"
+                  src="./images/sliders/mobile/reception-red-m.jpg"
+                  alt="Рецепція"
+                />
+              </picture>
+            </div>
+
+            <div
+              class="two-img-slider__slide swiper-slide hotel-section__slider"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sliders/desktop/four-towels-d.jpg    1x,
+                    ./images/sliders/desktop/four-towels-d@2x.jpg 2x
+                  "
+                  width="245"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/sliders/tablet/four-towels-t.jpg    1x,
+                    ./images/sliders/tablet/four-towels-t@2x.jpg 2x
+                  "
+                  width="194"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/sliders/mobile/four-towels-m.jpg    1x,
+                    ./images/sliders/mobile/four-towels-m@2x.jpg 2x
+                  "
+                  width="245"
+                />
+
+                <img
+                  class="two-img-slider__picture hotel-section__slider-img"
+                  src="./images/sliders/mobile/four-towels-m.jpg"
+                  alt="Рушники"
+                />
+              </picture>
+            </div>
+
+            <div
+              class="two-img-slider__slide swiper-slide hotel-section__slider"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sliders/desktop/lounge-d.jpg    1x,
+                    ./images/sliders/desktop/lounge-d@2x.jpg 2x
+                  "
+                  width="245"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/sliders/tablet/lounge-t.jpg    1x,
+                    ./images/sliders/tablet/lounge-t@2x.jpg 2x
+                  "
+                  width="194"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/sliders/mobile/lounge-m.jpg    1x,
+                    ./images/sliders/mobile/lounge-m@2x.jpg 2x
+                  "
+                  width="245"
+                />
+
+                <img
+                  class="two-img-slider__picture hotel-section__slider-img"
+                  src="./images/sliders/mobile/lounge-m.jpg"
+                  alt="Лаунж"
+                />
+              </picture>
+            </div>
+
+            <div
+              class="two-img-slider__slide swiper-slide hotel-section__slider"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/sliders/desktop/dark-couch-d.jpg    1x,
+                    ./images/sliders/desktop/dark-couch-d@2x.jpg 2x
+                  "
+                  width="245"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/sliders/tablet/dark-couch-t.jpg    1x,
+                    ./images/sliders/tablet/dark-couch-t@2x.jpg 2x
+                  "
+                  width="194"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./images/sliders/mobile/dark-couch-m.jpg    1x,
+                    ./images/sliders/mobile/dark-couch-m@2x.jpg 2x
+                  "
+                  width="245"
+                />
+
+                <img
+                  class="two-img-slider__picture hotel-section__slider-img"
+                  src="./images/sliders/mobile/dark-couch-m.jpg"
+                  alt="Софа"
+                />
+              </picture>
+            </div>
           </div>
 
-          <div class="two-img-slider__slide swiper-slide hotel-section__slider">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/sliders/desktop/four-towels-d.jpg    1x,
-                  ./images/sliders/desktop/four-towels-d@2x.jpg 2x
-                "
-                width="245"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./images/sliders/tablet/four-towels-t.jpg    1x,
-                  ./images/sliders/tablet/four-towels-t@2x.jpg 2x
-                "
-                width="194"
-              />
-              <source
-                media="(max-width: 1023px)"
-                srcset="
-                  ./images/sliders/mobile/four-towels-m.jpg    1x,
-                  ./images/sliders/mobile/four-towels-m@2x.jpg 2x
-                "
-                width="245"
-              />
-
-              <img
-                class="two-img-slider__picture hotel-section__slider-img"
-                src="./images/sliders/mobile/four-towels-m.jpg"
-                alt="Рушники"
-              />
-            </picture>
+          <div class="arrows hotel-section__arrows" dir="ltr">
+            <button
+              class="arrow-left hotel-section__arrow-button"
+              type="button"
+            >
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button
+              class="arrow-right hotel-section__arrow-button"
+              type="button"
+            >
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
-
-          <div class="two-img-slider__slide swiper-slide hotel-section__slider">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/sliders/desktop/lounge-d.jpg    1x,
-                  ./images/sliders/desktop/lounge-d@2x.jpg 2x
-                "
-                width="245"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./images/sliders/tablet/lounge-t.jpg    1x,
-                  ./images/sliders/tablet/lounge-t@2x.jpg 2x
-                "
-                width="194"
-              />
-              <source
-                media="(max-width: 1023px)"
-                srcset="
-                  ./images/sliders/mobile/lounge-m.jpg    1x,
-                  ./images/sliders/mobile/lounge-m@2x.jpg 2x
-                "
-                width="245"
-              />
-
-              <img
-                class="two-img-slider__picture hotel-section__slider-img"
-                src="./images/sliders/mobile/lounge-m.jpg"
-                alt="Лаунж"
-              />
-            </picture>
-          </div>
-
-          <div class="two-img-slider__slide swiper-slide hotel-section__slider">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/sliders/desktop/dark-couch-d.jpg    1x,
-                  ./images/sliders/desktop/dark-couch-d@2x.jpg 2x
-                "
-                width="245"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./images/sliders/tablet/dark-couch-t.jpg    1x,
-                  ./images/sliders/tablet/dark-couch-t@2x.jpg 2x
-                "
-                width="194"
-              />
-              <source
-                media="(max-width: 1023px)"
-                srcset="
-                  ./images/sliders/mobile/dark-couch-m.jpg    1x,
-                  ./images/sliders/mobile/dark-couch-m@2x.jpg 2x
-                "
-                width="245"
-              />
-
-              <img
-                class="two-img-slider__picture hotel-section__slider-img"
-                src="./images/sliders/mobile/dark-couch-m.jpg"
-                alt="Софа"
-              />
-            </picture>
-          </div>
+          <div class="hotel-section__slider-shadow"></div>
+          <div class="hotel-section__slider-shadow-second"></div>
         </div>
-
-        <div class="arrows hotel-section__arrows" dir="ltr">
-          <button class="arrow-left hotel-section__arrow-button" type="button">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <button class="arrow-right hotel-section__arrow-button" type="button">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="hotel-section__slider-shadow"></div>
-        <div class="hotel-section__slider-shadow-second"></div>
       </div>
     </div>
   </div>

@@ -1,6 +1,4 @@
-.hotel-secondary {
-  padding-top: 24px;
-  padding-bottom: 40px;
+.hotel-secondary { 
   margin-left: auto;
   margin-right: auto;
   width: 414px;
@@ -25,6 +23,11 @@
   background-size: cover;
   background-position: center;
 }
+}
+
+.hotel-secondary__gradient{
+  padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .hotel-secondary__content {

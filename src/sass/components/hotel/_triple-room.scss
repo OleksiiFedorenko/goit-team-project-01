@@ -12,6 +12,11 @@
     padding: 72px 0 112px;
   }
 }
+.triple-room__wrapper{
+ @include tablet-up{
+  padding-right: 17px;
+ }
+}
 .triple-room__subtitle {
   font-size: 20px;
   line-height: 1.15;
@@ -33,16 +38,21 @@
   }
   @include desktop-up {
     margin-bottom: 72px;
+    color: $color-dark-grey;
   }
 }
 .triple-room__text {
-  max-width: 258px;
+  max-width: 242px;
   font-size: 12px;
   line-height: 1.25;
   font-weight: 600;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   letter-spacing: 0.02em;
-  color: $color-text-dark;
+  @include tablet-up{
+    max-width: 400px;
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 .double-room__text-wrap {
   display: inline-block;
@@ -50,14 +60,13 @@
   text-align: left;
   margin-bottom: 32px;
   @include tablet-up {
-    font-size: 16px;
     margin-bottom: 169px;
-    max-width: 439px;
+    padding-right: 20px;
   }
   @include desktop-up {
     margin-bottom: 188px;
     font-weight: 700;
-    max-width: 400px;
+    padding-right: 57px;
   }
 }
 

@@ -140,9 +140,9 @@
      margin-bottom: 32px;
    }
 
-   @media screen and (max-width: 414px) {
-    min-width: 289px;
-    letter-spacing: 0.27em;
+   @media screen and (max-width: 413px) {
+      font-size: 90px;
+    max-width: 283px;
    }
 }
 
@@ -175,7 +175,7 @@
 
 
   .hero__title--small{
-    @media screen and (max-width: 414px){
+    @media screen and (max-width: 413px){
       font-size: 15px;
     }
   }
@@ -217,7 +217,7 @@
     margin-bottom: 144px;
   }
 
-  @media screen and (max-width: 414px){
+  @media screen and (max-width: 413px){
     font-size: 28px;
   }
 }

@@ -150,12 +150,17 @@
     height: 194px;
     margin-bottom: 44px;
     margin-right: 279px;
-    @include desktop-up{
-      width: 254px;
-      height: 254px;
-      margin-bottom: 52px;
-      margin-right: 339px;
-    }
+  }
+
+  @include desktop-up {
+    width: 254px;
+    height: 254px;
+    margin-bottom: 52px;
+    margin-right: 339px;
+  }
+
+  @include mobile-down {
+    display: none;
   }
   
 }
@@ -182,6 +187,10 @@
     @include desktop-up{
     background-color: transparent;
     box-shadow: none;
+    }
+
+    @include mobile-down {
+      display: none;
     }
   }
  

@@ -4,17 +4,17 @@
 
 //bugfix-треба виправити слайдери всюду і видалити звідси two-img-slider
 .two-img-slider__container, .two-img-slider {
-  width: 330px;
+  max-width: 330px;
   overflow: hidden;
   // margin-left: 50px; - Аліна: треба стилізувати це в своїй секції своїми класами.
 
   @include tablet-up {
-    width: 428px;
+    max-width: 428px;
     // margin-left: auto; - Аліна: треба стилізувати це в своїй секції своїми класами.
   }
 
   @include desktop-up {
-    width: 548px;
+    max-width: 548px;
   }
 
   // &--right {
@@ -59,15 +59,15 @@
 // Контейнер для слайдеру
 
 .three-img-slider__container {
-  width: 374px;
+  max-width: 374px;
   overflow: hidden;
 
   @include tablet-up {
-    width: 662px;
+    max-width: 662px;
   }
 
   @include desktop-up {
-    width: 874px;
+    max-width: 874px;
   }
 
   // &--right {
@@ -130,15 +130,15 @@
 // Контейнер для слайдеру
 
 .hotel-slider__container {
-  width: 284px;
+  max-width: 284px;
   overflow: hidden;
 
   @include tablet-up {
-    width: 428px;
+    max-width: 428px;
   }
 
   @include desktop-up {
-    width: 548px;
+    max-width: 548px;
   }
 
   // &--right {
@@ -180,15 +180,15 @@
 // Контейнер для слайдеру
 
 .restaurant-slider__container {
-  width: 330px;
+  max-width: 330px;
   overflow: hidden;
 
   @include tablet-up {
-    width: 428px;
+    max-width: 428px;
   }
 
   @include desktop-up {
-    width: 530px;
+    max-width: 530px;
   }
 
   // &--right {
@@ -214,14 +214,14 @@
  // Розміри слайдів
 
 .restaurant-slider__slide {
-  width: 245px;
+  max-width: 245px;
 
   @include tablet-up {
-    width: 194px;
+    max-width: 194px;
   }
 
   @include desktop-up {
-    width: 245px;
+    max-width: 245px;
   }
 }
 

@@ -179,6 +179,10 @@
     width: 254px;
     height: 254px;
   }
+
+  @include mobile-down {
+    display: none;
+  }
 }
 
 .hotel-slider__shadow-second {
@@ -203,5 +207,9 @@
     left: 0;
     width: 254px;
     height: 254px;
+  }
+
+  @include mobile-down {
+    display: none;
   }
 }

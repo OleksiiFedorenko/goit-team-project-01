@@ -10,7 +10,7 @@
 
 .footer__logo {
   display: flex;
-  padding-left: 44px;
+  // padding-left: 44px;
 
   transition: color $transition-time $cubic-bezier;
 
@@ -99,7 +99,7 @@
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 500;
-  padding-right: 26px;
+  // padding-right: 26px;
   color: $color-brand;
 
   @include tablet-up {
@@ -126,7 +126,7 @@
   @include flex;
   gap: 20px;
   margin-top: 32px;
-  padding-right: 26px;
+  // padding-right: 26px;
 
   @include tablet-up {
     flex-direction: column;

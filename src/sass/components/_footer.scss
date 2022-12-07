@@ -19,15 +19,6 @@
   &:active {
     color: $color-white;
   }
-
-  @include tablet-up {
-    margin-right: 163px;
-    padding-left: 0;
-  }
-
-  @include desktop-up {
-    margin-right: 231px;
-  }
 }
 
 .footer__socials {
@@ -86,8 +77,20 @@
 .footer__navigation {
   @include flex($justify: space-between);
 
+  @include mobile-up {
+    padding-left: 44px;
+    padding-right: 15px;
+  }
+
+
   @include tablet-up {
-    @include flex($justify: center);
+    padding-left: 107px;
+    padding-right: 75px;
+  }
+
+  @include desktop-up {
+    padding-left: 131px;
+    padding-right: 101px;
   }
 }
 
@@ -126,7 +129,6 @@
   @include flex;
   gap: 20px;
   margin-top: 32px;
-  // padding-right: 26px;
 
   @include tablet-up {
     flex-direction: column;

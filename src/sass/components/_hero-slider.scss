@@ -11,6 +11,10 @@
     overflow: hidden;
         width: 414px;
 
+    @media screen and (max-width: 413px) {
+        width: 100%;
+    }
+
     @include tablet-up {
         width: 1024px;
     }
@@ -94,14 +98,16 @@
     // outline: 1px dotted teal;
     // background-color: rgba(19, 18, 18, 0.5);
   
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!1
     @media screen and (max-width: 413px) {
         max-width: 100%;
+        padding-top: 308px;
     }
     margin: 0 auto;
     padding-top: 479px;
     padding-bottom: 14px;
     width: 414px;
-    height: 740px;
+    // height: 740px;
 
     @include tablet-up {
         // position: reletive для абсолютного
@@ -121,6 +127,12 @@
 }
 
 .luxe-hero__content {
+
+    // !!!!!!!!!!!!!!!!!!!!
+// @media screen and (max-width:413px) {
+//     max-width: 100%;
+// }
+
 @include mobile-only {
     max-width: 325px;
 }
@@ -139,6 +151,11 @@
 
     &--accent {
         text-transform: uppercase;
+    }
+
+    @media screen and (max-width:413px) {
+        margin-bottom: 12px;
+        text-align: center;
     }
 
     @include tablet-up {
@@ -193,6 +210,11 @@ color: $color-white;
     @include desktop-up {
         display: none;
     }
+}
+
+// !!!!!!!!!!!!!!!
+.luxe-soc__link {
+    @include flex;
 }
 
 .luxe-soc__icon {
